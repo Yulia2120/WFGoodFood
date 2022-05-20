@@ -11,6 +11,9 @@ namespace WFGoodFood.DataModel
        : base("name=cs") { }
 
         public virtual DbSet<User> UserList { get; set; }
+        public virtual DbSet<Admin> AdminList { get; set; }
         public IEnumerable<object> Users { get; internal set; }
+        public IEnumerable<object> Admins { get; internal set; }
+
     }
 }

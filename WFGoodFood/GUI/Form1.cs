@@ -18,13 +18,24 @@ namespace WFGoodFood
             InitializeComponent();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            using (ModelContext db = new ModelContext())
+            if (tabControl.SelectedIndex == 0)
             {
-                userBindingSource.DataSource = db.UserList.ToList();
+                using (ModelContext db = new ModelContext())
+                {
+                    userBindingSource.DataSource = db.UserList.ToList();
+                }
+            }
+            if(tabControl.SelectedIndex == 1)
+            {
+                using (ModelContext db = new ModelContext())
+                {
+                    userBindingSource.DataSource = db.AdminList.ToList();
+                }
             }
         }
+      
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -43,7 +54,7 @@ namespace WFGoodFood
         private void btnCancel_Click(object sender, EventArgs e)
         {
             userBindingSource.ResetBindings(false);
-            tabPage1_Click(sender, e);
+            Form1_Load(sender, e);
         }
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -89,5 +100,6 @@ namespace WFGoodFood
                 }
             }
         }
+
     }
 }

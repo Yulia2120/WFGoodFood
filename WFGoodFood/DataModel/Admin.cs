@@ -7,16 +7,13 @@ using System.Threading.Tasks;
 
 namespace WFGoodFood.DataModel
 {
-    public class User
+    public class Admin
     {
         public int Id { get; set; }
         [StringLength(255)]
-        public string UserName { get; set; }
+        public string Login { get; set; }
         [StringLength(255)]
-        public string Email { get; set; }
-        [StringLength(255)]
-        public string Password { get; set; } 
-        [StringLength (255)]
-        public string Phone { get; set; }
+        public string Password { get; set; }
+      
     }
 }
