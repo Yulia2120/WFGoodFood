@@ -109,6 +109,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\WFGoodFood.DataModel.Admin.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
