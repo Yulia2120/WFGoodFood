@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lbPhoneuser = new System.Windows.Forms.Label();
+            this.lbPasswuser = new System.Windows.Forms.Label();
+            this.lbEmailuser = new System.Windows.Forms.Label();
             this.lbUserNameuser = new System.Windows.Forms.Label();
             this.lbIduser = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
@@ -67,9 +70,6 @@
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lbEmailuser = new System.Windows.Forms.Label();
-            this.lbPasswuser = new System.Windows.Forms.Label();
-            this.lbPhoneuser = new System.Windows.Forms.Label();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -134,6 +134,33 @@
             this.tabPage1.Text = "User";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage1_MouseDoubleClick);
+            // 
+            // lbPhoneuser
+            // 
+            this.lbPhoneuser.AutoSize = true;
+            this.lbPhoneuser.Location = new System.Drawing.Point(586, 296);
+            this.lbPhoneuser.Name = "lbPhoneuser";
+            this.lbPhoneuser.Size = new System.Drawing.Size(41, 13);
+            this.lbPhoneuser.TabIndex = 22;
+            this.lbPhoneuser.Text = "Phone:";
+            // 
+            // lbPasswuser
+            // 
+            this.lbPasswuser.AutoSize = true;
+            this.lbPasswuser.Location = new System.Drawing.Point(586, 240);
+            this.lbPasswuser.Name = "lbPasswuser";
+            this.lbPasswuser.Size = new System.Drawing.Size(56, 13);
+            this.lbPasswuser.TabIndex = 21;
+            this.lbPasswuser.Text = "Password:";
+            // 
+            // lbEmailuser
+            // 
+            this.lbEmailuser.AutoSize = true;
+            this.lbEmailuser.Location = new System.Drawing.Point(586, 186);
+            this.lbEmailuser.Name = "lbEmailuser";
+            this.lbEmailuser.Size = new System.Drawing.Size(35, 13);
+            this.lbEmailuser.TabIndex = 20;
+            this.lbEmailuser.Text = "Email:";
             // 
             // lbUserNameuser
             // 
@@ -295,9 +322,9 @@
             this.passwordDataGridViewTextBoxColumn1,
             this.phoneDataGridViewTextBoxColumn});
             this.dataGridView.DataSource = this.userBindingSource;
-            this.dataGridView.Location = new System.Drawing.Point(8, 8);
+            this.dataGridView.Location = new System.Drawing.Point(6, 8);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(541, 428);
+            this.dataGridView.Size = new System.Drawing.Size(548, 428);
             this.dataGridView.TabIndex = 0;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
@@ -428,6 +455,7 @@
             // dataGridViewAdmin
             // 
             this.dataGridViewAdmin.AutoGenerateColumns = false;
+            this.dataGridViewAdmin.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridViewAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAdmin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn2,
@@ -470,33 +498,6 @@
             this.idDataGridViewTextBoxColumn.HeaderText = "Id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lbEmailuser
-            // 
-            this.lbEmailuser.AutoSize = true;
-            this.lbEmailuser.Location = new System.Drawing.Point(586, 186);
-            this.lbEmailuser.Name = "lbEmailuser";
-            this.lbEmailuser.Size = new System.Drawing.Size(35, 13);
-            this.lbEmailuser.TabIndex = 20;
-            this.lbEmailuser.Text = "Email:";
-            // 
-            // lbPasswuser
-            // 
-            this.lbPasswuser.AutoSize = true;
-            this.lbPasswuser.Location = new System.Drawing.Point(586, 240);
-            this.lbPasswuser.Name = "lbPasswuser";
-            this.lbPasswuser.Size = new System.Drawing.Size(56, 13);
-            this.lbPasswuser.TabIndex = 21;
-            this.lbPasswuser.Text = "Password:";
-            // 
-            // lbPhoneuser
-            // 
-            this.lbPhoneuser.AutoSize = true;
-            this.lbPhoneuser.Location = new System.Drawing.Point(586, 296);
-            this.lbPhoneuser.Name = "lbPhoneuser";
-            this.lbPhoneuser.Size = new System.Drawing.Size(41, 13);
-            this.lbPhoneuser.TabIndex = 22;
-            this.lbPhoneuser.Text = "Phone:";
             // 
             // userBindingSource
             // 
