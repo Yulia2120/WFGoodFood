@@ -50,10 +50,10 @@
             // lbName
             // 
             this.lbName.AutoSize = true;
-            this.lbName.Font = new System.Drawing.Font("Fira Sans", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbName.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbName.Location = new System.Drawing.Point(82, 68);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(169, 32);
+            this.lbName.Size = new System.Drawing.Size(190, 37);
             this.lbName.TabIndex = 1;
             this.lbName.Text = "My Food App";
             // 
