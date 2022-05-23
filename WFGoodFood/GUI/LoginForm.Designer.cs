@@ -36,12 +36,12 @@
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.ButLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.pbIconPass = new System.Windows.Forms.PictureBox();
-            this.pbIconUser = new System.Windows.Forms.PictureBox();
-            this.pBImg = new System.Windows.Forms.PictureBox();
             this.lbClose = new System.Windows.Forms.Label();
             this.lbClear = new System.Windows.Forms.Label();
             this.cboxRole = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.pbIconPass = new System.Windows.Forms.PictureBox();
+            this.pbIconUser = new System.Windows.Forms.PictureBox();
+            this.pBImg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbIconUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBImg)).BeginInit();
@@ -165,42 +165,12 @@
             this.ButLogin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ButLogin.ForeColor = System.Drawing.Color.White;
             this.ButLogin.HoverState.Parent = this.ButLogin;
-            this.ButLogin.Location = new System.Drawing.Point(163, 341);
+            this.ButLogin.Location = new System.Drawing.Point(101, 341);
             this.ButLogin.Name = "ButLogin";
             this.ButLogin.ShadowDecoration.Parent = this.ButLogin;
             this.ButLogin.Size = new System.Drawing.Size(125, 42);
             this.ButLogin.TabIndex = 10;
             this.ButLogin.Text = "Login";
-            // 
-            // pbIconPass
-            // 
-            this.pbIconPass.Image = global::WFGoodFood.Properties.Resources.icons8_key_24px;
-            this.pbIconPass.Location = new System.Drawing.Point(51, 272);
-            this.pbIconPass.Name = "pbIconPass";
-            this.pbIconPass.Size = new System.Drawing.Size(25, 25);
-            this.pbIconPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbIconPass.TabIndex = 6;
-            this.pbIconPass.TabStop = false;
-            // 
-            // pbIconUser
-            // 
-            this.pbIconUser.Image = global::WFGoodFood.Properties.Resources.icons8_user_24px;
-            this.pbIconUser.Location = new System.Drawing.Point(52, 177);
-            this.pbIconUser.Name = "pbIconUser";
-            this.pbIconUser.Size = new System.Drawing.Size(25, 25);
-            this.pbIconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbIconUser.TabIndex = 3;
-            this.pbIconUser.TabStop = false;
-            // 
-            // pBImg
-            // 
-            this.pBImg.Image = global::WFGoodFood.Properties.Resources.bl011;
-            this.pBImg.Location = new System.Drawing.Point(323, 1);
-            this.pBImg.Name = "pBImg";
-            this.pBImg.Size = new System.Drawing.Size(308, 449);
-            this.pBImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBImg.TabIndex = 0;
-            this.pBImg.TabStop = false;
             // 
             // lbClose
             // 
@@ -220,7 +190,7 @@
             this.lbClear.AutoSize = true;
             this.lbClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.lbClear.Location = new System.Drawing.Point(207, 404);
+            this.lbClear.Location = new System.Drawing.Point(145, 404);
             this.lbClear.Name = "lbClear";
             this.lbClear.Size = new System.Drawing.Size(38, 17);
             this.lbClear.TabIndex = 12;
@@ -253,6 +223,36 @@
             this.cboxRole.ShadowDecoration.Parent = this.cboxRole;
             this.cboxRole.Size = new System.Drawing.Size(140, 36);
             this.cboxRole.TabIndex = 13;
+            // 
+            // pbIconPass
+            // 
+            this.pbIconPass.Image = global::WFGoodFood.Properties.Resources.icons8_key_24px;
+            this.pbIconPass.Location = new System.Drawing.Point(51, 272);
+            this.pbIconPass.Name = "pbIconPass";
+            this.pbIconPass.Size = new System.Drawing.Size(25, 25);
+            this.pbIconPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIconPass.TabIndex = 6;
+            this.pbIconPass.TabStop = false;
+            // 
+            // pbIconUser
+            // 
+            this.pbIconUser.Image = global::WFGoodFood.Properties.Resources.icons8_user_24px;
+            this.pbIconUser.Location = new System.Drawing.Point(52, 177);
+            this.pbIconUser.Name = "pbIconUser";
+            this.pbIconUser.Size = new System.Drawing.Size(25, 25);
+            this.pbIconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIconUser.TabIndex = 3;
+            this.pbIconUser.TabStop = false;
+            // 
+            // pBImg
+            // 
+            this.pBImg.Image = global::WFGoodFood.Properties.Resources.bl011;
+            this.pBImg.Location = new System.Drawing.Point(323, 1);
+            this.pBImg.Name = "pBImg";
+            this.pBImg.Size = new System.Drawing.Size(308, 449);
+            this.pBImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBImg.TabIndex = 0;
+            this.pBImg.TabStop = false;
             // 
             // LoginForm
             // 

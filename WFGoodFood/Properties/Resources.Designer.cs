@@ -93,6 +93,16 @@ namespace WFGoodFood.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_shop_local_50px {
+            get {
+                object obj = ResourceManager.GetObject("icons8_shop_local_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_user_24px {
             get {
                 object obj = ResourceManager.GetObject("icons8_user_24px", resourceCulture);
