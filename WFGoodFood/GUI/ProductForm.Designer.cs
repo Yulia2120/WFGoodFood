@@ -39,9 +39,10 @@
             this.lbDelivery = new System.Windows.Forms.Label();
             this.lbrestor = new System.Windows.Forms.Label();
             this.lbIcon = new System.Windows.Forms.Label();
+            this.userControlDelivery = new WFGoodFood.Control.UserControlDelivery();
             this.userControlCategory = new WFGoodFood.Control.UserControlCategory();
             this.userControlHome = new WFGoodFood.Control.UserControlHome();
-            this.userControlDelivery1 = new WFGoodFood.Control.UserControlDelivery();
+            //this.userControlManagement = new WFGoodFood.Control.UserControlManagement();
             this.pnlSide.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
@@ -93,6 +94,7 @@
             this.btnManagement.TabIndex = 3;
             this.btnManagement.Text = "Management";
             this.btnManagement.UseVisualStyleBackColor = true;
+            //this.btnManagement.Click += new System.EventHandler(this.btnManagement_Click);
             // 
             // btnDelivery
             // 
@@ -106,6 +108,7 @@
             this.btnDelivery.TabIndex = 2;
             this.btnDelivery.Text = "Delivery";
             this.btnDelivery.UseVisualStyleBackColor = true;
+            //this.btnDelivery.Click += new System.EventHandler(this.btnDelivery_Click);
             // 
             // btnCategory
             // 
@@ -181,6 +184,14 @@
             this.lbIcon.TabIndex = 0;
             this.lbIcon.Text = "GoodFood";
             // 
+            // userControlDelivery
+            // 
+            this.userControlDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.userControlDelivery.Location = new System.Drawing.Point(230, 105);
+            this.userControlDelivery.Name = "userControlDelivery";
+            this.userControlDelivery.Size = new System.Drawing.Size(819, 530);
+            this.userControlDelivery.TabIndex = 17;
+            // 
             // userControlCategory
             // 
             this.userControlCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
@@ -197,13 +208,12 @@
             this.userControlHome.Size = new System.Drawing.Size(880, 530);
             this.userControlHome.TabIndex = 15;
             // 
-            // userControlDelivery1
+            // userControlManagement
             // 
-            this.userControlDelivery1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlDelivery1.Location = new System.Drawing.Point(200, 108);
-            this.userControlDelivery1.Name = "userControlDelivery1";
-            this.userControlDelivery1.Size = new System.Drawing.Size(880, 530);
-            this.userControlDelivery1.TabIndex = 17;
+            this.userControlManagement.Location = new System.Drawing.Point(202, 100);
+            this.userControlManagement.Name = "userControlManagement";
+            this.userControlManagement.Size = new System.Drawing.Size(880, 530);
+            this.userControlManagement.TabIndex = 18;
             // 
             // ProductForm
             // 
@@ -211,7 +221,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1084, 650);
-            this.Controls.Add(this.userControlDelivery1);
+            this.Controls.Add(this.userControlManagement);
+            this.Controls.Add(this.userControlDelivery);
             this.Controls.Add(this.userControlCategory);
             this.Controls.Add(this.userControlHome);
             this.Controls.Add(this.pnlTop);
@@ -242,6 +253,7 @@
         private System.Windows.Forms.Label lbDelivery;
         private Control.UserControlHome userControlHome;
         private Control.UserControlCategory userControlCategory;
-        private Control.UserControlDelivery userControlDelivery1;
+        private Control.UserControlDelivery userControlDelivery;
+        private Control.UserControlManagement userControlManagement;
     }
 }
