@@ -17,21 +17,21 @@ namespace WFGoodFood
             InitializeComponent();
             pnlSide.Height = btnHome.Height;
             pnlRed.Top = btnHome.Top;
-            userControlHome.BringToFront();
+            userControlHome1.BringToFront();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
             pnlSide.Height = btnHome.Height;
             pnlRed.Top = btnHome.Top;
-            userControlHome.BringToFront();
+            userControlHome1.BringToFront();
         }
 
         private void btnCategory_Click(object sender, EventArgs e)
         {
             pnlSide.Height = btnCategory.Height;
             pnlRed.Top= btnCategory.Top;
-            userControlCategory.BringToFront();
+            userControlCategory1.BringToFront();
         }
 
         private void lbClose_Click(object sender, EventArgs e)
@@ -47,6 +47,13 @@ namespace WFGoodFood
         private void lbClose_MouseLeave(object sender, EventArgs e)
         {
             lbClose.ForeColor = Color.Black;
+        }
+
+        private void btnDelivery_Click(object sender, EventArgs e)
+        {
+            pnlSide.Height = btnDelivery.Height;
+            pnlRed.Top = btnDelivery.Top;
+            userControlDelivery2.BringToFront();
         }
     }
 }
