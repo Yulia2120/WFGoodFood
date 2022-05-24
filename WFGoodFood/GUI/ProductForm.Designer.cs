@@ -38,8 +38,8 @@
             this.btnDelivery = new System.Windows.Forms.Button();
             this.btnManagement = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
             this.lbDelivery = new System.Windows.Forms.Label();
+            this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
             this.pnlLeft.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +56,7 @@
             // 
             // pnlLeft
             // 
-            this.pnlLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.pnlLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
             this.pnlLeft.Controls.Add(this.panel1);
             this.pnlLeft.Controls.Add(this.btnManagement);
             this.pnlLeft.Controls.Add(this.btnDelivery);
@@ -163,13 +163,6 @@
             this.panel1.Size = new System.Drawing.Size(5, 45);
             this.panel1.TabIndex = 16;
             // 
-            // userControlHome1
-            // 
-            this.userControlHome1.Location = new System.Drawing.Point(200, 117);
-            this.userControlHome1.Name = "userControlHome1";
-            this.userControlHome1.Size = new System.Drawing.Size(884, 530);
-            this.userControlHome1.TabIndex = 16;
-            // 
             // lbDelivery
             // 
             this.lbDelivery.AutoSize = true;
@@ -180,6 +173,13 @@
             this.lbDelivery.Size = new System.Drawing.Size(57, 17);
             this.lbDelivery.TabIndex = 2;
             this.lbDelivery.Text = "Delivery";
+            // 
+            // userControlHome1
+            // 
+            this.userControlHome1.Location = new System.Drawing.Point(200, 116);
+            this.userControlHome1.Name = "userControlHome1";
+            this.userControlHome1.Size = new System.Drawing.Size(884, 530);
+            this.userControlHome1.TabIndex = 15;
             // 
             // ProductForm
             // 

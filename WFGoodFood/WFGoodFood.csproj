@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\UserControlCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UserControlCategory.Designer.cs">
+      <DependentUpon>UserControlCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\UserControlHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Control\UserControlCategory.resx">
+      <DependentUpon>UserControlCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Control\UserControlHome.resx">
       <DependentUpon>UserControlHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +187,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\double burger -1-310x260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\california burger-6-310x260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken burger-2-310x260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classic burger-5-310x260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini burger-4-310x260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tomato toast-1-310x260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizzas-1-310x260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Turkey salads-4-310x260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pina colada-1-310x260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chocolate fudge cake-3-310x260.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

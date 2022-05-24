@@ -73,6 +73,46 @@ namespace WFGoodFood.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap california_burger_6_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("california burger-6-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chicken_burger_2_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("chicken burger-2-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chocolate_fudge_cake_3_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("chocolate fudge cake-3-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap classic_burger_5_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("classic burger-5-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap double_burger__1_310x260 {
             get {
                 object obj = ResourceManager.GetObject("double burger -1-310x260", resourceCulture);
@@ -106,6 +146,56 @@ namespace WFGoodFood.Properties {
         internal static System.Drawing.Bitmap icons8_instagram_logo_30px {
             get {
                 object obj = ResourceManager.GetObject("icons8_instagram_logo_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mini_burger_4_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("mini burger-4-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pina_colada_1_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("pina colada-1-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pizzas_1_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("pizzas-1-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tomato_toast_1_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("tomato toast-1-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Turkey_salads_4_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("Turkey salads-4-310x260", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
