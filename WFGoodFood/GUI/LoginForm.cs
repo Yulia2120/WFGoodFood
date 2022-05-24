@@ -41,5 +41,13 @@ namespace WFGoodFood.GUI
         {
             lbClear.ForeColor = Color.FromArgb(85, 115, 0);
         }
+
+        private void lbClear_Click(object sender, EventArgs e)
+        {
+            txtboxUserName.Clear();
+            txtboxPassword.Clear();
+        }
+
+       
     }
 }

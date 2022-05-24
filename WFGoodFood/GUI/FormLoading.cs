@@ -47,9 +47,12 @@ namespace WFGoodFood.GUI
 
         void CloseForm(object sender, EventArgs e)
         {
-            Close();
-            //Hide();
-            //(LoginForm log = new LoginForm();
+            Hide();
+            LoginForm log = new LoginForm();
+            log.Show();
+            timer1.Stop();
+            timer2.Stop();
+            
         }
 
         
