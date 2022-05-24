@@ -73,9 +73,9 @@ namespace WFGoodFood.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_delete_50px {
+        internal static System.Drawing.Bitmap double_burger__1_310x260 {
             get {
-                object obj = ResourceManager.GetObject("icons8_delete_50px", resourceCulture);
+                object obj = ResourceManager.GetObject("double burger -1-310x260", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace WFGoodFood.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_key_24px {
+        internal static System.Drawing.Bitmap icons8_facebook_f_32px {
             get {
-                object obj = ResourceManager.GetObject("icons8_key_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_facebook_f_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace WFGoodFood.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_shop_local_50px {
+        internal static System.Drawing.Bitmap icons8_google_32px {
             get {
-                object obj = ResourceManager.GetObject("icons8_shop_local_50px", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_google_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace WFGoodFood.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_user_24px {
+        internal static System.Drawing.Bitmap icons8_instagram_logo_30px {
             get {
-                object obj = ResourceManager.GetObject("icons8_user_24px", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8_instagram_logo_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

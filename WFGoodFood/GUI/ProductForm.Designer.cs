@@ -31,22 +31,24 @@
             this.lbClose = new System.Windows.Forms.Label();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.pnlIcon = new System.Windows.Forms.Panel();
             this.lbIcon = new System.Windows.Forms.Label();
             this.lbrestor = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnCategory = new System.Windows.Forms.Button();
             this.btnDelivery = new System.Windows.Forms.Button();
             this.btnManagement = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
+            this.lbDelivery = new System.Windows.Forms.Label();
             this.pnlLeft.SuspendLayout();
-            this.pnlIcon.SuspendLayout();
+            this.pnlTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbClose
             // 
             this.lbClose.AutoSize = true;
             this.lbClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbClose.Location = new System.Drawing.Point(1039, 39);
+            this.lbClose.Location = new System.Drawing.Point(860, 5);
             this.lbClose.Name = "lbClose";
             this.lbClose.Size = new System.Drawing.Size(20, 19);
             this.lbClose.TabIndex = 12;
@@ -55,6 +57,7 @@
             // pnlLeft
             // 
             this.pnlLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.pnlLeft.Controls.Add(this.panel1);
             this.pnlLeft.Controls.Add(this.btnManagement);
             this.pnlLeft.Controls.Add(this.btnDelivery);
             this.pnlLeft.Controls.Add(this.btnCategory);
@@ -68,28 +71,22 @@
             // pnlTop
             // 
             this.pnlTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(75)))), ((int)(((byte)(72)))));
+            this.pnlTop.Controls.Add(this.lbDelivery);
+            this.pnlTop.Controls.Add(this.lbrestor);
+            this.pnlTop.Controls.Add(this.lbIcon);
+            this.pnlTop.Controls.Add(this.lbClose);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(200, 0);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(884, 15);
+            this.pnlTop.Size = new System.Drawing.Size(884, 92);
             this.pnlTop.TabIndex = 14;
-            // 
-            // pnlIcon
-            // 
-            this.pnlIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(75)))), ((int)(((byte)(72)))));
-            this.pnlIcon.Controls.Add(this.lbrestor);
-            this.pnlIcon.Controls.Add(this.lbIcon);
-            this.pnlIcon.Location = new System.Drawing.Point(236, 12);
-            this.pnlIcon.Name = "pnlIcon";
-            this.pnlIcon.Size = new System.Drawing.Size(160, 80);
-            this.pnlIcon.TabIndex = 15;
             // 
             // lbIcon
             // 
             this.lbIcon.AutoSize = true;
             this.lbIcon.Font = new System.Drawing.Font("Sarllina", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.lbIcon.Location = new System.Drawing.Point(32, 13);
+            this.lbIcon.Location = new System.Drawing.Point(15, 9);
             this.lbIcon.Name = "lbIcon";
             this.lbIcon.Size = new System.Drawing.Size(95, 33);
             this.lbIcon.TabIndex = 0;
@@ -100,7 +97,7 @@
             this.lbrestor.AutoSize = true;
             this.lbrestor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbrestor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.lbrestor.Location = new System.Drawing.Point(45, 46);
+            this.lbrestor.Location = new System.Drawing.Point(27, 42);
             this.lbrestor.Name = "lbrestor";
             this.lbrestor.Size = new System.Drawing.Size(72, 17);
             this.lbrestor.TabIndex = 1;
@@ -112,7 +109,7 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.btnHome.Location = new System.Drawing.Point(0, 69);
+            this.btnHome.Location = new System.Drawing.Point(0, 98);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(200, 45);
             this.btnHome.TabIndex = 0;
@@ -125,7 +122,7 @@
             this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategory.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.btnCategory.Location = new System.Drawing.Point(0, 120);
+            this.btnCategory.Location = new System.Drawing.Point(0, 149);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Size = new System.Drawing.Size(200, 45);
             this.btnCategory.TabIndex = 1;
@@ -138,7 +135,7 @@
             this.btnDelivery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelivery.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnDelivery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.btnDelivery.Location = new System.Drawing.Point(3, 171);
+            this.btnDelivery.Location = new System.Drawing.Point(3, 200);
             this.btnDelivery.Name = "btnDelivery";
             this.btnDelivery.Size = new System.Drawing.Size(200, 45);
             this.btnDelivery.TabIndex = 2;
@@ -151,12 +148,38 @@
             this.btnManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManagement.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.btnManagement.Location = new System.Drawing.Point(0, 222);
+            this.btnManagement.Location = new System.Drawing.Point(0, 251);
             this.btnManagement.Name = "btnManagement";
             this.btnManagement.Size = new System.Drawing.Size(200, 45);
             this.btnManagement.TabIndex = 3;
             this.btnManagement.Text = "Management";
             this.btnManagement.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(75)))), ((int)(((byte)(72)))));
+            this.panel1.Location = new System.Drawing.Point(3, 98);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(5, 45);
+            this.panel1.TabIndex = 16;
+            // 
+            // userControlHome1
+            // 
+            this.userControlHome1.Location = new System.Drawing.Point(200, 117);
+            this.userControlHome1.Name = "userControlHome1";
+            this.userControlHome1.Size = new System.Drawing.Size(884, 530);
+            this.userControlHome1.TabIndex = 16;
+            // 
+            // lbDelivery
+            // 
+            this.lbDelivery.AutoSize = true;
+            this.lbDelivery.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbDelivery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.lbDelivery.Location = new System.Drawing.Point(27, 64);
+            this.lbDelivery.Name = "lbDelivery";
+            this.lbDelivery.Size = new System.Drawing.Size(57, 17);
+            this.lbDelivery.TabIndex = 2;
+            this.lbDelivery.Text = "Delivery";
             // 
             // ProductForm
             // 
@@ -164,19 +187,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1084, 650);
-            this.Controls.Add(this.pnlIcon);
+            this.Controls.Add(this.userControlHome1);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlLeft);
-            this.Controls.Add(this.lbClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ProductForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductForm";
             this.pnlLeft.ResumeLayout(false);
-            this.pnlIcon.ResumeLayout(false);
-            this.pnlIcon.PerformLayout();
+            this.pnlTop.ResumeLayout(false);
+            this.pnlTop.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -185,12 +206,14 @@
         private System.Windows.Forms.Label lbClose;
         private System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Panel pnlTop;
-        private System.Windows.Forms.Panel pnlIcon;
         private System.Windows.Forms.Label lbIcon;
         private System.Windows.Forms.Button btnManagement;
         private System.Windows.Forms.Button btnDelivery;
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Label lbrestor;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbDelivery;
+        private Control.UserControlHome userControlHome1;
     }
 }

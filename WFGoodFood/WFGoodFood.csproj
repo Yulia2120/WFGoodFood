@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\UserControlHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UserControlHome.Designer.cs">
+      <DependentUpon>UserControlHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataModel\Admin.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
     <Compile Include="DataModel\User.cs" />
@@ -102,6 +108,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Control\UserControlHome.resx">
+      <DependentUpon>UserControlHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,14 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Admin.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.User.datasource" />
@@ -143,6 +147,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -156,19 +165,19 @@
     <None Include="Resources\bl011.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8_user_24px.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8_key_24px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8_delete_50px.png" />
+    <None Include="Resources\icons8_facebook_f_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8_shop_local_50px.png" />
+    <None Include="Resources\icons8_google_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_instagram_logo_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double burger -1-310x260.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
