@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lbPhoneuser = new System.Windows.Forms.Label();
@@ -69,11 +70,23 @@
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -86,7 +99,7 @@
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(880, 530);
+            this.tabControl.Size = new System.Drawing.Size(914, 561);
             this.tabControl.TabIndex = 0;
             // 
             // tabPage1
@@ -116,16 +129,16 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(872, 504);
+            this.tabPage1.Size = new System.Drawing.Size(906, 535);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "User";
             this.tabPage1.UseVisualStyleBackColor = true;
-            //this.tabPage1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage1_MouseDoubleClick);
+            this.tabPage1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage1_MouseDoubleClick);
             // 
             // lbPhoneuser
             // 
             this.lbPhoneuser.AutoSize = true;
-            this.lbPhoneuser.Location = new System.Drawing.Point(577, 296);
+            this.lbPhoneuser.Location = new System.Drawing.Point(586, 296);
             this.lbPhoneuser.Name = "lbPhoneuser";
             this.lbPhoneuser.Size = new System.Drawing.Size(41, 13);
             this.lbPhoneuser.TabIndex = 22;
@@ -134,7 +147,7 @@
             // lbPasswuser
             // 
             this.lbPasswuser.AutoSize = true;
-            this.lbPasswuser.Location = new System.Drawing.Point(577, 240);
+            this.lbPasswuser.Location = new System.Drawing.Point(586, 240);
             this.lbPasswuser.Name = "lbPasswuser";
             this.lbPasswuser.Size = new System.Drawing.Size(56, 13);
             this.lbPasswuser.TabIndex = 21;
@@ -143,7 +156,7 @@
             // lbEmailuser
             // 
             this.lbEmailuser.AutoSize = true;
-            this.lbEmailuser.Location = new System.Drawing.Point(577, 186);
+            this.lbEmailuser.Location = new System.Drawing.Point(586, 186);
             this.lbEmailuser.Name = "lbEmailuser";
             this.lbEmailuser.Size = new System.Drawing.Size(35, 13);
             this.lbEmailuser.TabIndex = 20;
@@ -152,7 +165,7 @@
             // lbUserNameuser
             // 
             this.lbUserNameuser.AutoSize = true;
-            this.lbUserNameuser.Location = new System.Drawing.Point(577, 135);
+            this.lbUserNameuser.Location = new System.Drawing.Point(586, 135);
             this.lbUserNameuser.Name = "lbUserNameuser";
             this.lbUserNameuser.Size = new System.Drawing.Size(60, 13);
             this.lbUserNameuser.TabIndex = 19;
@@ -161,7 +174,7 @@
             // lbIduser
             // 
             this.lbIduser.AutoSize = true;
-            this.lbIduser.Location = new System.Drawing.Point(577, 76);
+            this.lbIduser.Location = new System.Drawing.Point(586, 76);
             this.lbIduser.Name = "lbIduser";
             this.lbIduser.Size = new System.Drawing.Size(19, 13);
             this.lbIduser.TabIndex = 18;
@@ -169,7 +182,8 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(651, 289);
+            this.txtPhone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "Phone", true));
+            this.txtPhone.Location = new System.Drawing.Point(660, 289);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(204, 20);
             this.txtPhone.TabIndex = 17;
@@ -184,57 +198,58 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(763, 462);
+            this.btnSave.Location = new System.Drawing.Point(809, 478);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 15;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
-            //this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(577, 462);
+            this.btnCancel.Location = new System.Drawing.Point(623, 478);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 14;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            //this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(670, 462);
+            this.btnDelete.Location = new System.Drawing.Point(716, 478);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
-            //this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(484, 462);
+            this.btnEdit.Location = new System.Drawing.Point(530, 478);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 12;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
-            //this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(391, 462);
+            this.btnAdd.Location = new System.Drawing.Point(437, 478);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
-            //this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(651, 234);
+            this.txtPassword.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "Password", true));
+            this.txtPassword.Location = new System.Drawing.Point(660, 234);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(204, 20);
             this.txtPassword.TabIndex = 10;
@@ -249,7 +264,8 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(651, 179);
+            this.txtEmail.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "Email", true));
+            this.txtEmail.Location = new System.Drawing.Point(660, 179);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(204, 20);
             this.txtEmail.TabIndex = 8;
@@ -264,7 +280,8 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(651, 128);
+            this.txtUserName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "UserName", true));
+            this.txtUserName.Location = new System.Drawing.Point(660, 128);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(204, 20);
             this.txtUserName.TabIndex = 6;
@@ -279,7 +296,8 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(651, 73);
+            this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.userBindingSource, "Id", true));
+            this.txtId.Location = new System.Drawing.Point(660, 73);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 4;
@@ -294,13 +312,21 @@
             // 
             // dataGridView
             // 
+            this.dataGridView.AutoGenerateColumns = false;
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn1,
+            this.userNameDataGridViewTextBoxColumn1,
+            this.emailDataGridViewTextBoxColumn1,
+            this.passwordDataGridViewTextBoxColumn1,
+            this.phoneDataGridViewTextBoxColumn});
+            this.dataGridView.DataSource = this.userBindingSource;
             this.dataGridView.Location = new System.Drawing.Point(6, 8);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(548, 428);
             this.dataGridView.TabIndex = 0;
-            //this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
             // tabPage2
             // 
@@ -319,11 +345,11 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(872, 504);
+            this.tabPage2.Size = new System.Drawing.Size(906, 535);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Admin";
             this.tabPage2.UseVisualStyleBackColor = true;
-            //this.tabPage2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage2_MouseDoubleClick);
+            this.tabPage2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage2_MouseDoubleClick);
             // 
             // btnSaveAdmin
             // 
@@ -333,7 +359,7 @@
             this.btnSaveAdmin.TabIndex = 23;
             this.btnSaveAdmin.Text = "Save";
             this.btnSaveAdmin.UseVisualStyleBackColor = true;
-            //this.btnSaveAdmin.Click += new System.EventHandler(this.btnSaveAdmin_Click);
+            this.btnSaveAdmin.Click += new System.EventHandler(this.btnSaveAdmin_Click);
             // 
             // btnCancelAdmin
             // 
@@ -343,7 +369,7 @@
             this.btnCancelAdmin.TabIndex = 22;
             this.btnCancelAdmin.Text = "Cancel";
             this.btnCancelAdmin.UseVisualStyleBackColor = true;
-            //this.btnCancelAdmin.Click += new System.EventHandler(this.btnCancelAdmin_Click);
+            this.btnCancelAdmin.Click += new System.EventHandler(this.btnCancelAdmin_Click);
             // 
             // btnDeleteAdmin
             // 
@@ -353,7 +379,7 @@
             this.btnDeleteAdmin.TabIndex = 21;
             this.btnDeleteAdmin.Text = "Delete";
             this.btnDeleteAdmin.UseVisualStyleBackColor = true;
-            //this.btnDeleteAdmin.Click += new System.EventHandler(this.btnDeleteAdmin_Click);
+            this.btnDeleteAdmin.Click += new System.EventHandler(this.btnDeleteAdmin_Click);
             // 
             // btnEditAdmin
             // 
@@ -363,7 +389,7 @@
             this.btnEditAdmin.TabIndex = 20;
             this.btnEditAdmin.Text = "Edit";
             this.btnEditAdmin.UseVisualStyleBackColor = true;
-            //this.btnEditAdmin.Click += new System.EventHandler(this.btnEditAdmin_Click);
+            this.btnEditAdmin.Click += new System.EventHandler(this.btnEditAdmin_Click);
             // 
             // btnAddAdmin
             // 
@@ -373,10 +399,11 @@
             this.btnAddAdmin.TabIndex = 19;
             this.btnAddAdmin.Text = "Add";
             this.btnAddAdmin.UseVisualStyleBackColor = true;
-            //this.btnAddAdmin.Click += new System.EventHandler(this.btnAddAdmin_Click);
+            this.btnAddAdmin.Click += new System.EventHandler(this.btnAddAdmin_Click);
             // 
             // txtPasswordAdmin
             // 
+            this.txtPasswordAdmin.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.adminBindingSource, "Password", true));
             this.txtPasswordAdmin.Location = new System.Drawing.Point(640, 187);
             this.txtPasswordAdmin.Name = "txtPasswordAdmin";
             this.txtPasswordAdmin.Size = new System.Drawing.Size(204, 20);
@@ -393,6 +420,7 @@
             // 
             // txtLoginAdmin
             // 
+            this.txtLoginAdmin.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.adminBindingSource, "Login", true));
             this.txtLoginAdmin.Location = new System.Drawing.Point(640, 123);
             this.txtLoginAdmin.Name = "txtLoginAdmin";
             this.txtLoginAdmin.Size = new System.Drawing.Size(204, 20);
@@ -409,6 +437,7 @@
             // 
             // txtIdAdmin
             // 
+            this.txtIdAdmin.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.adminBindingSource, "Id", true));
             this.txtIdAdmin.Location = new System.Drawing.Point(640, 68);
             this.txtIdAdmin.Name = "txtIdAdmin";
             this.txtIdAdmin.Size = new System.Drawing.Size(100, 20);
@@ -425,13 +454,19 @@
             // 
             // dataGridViewAdmin
             // 
+            this.dataGridViewAdmin.AutoGenerateColumns = false;
             this.dataGridViewAdmin.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridViewAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAdmin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn2,
+            this.loginDataGridViewTextBoxColumn,
+            this.passwordDataGridViewTextBoxColumn2});
+            this.dataGridViewAdmin.DataSource = this.adminBindingSource;
             this.dataGridViewAdmin.Location = new System.Drawing.Point(8, 8);
             this.dataGridViewAdmin.Name = "dataGridViewAdmin";
             this.dataGridViewAdmin.Size = new System.Drawing.Size(486, 419);
             this.dataGridViewAdmin.TabIndex = 0;
-            //this.dataGridViewAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdmin_CellClick);
+            this.dataGridViewAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdmin_CellClick);
             // 
             // Phone
             // 
@@ -464,17 +499,74 @@
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataSource = typeof(WFGoodFood.DataModel.User);
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            // 
+            // userNameDataGridViewTextBoxColumn1
+            // 
+            this.userNameDataGridViewTextBoxColumn1.DataPropertyName = "UserName";
+            this.userNameDataGridViewTextBoxColumn1.HeaderText = "UserName";
+            this.userNameDataGridViewTextBoxColumn1.Name = "userNameDataGridViewTextBoxColumn1";
+            // 
+            // emailDataGridViewTextBoxColumn1
+            // 
+            this.emailDataGridViewTextBoxColumn1.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn1.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn1.Name = "emailDataGridViewTextBoxColumn1";
+            // 
+            // passwordDataGridViewTextBoxColumn1
+            // 
+            this.passwordDataGridViewTextBoxColumn1.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn1.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn1.Name = "passwordDataGridViewTextBoxColumn1";
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            // 
+            // adminBindingSource
+            // 
+            this.adminBindingSource.DataSource = typeof(WFGoodFood.DataModel.Admin);
+            // 
+            // idDataGridViewTextBoxColumn2
+            // 
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn2.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            this.idDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // loginDataGridViewTextBoxColumn
+            // 
+            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
+            this.loginDataGridViewTextBoxColumn.HeaderText = "Login";
+            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
+            // 
+            // passwordDataGridViewTextBoxColumn2
+            // 
+            this.passwordDataGridViewTextBoxColumn2.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn2.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn2.Name = "passwordDataGridViewTextBoxColumn2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 530);
+            this.ClientSize = new System.Drawing.Size(914, 561);
             this.Controls.Add(this.tabControl);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            //this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -482,6 +574,8 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -489,6 +583,7 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.BindingSource userBindingSource;
         public System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label lbPhone;
@@ -506,6 +601,11 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lbId;
         private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
@@ -524,6 +624,10 @@
         private System.Windows.Forms.TextBox txtIdAdmin;
         private System.Windows.Forms.Label lbIdadmin;
         private System.Windows.Forms.DataGridView dataGridViewAdmin;
+        private System.Windows.Forms.BindingSource adminBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loginDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn2;
         private System.Windows.Forms.Label lbIduser;
         private System.Windows.Forms.Label lbUserNameuser;
         private System.Windows.Forms.Label lbEmailuser;
