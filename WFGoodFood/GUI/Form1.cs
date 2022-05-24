@@ -68,7 +68,7 @@ namespace WFGoodFood
         private void btnCancel_Click(object sender, EventArgs e)
         {
            // userBindingSource.ResetBindings(false);
-            Form1_Load(sender, e);
+            //Form1_Load(sender, e);
         }
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
