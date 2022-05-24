@@ -42,6 +42,7 @@
             this.userControlDelivery2 = new WFGoodFood.Control.UserControlDelivery();
             this.userControlCategory1 = new WFGoodFood.Control.UserControlCategory();
             this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
+            this.userControlManagement1 = new WFGoodFood.Control.UserControlManagement();
             this.pnlSide.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +77,7 @@
             // pnlRed
             // 
             this.pnlRed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(75)))), ((int)(((byte)(72)))));
-            this.pnlRed.Location = new System.Drawing.Point(3, 98);
+            this.pnlRed.Location = new System.Drawing.Point(1, 98);
             this.pnlRed.Name = "pnlRed";
             this.pnlRed.Size = new System.Drawing.Size(5, 45);
             this.pnlRed.TabIndex = 16;
@@ -93,6 +94,7 @@
             this.btnManagement.TabIndex = 3;
             this.btnManagement.Text = "Management";
             this.btnManagement.UseVisualStyleBackColor = true;
+            this.btnManagement.Click += new System.EventHandler(this.btnManagement_Click);
             // 
             // btnDelivery
             // 
@@ -206,12 +208,20 @@
             this.userControlHome1.Size = new System.Drawing.Size(877, 530);
             this.userControlHome1.TabIndex = 17;
             // 
+            // userControlManagement1
+            // 
+            this.userControlManagement1.Location = new System.Drawing.Point(202, 104);
+            this.userControlManagement1.Name = "userControlManagement1";
+            this.userControlManagement1.Size = new System.Drawing.Size(880, 530);
+            this.userControlManagement1.TabIndex = 18;
+            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1084, 650);
+            this.Controls.Add(this.userControlManagement1);
             this.Controls.Add(this.userControlHome1);
             this.Controls.Add(this.userControlCategory1);
             this.Controls.Add(this.userControlDelivery2);
@@ -247,5 +257,6 @@
         private Control.UserControlDelivery userControlDelivery2;
         private Control.UserControlCategory userControlCategory1;
         private Control.UserControlHome userControlHome1;
+        private Control.UserControlManagement userControlManagement1;
     }
 }

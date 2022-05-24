@@ -55,5 +55,12 @@ namespace WFGoodFood
             pnlRed.Top = btnDelivery.Top;
             userControlDelivery2.BringToFront();
         }
+
+        private void btnManagement_Click(object sender, EventArgs e)
+        {
+            pnlSide.Height = btnManagement.Height;
+            pnlRed.Top = btnManagement.Top;
+            userControlManagement1.BringToFront();
+        }
     }
 }
