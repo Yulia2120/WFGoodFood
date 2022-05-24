@@ -74,6 +74,12 @@
     <Compile Include="Control\UserControlHome.Designer.cs">
       <DependentUpon>UserControlHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\UserControlManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UserControlManagement.Designer.cs">
+      <DependentUpon>UserControlManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataModel\Admin.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
     <Compile Include="DataModel\User.cs" />
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Control\UserControlHome.resx">
       <DependentUpon>UserControlHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\UserControlManagement.resx">
+      <DependentUpon>UserControlManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
