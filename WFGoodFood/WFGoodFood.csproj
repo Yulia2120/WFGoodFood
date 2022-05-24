@@ -107,6 +107,11 @@
     <Compile Include="GUI\ProductForm.Designer.cs">
       <DependentUpon>ProductForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205241753294_user.cs" />
+    <Compile Include="Migrations\202205241753294_user.designer.cs">
+      <DependentUpon>202205241753294_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Control\UserControlCategory.resx">
@@ -132,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ProductForm.resx">
       <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205241753294_user.resx">
+      <DependentUpon>202205241753294_user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

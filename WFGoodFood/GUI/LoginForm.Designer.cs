@@ -44,13 +44,19 @@
             this.txtboxUserNameSign = new System.Windows.Forms.TextBox();
             this.lbUserNameSign = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txtBoxSign = new System.Windows.Forms.TextBox();
+            this.txtBoxPassSign = new System.Windows.Forms.TextBox();
             this.lbPasswSign = new System.Windows.Forms.Label();
             this.btnSign = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pBImg = new System.Windows.Forms.PictureBox();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.txtBoxEmail = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lbPhone = new System.Windows.Forms.Label();
+            this.txtBoxPhone = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -106,7 +112,7 @@
             this.lbClear.AutoSize = true;
             this.lbClear.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.lbClear.Location = new System.Drawing.Point(763, 405);
+            this.lbClear.Location = new System.Drawing.Point(770, 405);
             this.lbClear.Name = "lbClear";
             this.lbClear.Size = new System.Drawing.Size(43, 17);
             this.lbClear.TabIndex = 12;
@@ -161,7 +167,7 @@
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnlogin.ForeColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(742, 351);
+            this.btnlogin.Location = new System.Drawing.Point(748, 358);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(87, 31);
             this.btnlogin.TabIndex = 17;
@@ -188,7 +194,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(109, 64);
+            this.label1.Location = new System.Drawing.Point(109, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 23);
             this.label1.TabIndex = 19;
@@ -197,7 +203,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel3.Location = new System.Drawing.Point(56, 208);
+            this.panel3.Location = new System.Drawing.Point(56, 139);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(210, 3);
             this.panel3.TabIndex = 22;
@@ -208,7 +214,7 @@
             this.txtboxUserNameSign.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtboxUserNameSign.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtboxUserNameSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtboxUserNameSign.Location = new System.Drawing.Point(56, 190);
+            this.txtboxUserNameSign.Location = new System.Drawing.Point(56, 122);
             this.txtboxUserNameSign.Name = "txtboxUserNameSign";
             this.txtboxUserNameSign.Size = new System.Drawing.Size(210, 15);
             this.txtboxUserNameSign.TabIndex = 21;
@@ -217,7 +223,7 @@
             // 
             this.lbUserNameSign.AutoSize = true;
             this.lbUserNameSign.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbUserNameSign.Location = new System.Drawing.Point(53, 153);
+            this.lbUserNameSign.Location = new System.Drawing.Point(53, 102);
             this.lbUserNameSign.Name = "lbUserNameSign";
             this.lbUserNameSign.Size = new System.Drawing.Size(65, 16);
             this.lbUserNameSign.TabIndex = 20;
@@ -226,28 +232,28 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(56, 300);
+            this.panel4.Location = new System.Drawing.Point(56, 265);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(210, 3);
             this.panel4.TabIndex = 25;
             // 
-            // txtBoxSign
+            // txtBoxPassSign
             // 
-            this.txtBoxSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.txtBoxSign.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBoxSign.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtBoxSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtBoxSign.Location = new System.Drawing.Point(56, 282);
-            this.txtBoxSign.Name = "txtBoxSign";
-            this.txtBoxSign.Size = new System.Drawing.Size(210, 15);
-            this.txtBoxSign.TabIndex = 24;
-            this.txtBoxSign.UseSystemPasswordChar = true;
+            this.txtBoxPassSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.txtBoxPassSign.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxPassSign.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtBoxPassSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
+            this.txtBoxPassSign.Location = new System.Drawing.Point(56, 248);
+            this.txtBoxPassSign.Name = "txtBoxPassSign";
+            this.txtBoxPassSign.Size = new System.Drawing.Size(210, 15);
+            this.txtBoxPassSign.TabIndex = 24;
+            this.txtBoxPassSign.UseSystemPasswordChar = true;
             // 
             // lbPasswSign
             // 
             this.lbPasswSign.AutoSize = true;
             this.lbPasswSign.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbPasswSign.Location = new System.Drawing.Point(53, 244);
+            this.lbPasswSign.Location = new System.Drawing.Point(53, 228);
             this.lbPasswSign.Name = "lbPasswSign";
             this.lbPasswSign.Size = new System.Drawing.Size(58, 16);
             this.lbPasswSign.TabIndex = 23;
@@ -260,7 +266,7 @@
             this.btnSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSign.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSign.ForeColor = System.Drawing.Color.White;
-            this.btnSign.Location = new System.Drawing.Point(113, 351);
+            this.btnSign.Location = new System.Drawing.Point(113, 358);
             this.btnSign.Name = "btnSign";
             this.btnSign.Size = new System.Drawing.Size(87, 31);
             this.btnSign.TabIndex = 26;
@@ -270,7 +276,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WFGoodFood.Properties.Resources.icons8_instagram_logo_30px;
-            this.pictureBox3.Location = new System.Drawing.Point(189, 397);
+            this.pictureBox3.Location = new System.Drawing.Point(189, 407);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -280,7 +286,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WFGoodFood.Properties.Resources.icons8_google_32px;
-            this.pictureBox2.Location = new System.Drawing.Point(144, 397);
+            this.pictureBox2.Location = new System.Drawing.Point(144, 407);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -290,7 +296,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WFGoodFood.Properties.Resources.icons8_facebook_f_32px;
-            this.pictureBox1.Location = new System.Drawing.Point(99, 397);
+            this.pictureBox1.Location = new System.Drawing.Point(99, 407);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -307,18 +313,84 @@
             this.pBImg.TabIndex = 0;
             this.pBImg.TabStop = false;
             // 
+            // lbEmail
+            // 
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbEmail.Location = new System.Drawing.Point(53, 162);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(35, 16);
+            this.lbEmail.TabIndex = 30;
+            this.lbEmail.Text = "Email";
+            // 
+            // txtBoxEmail
+            // 
+            this.txtBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.txtBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxEmail.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
+            this.txtBoxEmail.Location = new System.Drawing.Point(56, 183);
+            this.txtBoxEmail.Name = "txtBoxEmail";
+            this.txtBoxEmail.Size = new System.Drawing.Size(210, 15);
+            this.txtBoxEmail.TabIndex = 31;
+            this.txtBoxEmail.UseSystemPasswordChar = true;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.panel5.Location = new System.Drawing.Point(56, 200);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(210, 3);
+            this.panel5.TabIndex = 32;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.panel6.Location = new System.Drawing.Point(56, 328);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(210, 3);
+            this.panel6.TabIndex = 33;
+            // 
+            // lbPhone
+            // 
+            this.lbPhone.AutoSize = true;
+            this.lbPhone.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbPhone.Location = new System.Drawing.Point(53, 295);
+            this.lbPhone.Name = "lbPhone";
+            this.lbPhone.Size = new System.Drawing.Size(42, 16);
+            this.lbPhone.TabIndex = 34;
+            this.lbPhone.Text = "Phone";
+            // 
+            // txtBoxPhone
+            // 
+            this.txtBoxPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.txtBoxPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxPhone.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtBoxPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
+            this.txtBoxPhone.Location = new System.Drawing.Point(56, 313);
+            this.txtBoxPhone.Name = "txtBoxPhone";
+            this.txtBoxPhone.Size = new System.Drawing.Size(210, 15);
+            this.txtBoxPhone.TabIndex = 35;
+            this.txtBoxPhone.UseSystemPasswordChar = true;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(950, 450);
+            this.Controls.Add(this.txtBoxPhone);
+            this.Controls.Add(this.lbPhone);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.txtBoxEmail);
+            this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSign);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.txtBoxSign);
+            this.Controls.Add(this.txtBoxPassSign);
             this.Controls.Add(this.lbPasswSign);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.txtboxUserNameSign);
@@ -369,11 +441,17 @@
         private System.Windows.Forms.TextBox txtboxUserNameSign;
         private System.Windows.Forms.Label lbUserNameSign;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtBoxSign;
+        private System.Windows.Forms.TextBox txtBoxPassSign;
         private System.Windows.Forms.Label lbPasswSign;
         private System.Windows.Forms.Button btnSign;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lbEmail;
+        private System.Windows.Forms.TextBox txtBoxEmail;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lbPhone;
+        private System.Windows.Forms.TextBox txtBoxPhone;
     }
 }
