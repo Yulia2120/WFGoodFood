@@ -39,8 +39,9 @@
             this.lbDelivery = new System.Windows.Forms.Label();
             this.lbrestor = new System.Windows.Forms.Label();
             this.lbIcon = new System.Windows.Forms.Label();
-            this.userControlHome = new WFGoodFood.Control.UserControlHome();
             this.userControlCategory = new WFGoodFood.Control.UserControlCategory();
+            this.userControlHome = new WFGoodFood.Control.UserControlHome();
+            this.userControlDelivery1 = new WFGoodFood.Control.UserControlDelivery();
             this.pnlSide.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
@@ -163,7 +164,7 @@
             this.lbrestor.AutoSize = true;
             this.lbrestor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbrestor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.lbrestor.Location = new System.Drawing.Point(27, 42);
+            this.lbrestor.Location = new System.Drawing.Point(27, 48);
             this.lbrestor.Name = "lbrestor";
             this.lbrestor.Size = new System.Drawing.Size(72, 17);
             this.lbrestor.TabIndex = 1;
@@ -172,21 +173,13 @@
             // lbIcon
             // 
             this.lbIcon.AutoSize = true;
-            this.lbIcon.Font = new System.Drawing.Font("Sarllina", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIcon.Font = new System.Drawing.Font("Sarllina", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.lbIcon.Location = new System.Drawing.Point(15, 9);
             this.lbIcon.Name = "lbIcon";
-            this.lbIcon.Size = new System.Drawing.Size(95, 33);
+            this.lbIcon.Size = new System.Drawing.Size(105, 38);
             this.lbIcon.TabIndex = 0;
             this.lbIcon.Text = "GoodFood";
-            // 
-            // userControlHome
-            // 
-            this.userControlHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlHome.Location = new System.Drawing.Point(202, 95);
-            this.userControlHome.Name = "userControlHome";
-            this.userControlHome.Size = new System.Drawing.Size(880, 530);
-            this.userControlHome.TabIndex = 15;
             // 
             // userControlCategory
             // 
@@ -196,12 +189,29 @@
             this.userControlCategory.Size = new System.Drawing.Size(882, 530);
             this.userControlCategory.TabIndex = 16;
             // 
+            // userControlHome
+            // 
+            this.userControlHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.userControlHome.Location = new System.Drawing.Point(202, 95);
+            this.userControlHome.Name = "userControlHome";
+            this.userControlHome.Size = new System.Drawing.Size(880, 530);
+            this.userControlHome.TabIndex = 15;
+            // 
+            // userControlDelivery1
+            // 
+            this.userControlDelivery1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.userControlDelivery1.Location = new System.Drawing.Point(200, 108);
+            this.userControlDelivery1.Name = "userControlDelivery1";
+            this.userControlDelivery1.Size = new System.Drawing.Size(880, 530);
+            this.userControlDelivery1.TabIndex = 17;
+            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1084, 650);
+            this.Controls.Add(this.userControlDelivery1);
             this.Controls.Add(this.userControlCategory);
             this.Controls.Add(this.userControlHome);
             this.Controls.Add(this.pnlTop);
@@ -232,5 +242,6 @@
         private System.Windows.Forms.Label lbDelivery;
         private Control.UserControlHome userControlHome;
         private Control.UserControlCategory userControlCategory;
+        private Control.UserControlDelivery userControlDelivery1;
     }
 }
