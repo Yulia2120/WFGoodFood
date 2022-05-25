@@ -43,8 +43,8 @@
             this.lbUserNameSign = new System.Windows.Forms.Label();
             this.lbClose = new System.Windows.Forms.Label();
             this.lbName = new System.Windows.Forms.Label();
-            this.pBImg = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
+            this.pBImg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pBImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +58,6 @@
             this.txtBoxPhone.Name = "txtBoxPhone";
             this.txtBoxPhone.Size = new System.Drawing.Size(210, 15);
             this.txtBoxPhone.TabIndex = 49;
-            this.txtBoxPhone.UseSystemPasswordChar = true;
             // 
             // lbPhone
             // 
@@ -96,7 +95,6 @@
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(210, 15);
             this.txtBoxEmail.TabIndex = 45;
-            this.txtBoxEmail.UseSystemPasswordChar = true;
             // 
             // lbEmail
             // 
@@ -206,16 +204,6 @@
             this.lbName.TabIndex = 52;
             this.lbName.Text = "GoodFood";
             // 
-            // pBImg
-            // 
-            this.pBImg.Image = global::WFGoodFood.Properties.Resources.pablo;
-            this.pBImg.Location = new System.Drawing.Point(1, 1);
-            this.pBImg.Name = "pBImg";
-            this.pBImg.Size = new System.Drawing.Size(308, 449);
-            this.pBImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBImg.TabIndex = 51;
-            this.pBImg.TabStop = false;
-            // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
@@ -230,6 +218,16 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // pBImg
+            // 
+            this.pBImg.Image = global::WFGoodFood.Properties.Resources.pablo;
+            this.pBImg.Location = new System.Drawing.Point(1, 1);
+            this.pBImg.Name = "pBImg";
+            this.pBImg.Size = new System.Drawing.Size(308, 449);
+            this.pBImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBImg.TabIndex = 51;
+            this.pBImg.TabStop = false;
             // 
             // Sign_Up
             // 

@@ -4,8 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WFGoodFood.DataModel;
 
@@ -59,6 +57,12 @@ namespace WFGoodFood.GUI
                 if (rec != null)
                 {
                     MessageBox.Show("Login Success");
+                }
+                if(rec != null)
+                {
+                 ProductForm frm = new ProductForm();
+                    Hide();
+                   frm.ShowDialog();
                 }
                 else
                 {

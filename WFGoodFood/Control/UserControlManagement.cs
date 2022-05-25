@@ -19,6 +19,13 @@ namespace WFGoodFood.Control
         }
 
         #region User table
+        private void tabPage1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                userBindingSource.DataSource = db.UserList.ToList();
+            }
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             userBindingSource.Add(new User());
@@ -82,13 +89,7 @@ namespace WFGoodFood.Control
                 }
             }
         }
-        private void tabPage1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            using (ModelContext db = new ModelContext())
-            {
-                userBindingSource.DataSource = db.UserList.ToList();
-            }
-        }
+       
 
         #endregion
 
