@@ -49,9 +49,9 @@ namespace WFGoodFood.Control
                     {
                         if (db.Entry<User>(obj).State == System.Data.Entity.EntityState.Detached)
                             db.Set<User>().Attach(obj);
-                        db.Entry<User>(obj).State = System.Data.Entity.EntityState.Deleted;
-                        db.SaveChanges();
-                        userBindingSource.RemoveCurrent();
+                            db.Entry<User>(obj).State = System.Data.Entity.EntityState.Deleted;
+                            db.SaveChanges();
+                            userBindingSource.RemoveCurrent();
 
                     }
                 }

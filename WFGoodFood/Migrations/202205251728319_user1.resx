@@ -117,53 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="classic burger-5-310x260" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classic burger-5-310x260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAO1Y3W7bNhS+H9B3EHSdmomDAlsgt8icuAgWJ0GVtte0dGwTpUiNpDL72XaxR9or7FD/lizHcp1gKIoggHXE851fnh/9+/c/3odVxJ0nUJpJMXLPBqeuAyKQIROLkZuY+dtf3Q/v3/ziXYfRyvlSnDu355BT6JG7NCa+IEQHS4ioHkQsUFLLuRkEMiI0lGR4evobOTsjgBAuYjmO9ykRhkWQPuDjWIoAYpNQPpUhcJ3T8Y2fojp3NAId0wBG7tfJRynDCf4PrqihKYPrXHJGURcf+Nx1qBDSUIOaXnzW4BslxcKPkUD54zoGPDenXENuwUV1fF9jTofWGFIxFlBBoo2MegKenefeIU32g3zslt5D/12jn83aWp36cORehhFD3KakizFX9tR2/w5SrhOnendS5gKmjP07ccYJN4mCkYDEKMpPnIdkxlnwB6wf5TcQI5FwXtcNtcN3GwQkPSgZgzLrTzDPNb4JXYds8pEmY8lW48nMuRHmfOg6dyiczjiUoa+Z7hup4CMIUNRA+ECNASUsBqTOa0lvyLqVC+vRTBwmG94c15nS1S2IhVmO3OG7d64zYSsIC0quwmfB8KIhk1EJPCflgWr9l1ThkQV5pMqQnXmDF0n1ThvL9DNrtsqyrrG/jhDPlpa7JV9HlPHXF3vEBO4reSnFi/t590XCBmcow1zJVUqvhyXCymy5VZgc+cXSufBNAzNQH0y9qN8yjViVFlk3HOQFn+xGsOnYAZDd/G22llZV/ZpkDbto7KSjs3tTGscYh1qnzymOn7X58Vu/f/eLMgwS6C1NsNS2lIQ3mC6g8RZFo6YTprSxhWxGbaTHYdQ6thHDDu8WopphatavyukFh/2dcXU35CZM5cUJGhZhIUpthFKdov23+NJJi3KqtlTEseRJJLqq6i7uvDPWAXLS/hhV2ajDVNQ2kkcaTmg6m7S83egTzfDtFdzyBn13bNML1z+029leJrJV96pjVNT9kfJuVIfJSS+ZI51IWavYgMlIr5xnrRLbPFJKL0tto6R6eXl7fqNq1bvsiOugc55YaGudv9YGojRHB/6ffMwZ2lsdmFLB5qBNNrK5uNIMGyvZ/2c9IlqHfJ8d6dWHTmZd+uxY2XP42dhOxBNVwZKq9vhToR6yjByG22/3+DHC0Rz79/Fc/6n+aKiHBLr/TH4gar+Ruz3V7TFTd8/TWY0cueFMohmZjukrvdes3Tlnb8O1b/TBI3i7D3ik/v3NuwLNFhWE/RonILAFtgItztyIuSxCiRbVNSqONCI9BUNDdPmlMmxOA4OvA9A6XcK+UJ6kuTuD8EbcJyZOzKXWEM34xgLtkd3y0z1jU2fvPrZP+hgmoJoMTYB78XvCeFjqPdmSkx0QNvvyMoJa4RKKcIt1iXTXmjG6gHL3XUEMwhahR4hijmD6Xvj0CQ7RDdPrFhY0WBftvBvk+UBsut27YnShaKRzjIrfflMm9qPy+/8AbA681IYWAAA=</value>
   </data>
-  <data name="Turkey salads-4-310x260" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Turkey salads-4-310x260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="double burger -1-310x260" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\double burger -1-310x260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pizzas-1-310x260" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pizzas-1-310x260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_instagram_logo_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_instagram_logo_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bl011" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bl011.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chicken burger-2-310x260" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chicken burger-2-310x260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_google_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_google_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="banner-pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\banner-pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mini burger-4-310x260" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mini burger-4-310x260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pina colada-1-310x260" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pina colada-1-310x260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="california burger-6-310x260" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\california burger-6-310x260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tomato toast-1-310x260" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tomato toast-1-310x260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8_facebook_f_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_facebook_f_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="chocolate fudge cake-3-310x260" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chocolate fudge cake-3-310x260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pablo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pablo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
   </data>
 </root>

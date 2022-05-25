@@ -173,6 +173,16 @@ namespace WFGoodFood.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pablo {
+            get {
+                object obj = ResourceManager.GetObject("pablo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pina_colada_1_310x260 {
             get {
                 object obj = ResourceManager.GetObject("pina colada-1-310x260", resourceCulture);

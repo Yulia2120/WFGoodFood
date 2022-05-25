@@ -39,27 +39,8 @@
             this.txtboxPassword = new System.Windows.Forms.TextBox();
             this.btnlogin = new System.Windows.Forms.Button();
             this.comboBoxLogin = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtboxUserNameSign = new System.Windows.Forms.TextBox();
-            this.lbUserNameSign = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtBoxPassSign = new System.Windows.Forms.TextBox();
-            this.lbPasswSign = new System.Windows.Forms.Label();
-            this.btnSign = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSignUp = new System.Windows.Forms.Button();
             this.pBImg = new System.Windows.Forms.PictureBox();
-            this.lbEmail = new System.Windows.Forms.Label();
-            this.txtBoxEmail = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.lbPhone = new System.Windows.Forms.Label();
-            this.txtBoxPhone = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +49,7 @@
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Sarllina", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.lbName.Location = new System.Drawing.Point(712, 46);
+            this.lbName.Location = new System.Drawing.Point(386, 43);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(158, 58);
             this.lbName.TabIndex = 1;
@@ -78,7 +59,7 @@
             // 
             this.lbUserName.AutoSize = true;
             this.lbUserName.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbUserName.Location = new System.Drawing.Point(689, 153);
+            this.lbUserName.Location = new System.Drawing.Point(363, 150);
             this.lbUserName.Name = "lbUserName";
             this.lbUserName.Size = new System.Drawing.Size(65, 16);
             this.lbUserName.TabIndex = 2;
@@ -88,7 +69,7 @@
             // 
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbPassword.Location = new System.Drawing.Point(689, 244);
+            this.lbPassword.Location = new System.Drawing.Point(363, 241);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(58, 16);
             this.lbPassword.TabIndex = 5;
@@ -98,7 +79,7 @@
             // 
             this.lbClose.AutoSize = true;
             this.lbClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbClose.Location = new System.Drawing.Point(921, 9);
+            this.lbClose.Location = new System.Drawing.Point(606, 4);
             this.lbClose.Name = "lbClose";
             this.lbClose.Size = new System.Drawing.Size(20, 19);
             this.lbClose.TabIndex = 11;
@@ -110,11 +91,11 @@
             // lbClear
             // 
             this.lbClear.AutoSize = true;
-            this.lbClear.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbClear.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbClear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.lbClear.Location = new System.Drawing.Point(770, 405);
+            this.lbClear.Location = new System.Drawing.Point(385, 407);
             this.lbClear.Name = "lbClear";
-            this.lbClear.Size = new System.Drawing.Size(43, 17);
+            this.lbClear.Size = new System.Drawing.Size(43, 16);
             this.lbClear.TabIndex = 12;
             this.lbClear.Text = "Clear";
             this.lbClear.Click += new System.EventHandler(this.lbClear_Click);
@@ -127,7 +108,7 @@
             this.txtboxUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtboxUserName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtboxUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtboxUserName.Location = new System.Drawing.Point(692, 190);
+            this.txtboxUserName.Location = new System.Drawing.Point(366, 187);
             this.txtboxUserName.Name = "txtboxUserName";
             this.txtboxUserName.Size = new System.Drawing.Size(210, 15);
             this.txtboxUserName.TabIndex = 13;
@@ -135,7 +116,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel1.Location = new System.Drawing.Point(692, 208);
+            this.panel1.Location = new System.Drawing.Point(366, 205);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(210, 3);
             this.panel1.TabIndex = 14;
@@ -143,7 +124,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel2.Location = new System.Drawing.Point(692, 300);
+            this.panel2.Location = new System.Drawing.Point(366, 297);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(210, 3);
             this.panel2.TabIndex = 16;
@@ -154,7 +135,7 @@
             this.txtboxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtboxPassword.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtboxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtboxPassword.Location = new System.Drawing.Point(692, 282);
+            this.txtboxPassword.Location = new System.Drawing.Point(366, 279);
             this.txtboxPassword.Name = "txtboxPassword";
             this.txtboxPassword.Size = new System.Drawing.Size(210, 15);
             this.txtboxPassword.TabIndex = 15;
@@ -165,14 +146,15 @@
             this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
             this.btnlogin.FlatAppearance.BorderSize = 0;
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnlogin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnlogin.ForeColor = System.Drawing.Color.White;
-            this.btnlogin.Location = new System.Drawing.Point(748, 358);
+            this.btnlogin.Location = new System.Drawing.Point(366, 354);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(87, 31);
             this.btnlogin.TabIndex = 17;
             this.btnlogin.Text = "Login";
             this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // comboBoxLogin
             // 
@@ -184,218 +166,43 @@
             this.comboBoxLogin.Items.AddRange(new object[] {
             "Admin",
             "Seller"});
-            this.comboBoxLogin.Location = new System.Drawing.Point(781, 153);
+            this.comboBoxLogin.Location = new System.Drawing.Point(455, 150);
             this.comboBoxLogin.Name = "comboBoxLogin";
             this.comboBoxLogin.Size = new System.Drawing.Size(121, 25);
             this.comboBoxLogin.TabIndex = 18;
             // 
-            // label1
+            // btnSignUp
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(109, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 23);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Sign-Up";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel3.Location = new System.Drawing.Point(56, 139);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(210, 3);
-            this.panel3.TabIndex = 22;
-            // 
-            // txtboxUserNameSign
-            // 
-            this.txtboxUserNameSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.txtboxUserNameSign.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtboxUserNameSign.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtboxUserNameSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtboxUserNameSign.Location = new System.Drawing.Point(56, 122);
-            this.txtboxUserNameSign.Name = "txtboxUserNameSign";
-            this.txtboxUserNameSign.Size = new System.Drawing.Size(210, 15);
-            this.txtboxUserNameSign.TabIndex = 21;
-            // 
-            // lbUserNameSign
-            // 
-            this.lbUserNameSign.AutoSize = true;
-            this.lbUserNameSign.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbUserNameSign.Location = new System.Drawing.Point(53, 102);
-            this.lbUserNameSign.Name = "lbUserNameSign";
-            this.lbUserNameSign.Size = new System.Drawing.Size(65, 16);
-            this.lbUserNameSign.TabIndex = 20;
-            this.lbUserNameSign.Text = "User Name";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(56, 265);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(210, 3);
-            this.panel4.TabIndex = 25;
-            // 
-            // txtBoxPassSign
-            // 
-            this.txtBoxPassSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.txtBoxPassSign.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBoxPassSign.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtBoxPassSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtBoxPassSign.Location = new System.Drawing.Point(56, 248);
-            this.txtBoxPassSign.Name = "txtBoxPassSign";
-            this.txtBoxPassSign.Size = new System.Drawing.Size(210, 15);
-            this.txtBoxPassSign.TabIndex = 24;
-            this.txtBoxPassSign.UseSystemPasswordChar = true;
-            // 
-            // lbPasswSign
-            // 
-            this.lbPasswSign.AutoSize = true;
-            this.lbPasswSign.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbPasswSign.Location = new System.Drawing.Point(53, 228);
-            this.lbPasswSign.Name = "lbPasswSign";
-            this.lbPasswSign.Size = new System.Drawing.Size(58, 16);
-            this.lbPasswSign.TabIndex = 23;
-            this.lbPasswSign.Text = "Password";
-            // 
-            // btnSign
-            // 
-            this.btnSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.btnSign.FlatAppearance.BorderSize = 0;
-            this.btnSign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSign.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSign.ForeColor = System.Drawing.Color.White;
-            this.btnSign.Location = new System.Drawing.Point(113, 358);
-            this.btnSign.Name = "btnSign";
-            this.btnSign.Size = new System.Drawing.Size(87, 31);
-            this.btnSign.TabIndex = 26;
-            this.btnSign.Text = "Sign-Up";
-            this.btnSign.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::WFGoodFood.Properties.Resources.icons8_instagram_logo_30px;
-            this.pictureBox3.Location = new System.Drawing.Point(189, 407);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 29;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::WFGoodFood.Properties.Resources.icons8_google_32px;
-            this.pictureBox2.Location = new System.Drawing.Point(144, 407);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 28;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WFGoodFood.Properties.Resources.icons8_facebook_f_32px;
-            this.pictureBox1.Location = new System.Drawing.Point(99, 407);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
+            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.btnSignUp.FlatAppearance.BorderSize = 0;
+            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignUp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.Location = new System.Drawing.Point(489, 354);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(87, 31);
+            this.btnSignUp.TabIndex = 19;
+            this.btnSignUp.Text = "Sign-Up";
+            this.btnSignUp.UseVisualStyleBackColor = false;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // pBImg
             // 
             this.pBImg.Image = global::WFGoodFood.Properties.Resources.bl011;
-            this.pBImg.Location = new System.Drawing.Point(323, 1);
+            this.pBImg.Location = new System.Drawing.Point(1, 1);
             this.pBImg.Name = "pBImg";
             this.pBImg.Size = new System.Drawing.Size(308, 449);
             this.pBImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBImg.TabIndex = 0;
             this.pBImg.TabStop = false;
             // 
-            // lbEmail
-            // 
-            this.lbEmail.AutoSize = true;
-            this.lbEmail.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbEmail.Location = new System.Drawing.Point(53, 162);
-            this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(35, 16);
-            this.lbEmail.TabIndex = 30;
-            this.lbEmail.Text = "Email";
-            // 
-            // txtBoxEmail
-            // 
-            this.txtBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.txtBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBoxEmail.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtBoxEmail.Location = new System.Drawing.Point(56, 183);
-            this.txtBoxEmail.Name = "txtBoxEmail";
-            this.txtBoxEmail.Size = new System.Drawing.Size(210, 15);
-            this.txtBoxEmail.TabIndex = 31;
-            this.txtBoxEmail.UseSystemPasswordChar = true;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel5.Location = new System.Drawing.Point(56, 200);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(210, 3);
-            this.panel5.TabIndex = 32;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel6.Location = new System.Drawing.Point(56, 328);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(210, 3);
-            this.panel6.TabIndex = 33;
-            // 
-            // lbPhone
-            // 
-            this.lbPhone.AutoSize = true;
-            this.lbPhone.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbPhone.Location = new System.Drawing.Point(53, 295);
-            this.lbPhone.Name = "lbPhone";
-            this.lbPhone.Size = new System.Drawing.Size(42, 16);
-            this.lbPhone.TabIndex = 34;
-            this.lbPhone.Text = "Phone";
-            // 
-            // txtBoxPhone
-            // 
-            this.txtBoxPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.txtBoxPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBoxPhone.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtBoxPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtBoxPhone.Location = new System.Drawing.Point(56, 313);
-            this.txtBoxPhone.Name = "txtBoxPhone";
-            this.txtBoxPhone.Size = new System.Drawing.Size(210, 15);
-            this.txtBoxPhone.TabIndex = 35;
-            this.txtBoxPhone.UseSystemPasswordChar = true;
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(950, 450);
-            this.Controls.Add(this.txtBoxPhone);
-            this.Controls.Add(this.lbPhone);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.txtBoxEmail);
-            this.Controls.Add(this.lbEmail);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnSign);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.txtBoxPassSign);
-            this.Controls.Add(this.lbPasswSign);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.txtboxUserNameSign);
-            this.Controls.Add(this.lbUserNameSign);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(630, 450);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.comboBoxLogin);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.panel2);
@@ -412,9 +219,6 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -436,22 +240,6 @@
         private System.Windows.Forms.TextBox txtboxPassword;
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.ComboBox comboBoxLogin;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtboxUserNameSign;
-        private System.Windows.Forms.Label lbUserNameSign;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtBoxPassSign;
-        private System.Windows.Forms.Label lbPasswSign;
-        private System.Windows.Forms.Button btnSign;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label lbEmail;
-        private System.Windows.Forms.TextBox txtBoxEmail;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lbPhone;
-        private System.Windows.Forms.TextBox txtBoxPhone;
+        private System.Windows.Forms.Button btnSignUp;
     }
 }

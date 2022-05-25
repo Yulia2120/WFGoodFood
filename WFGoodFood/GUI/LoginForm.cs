@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WFGoodFood.DataModel;
 
 namespace WFGoodFood.GUI
 {
@@ -48,6 +49,29 @@ namespace WFGoodFood.GUI
             txtboxPassword.Clear();
         }
 
-        
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+            string username = txtboxUserName.Text;
+            string password = txtboxPassword.Text;
+            var rec = db.Set<User>().Where(a => a.UserName == username && a.Password == password).FirstOrDefault();
+                if (rec != null)
+                {
+                    MessageBox.Show("Login Success");
+                }
+                else
+                {
+                    MessageBox.Show("login Fail");
+                }
+            }
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Sign_Up sign = new Sign_Up();
+            Hide();
+            sign.Show();
+        }
     }
 }
