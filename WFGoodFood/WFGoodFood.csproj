@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\UserControlBurger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\UserControlBurger.Designer.cs">
+      <DependentUpon>UserControlBurger.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\UserControlCategory.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Control\UserControlBurger.resx">
+      <DependentUpon>UserControlBurger.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Control\UserControlCategory.resx">
       <DependentUpon>UserControlCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,10 +252,15 @@
     <None Include="Resources\pablo.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Images\buffalo bleu salads-6-310x260.png" />
+    <None Include="Images\blue moon-4-310x260.png" />
     <Content Include="Images\california burger-6-310x260.png" />
+    <None Include="Images\Chicken Caprese salads-5-310x260.png" />
     <Content Include="Images\chocolate fudge cake-3-310x260.png" />
+    <None Include="Images\donuts-6-310x260.png" />
     <Content Include="Images\pina colada-1-310x260.png" />
     <Content Include="Images\pizzas-1-310x260.png" />
+    <None Include="Images\pizzas-5-310x260.png" />
     <Content Include="Images\tomato toast-1-310x260.png" />
     <Content Include="Images\Turkey salads-4-310x260.png" />
   </ItemGroup>

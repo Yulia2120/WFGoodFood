@@ -43,6 +43,8 @@
             this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
             this.userControlCategory1 = new WFGoodFood.Control.UserControlCategory();
             this.userControlDelivery2 = new WFGoodFood.Control.UserControlDelivery();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.userControlBurger = new WFGoodFood.Control.UserControlBurger();
             this.pnlSide.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +65,7 @@
             // pnlSide
             // 
             this.pnlSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.pnlSide.Controls.Add(this.btnProducts);
             this.pnlSide.Controls.Add(this.pnlRed);
             this.pnlSide.Controls.Add(this.btnManagement);
             this.pnlSide.Controls.Add(this.btnDelivery);
@@ -215,12 +218,35 @@
             this.userControlDelivery2.Size = new System.Drawing.Size(842, 530);
             this.userControlDelivery2.TabIndex = 15;
             // 
+            // btnProducts
+            // 
+            this.btnProducts.FlatAppearance.BorderSize = 0;
+            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.btnProducts.Location = new System.Drawing.Point(1, 302);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(200, 45);
+            this.btnProducts.TabIndex = 17;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            // 
+            // userControlBurger
+            // 
+            this.userControlBurger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.userControlBurger.Location = new System.Drawing.Point(202, 96);
+            this.userControlBurger.Name = "userControlBurger";
+            this.userControlBurger.Size = new System.Drawing.Size(880, 530);
+            this.userControlBurger.TabIndex = 19;
+            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1084, 650);
+            this.Controls.Add(this.userControlBurger);
             this.Controls.Add(this.userControlManagement1);
             this.Controls.Add(this.userControlHome1);
             this.Controls.Add(this.userControlCategory1);
@@ -258,5 +284,7 @@
         private Control.UserControlCategory userControlCategory1;
         private Control.UserControlHome userControlHome1;
         private Control.UserControlManagement userControlManagement1;
+        private System.Windows.Forms.Button btnProducts;
+        private Control.UserControlBurger userControlBurger;
     }
 }

@@ -83,6 +83,26 @@ namespace WFGoodFood.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blue_moon_4_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("blue moon-4-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buffalo_bleu_salads_6_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("buffalo bleu salads-6-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap california_burger_6_310x260 {
             get {
                 object obj = ResourceManager.GetObject("california burger-6-310x260", resourceCulture);
@@ -103,6 +123,16 @@ namespace WFGoodFood.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Chicken_Caprese_salads_5_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("Chicken Caprese salads-5-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chocolate_fudge_cake_3_310x260 {
             get {
                 object obj = ResourceManager.GetObject("chocolate fudge cake-3-310x260", resourceCulture);
@@ -116,6 +146,16 @@ namespace WFGoodFood.Properties {
         internal static System.Drawing.Bitmap classic_burger_5_310x260 {
             get {
                 object obj = ResourceManager.GetObject("classic burger-5-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap donuts_6_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("donuts-6-310x260", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +236,16 @@ namespace WFGoodFood.Properties {
         internal static System.Drawing.Bitmap pizzas_1_310x260 {
             get {
                 object obj = ResourceManager.GetObject("pizzas-1-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pizzas_5_310x260 {
+            get {
+                object obj = ResourceManager.GetObject("pizzas-5-310x260", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
