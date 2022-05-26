@@ -107,6 +107,13 @@
             this.txtBoxQuantity = new System.Windows.Forms.TextBox();
             this.lbPrice = new System.Windows.Forms.Label();
             this.txtBoxPrice = new System.Windows.Forms.TextBox();
+            this.lbDescript = new System.Windows.Forms.Label();
+            this.txtBoxDescripProd = new System.Windows.Forms.TextBox();
+            this.btnSaveProduct = new System.Windows.Forms.Button();
+            this.btnCancelProduct = new System.Windows.Forms.Button();
+            this.btnDeleteProduct = new System.Windows.Forms.Button();
+            this.btnEditProduct = new System.Windows.Forms.Button();
+            this.btnAddProduct = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -761,6 +768,13 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.btnSaveProduct);
+            this.tabPage4.Controls.Add(this.btnCancelProduct);
+            this.tabPage4.Controls.Add(this.btnDeleteProduct);
+            this.tabPage4.Controls.Add(this.btnEditProduct);
+            this.tabPage4.Controls.Add(this.btnAddProduct);
+            this.tabPage4.Controls.Add(this.txtBoxDescripProd);
+            this.tabPage4.Controls.Add(this.lbDescript);
             this.tabPage4.Controls.Add(this.txtBoxPrice);
             this.tabPage4.Controls.Add(this.lbPrice);
             this.tabPage4.Controls.Add(this.txtBoxQuantity);
@@ -869,6 +883,69 @@
             this.txtBoxPrice.Name = "txtBoxPrice";
             this.txtBoxPrice.Size = new System.Drawing.Size(175, 20);
             this.txtBoxPrice.TabIndex = 10;
+            // 
+            // lbDescript
+            // 
+            this.lbDescript.AutoSize = true;
+            this.lbDescript.Location = new System.Drawing.Point(575, 395);
+            this.lbDescript.Name = "lbDescript";
+            this.lbDescript.Size = new System.Drawing.Size(60, 13);
+            this.lbDescript.TabIndex = 11;
+            this.lbDescript.Text = "Description";
+            // 
+            // txtBoxDescripProd
+            // 
+            this.txtBoxDescripProd.Location = new System.Drawing.Point(665, 395);
+            this.txtBoxDescripProd.Multiline = true;
+            this.txtBoxDescripProd.Name = "txtBoxDescripProd";
+            this.txtBoxDescripProd.Size = new System.Drawing.Size(175, 74);
+            this.txtBoxDescripProd.TabIndex = 12;
+            // 
+            // btnSaveProduct
+            // 
+            this.btnSaveProduct.Location = new System.Drawing.Point(475, 446);
+            this.btnSaveProduct.Name = "btnSaveProduct";
+            this.btnSaveProduct.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveProduct.TabIndex = 33;
+            this.btnSaveProduct.Text = "Save";
+            this.btnSaveProduct.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelProduct
+            // 
+            this.btnCancelProduct.Location = new System.Drawing.Point(289, 446);
+            this.btnCancelProduct.Name = "btnCancelProduct";
+            this.btnCancelProduct.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelProduct.TabIndex = 32;
+            this.btnCancelProduct.Text = "Cancel";
+            this.btnCancelProduct.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteProduct
+            // 
+            this.btnDeleteProduct.Location = new System.Drawing.Point(382, 446);
+            this.btnDeleteProduct.Name = "btnDeleteProduct";
+            this.btnDeleteProduct.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteProduct.TabIndex = 31;
+            this.btnDeleteProduct.Text = "Delete";
+            this.btnDeleteProduct.UseVisualStyleBackColor = true;
+            // 
+            // btnEditProduct
+            // 
+            this.btnEditProduct.Location = new System.Drawing.Point(196, 446);
+            this.btnEditProduct.Name = "btnEditProduct";
+            this.btnEditProduct.Size = new System.Drawing.Size(75, 23);
+            this.btnEditProduct.TabIndex = 30;
+            this.btnEditProduct.Text = "Edit";
+            this.btnEditProduct.UseVisualStyleBackColor = true;
+            // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAddProduct.Location = new System.Drawing.Point(103, 446);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Size = new System.Drawing.Size(75, 23);
+            this.btnAddProduct.TabIndex = 29;
+            this.btnAddProduct.Text = "Add";
+            this.btnAddProduct.UseVisualStyleBackColor = false;
             // 
             // UserControlManagement
             // 
@@ -979,5 +1056,12 @@
         private System.Windows.Forms.Button btnBrowseProd;
         private System.Windows.Forms.PictureBox pBoxImage;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnSaveProduct;
+        private System.Windows.Forms.Button btnCancelProduct;
+        private System.Windows.Forms.Button btnDeleteProduct;
+        private System.Windows.Forms.Button btnEditProduct;
+        private System.Windows.Forms.Button btnAddProduct;
+        private System.Windows.Forms.TextBox txtBoxDescripProd;
+        private System.Windows.Forms.Label lbDescript;
     }
 }

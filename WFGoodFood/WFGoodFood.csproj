@@ -83,6 +83,7 @@
     <Compile Include="DataModel\Admin.cs" />
     <Compile Include="DataModel\Category.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
+    <Compile Include="DataModel\Product.cs" />
     <Compile Include="DataModel\User.cs" />
     <Compile Include="GUI\FormLoading.cs">
       <SubType>Form</SubType>
@@ -120,6 +121,10 @@
     <Compile Include="Migrations\202205260746406_category.designer.cs">
       <DependentUpon>202205260746406_category.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205260937267_product.cs" />
+    <Compile Include="Migrations\202205260937267_product.designer.cs">
+      <DependentUpon>202205260937267_product.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -155,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205260746406_category.resx">
       <DependentUpon>202205260746406_category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205260937267_product.resx">
+      <DependentUpon>202205260937267_product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
