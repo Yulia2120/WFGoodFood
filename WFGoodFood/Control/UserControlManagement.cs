@@ -355,7 +355,7 @@ namespace WFGoodFood.Control
         private void dataGridViewBurger_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Burger obj = burgerBindingSource.Current as Burger;
-            if (obj != null)
+            if (obj != null) //To Do
                 pBoxImage.Image = Image.FromFile(obj.ImageUrl);
         }
     }

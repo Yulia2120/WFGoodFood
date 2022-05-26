@@ -39,10 +39,10 @@
             this.lbDelivery = new System.Windows.Forms.Label();
             this.lbrestor = new System.Windows.Forms.Label();
             this.lbIcon = new System.Windows.Forms.Label();
-            this.userControlDelivery2 = new WFGoodFood.Control.UserControlDelivery();
-            this.userControlCategory1 = new WFGoodFood.Control.UserControlCategory();
-            this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
             this.userControlManagement1 = new WFGoodFood.Control.UserControlManagement();
+            this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
+            this.userControlCategory1 = new WFGoodFood.Control.UserControlCategory();
+            this.userControlDelivery2 = new WFGoodFood.Control.UserControlDelivery();
             this.pnlSide.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
@@ -184,13 +184,20 @@
             this.lbIcon.TabIndex = 0;
             this.lbIcon.Text = "GoodFood";
             // 
-            // userControlDelivery2
+            // userControlManagement1
             // 
-            this.userControlDelivery2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlDelivery2.Location = new System.Drawing.Point(222, 108);
-            this.userControlDelivery2.Name = "userControlDelivery2";
-            this.userControlDelivery2.Size = new System.Drawing.Size(842, 530);
-            this.userControlDelivery2.TabIndex = 15;
+            this.userControlManagement1.Location = new System.Drawing.Point(203, 96);
+            this.userControlManagement1.Name = "userControlManagement1";
+            this.userControlManagement1.Size = new System.Drawing.Size(880, 530);
+            this.userControlManagement1.TabIndex = 18;
+            // 
+            // userControlHome1
+            // 
+            this.userControlHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.userControlHome1.Location = new System.Drawing.Point(202, 95);
+            this.userControlHome1.Name = "userControlHome1";
+            this.userControlHome1.Size = new System.Drawing.Size(877, 530);
+            this.userControlHome1.TabIndex = 17;
             // 
             // userControlCategory1
             // 
@@ -200,21 +207,13 @@
             this.userControlCategory1.Size = new System.Drawing.Size(877, 530);
             this.userControlCategory1.TabIndex = 16;
             // 
-            // userControlHome1
+            // userControlDelivery2
             // 
-            this.userControlHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlHome1.Location = new System.Drawing.Point(203, 104);
-            this.userControlHome1.Name = "userControlHome1";
-            this.userControlHome1.Size = new System.Drawing.Size(877, 530);
-            this.userControlHome1.TabIndex = 17;
-            // 
-            // userControlManagement1
-            // 
-            this.userControlManagement1.Location = new System.Drawing.Point(202, 104);
-            this.userControlManagement1.Name = "userControlManagement1";
-            this.userControlManagement1.Size = new System.Drawing.Size(880, 530);
-            this.userControlManagement1.TabIndex = 18;
-       
+            this.userControlDelivery2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.userControlDelivery2.Location = new System.Drawing.Point(222, 108);
+            this.userControlDelivery2.Name = "userControlDelivery2";
+            this.userControlDelivery2.Size = new System.Drawing.Size(842, 530);
+            this.userControlDelivery2.TabIndex = 15;
             // 
             // ProductForm
             // 

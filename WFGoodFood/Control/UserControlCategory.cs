@@ -17,6 +17,9 @@ namespace WFGoodFood.Control
             InitializeComponent();
         }
 
-        
+        private void btnCatBurg_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

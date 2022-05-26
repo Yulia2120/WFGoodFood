@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             this.pnlCategory = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCatBurg = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCatToast = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnCatPizza = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnCatSalad = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnCatDrinks = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnCatDessert = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -76,7 +76,7 @@
             // 
             this.pnlCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.pnlCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlCategory.Controls.Add(this.button1);
+            this.pnlCategory.Controls.Add(this.btnCatBurg);
             this.pnlCategory.Controls.Add(this.label2);
             this.pnlCategory.Controls.Add(this.label1);
             this.pnlCategory.Controls.Add(this.pictureBox1);
@@ -85,19 +85,20 @@
             this.pnlCategory.Size = new System.Drawing.Size(200, 230);
             this.pnlCategory.TabIndex = 0;
             // 
-            // button1
+            // btnCatBurg
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.button1.Location = new System.Drawing.Point(61, 194);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 25);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Read More";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCatBurg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.btnCatBurg.FlatAppearance.BorderSize = 0;
+            this.btnCatBurg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCatBurg.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCatBurg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.btnCatBurg.Location = new System.Drawing.Point(61, 194);
+            this.btnCatBurg.Name = "btnCatBurg";
+            this.btnCatBurg.Size = new System.Drawing.Size(80, 25);
+            this.btnCatBurg.TabIndex = 4;
+            this.btnCatBurg.Text = "Read More";
+            this.btnCatBurg.UseVisualStyleBackColor = false;
+            this.btnCatBurg.Click += new System.EventHandler(this.btnCatBurg_Click);
             // 
             // label2
             // 
@@ -134,7 +135,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnCatToast);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -143,19 +144,19 @@
             this.panel1.Size = new System.Drawing.Size(200, 230);
             this.panel1.TabIndex = 6;
             // 
-            // button2
+            // btnCatToast
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.button2.Location = new System.Drawing.Point(62, 196);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 25);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Read More";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCatToast.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.btnCatToast.FlatAppearance.BorderSize = 0;
+            this.btnCatToast.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCatToast.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCatToast.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.btnCatToast.Location = new System.Drawing.Point(62, 196);
+            this.btnCatToast.Name = "btnCatToast";
+            this.btnCatToast.Size = new System.Drawing.Size(80, 25);
+            this.btnCatToast.TabIndex = 4;
+            this.btnCatToast.Text = "Read More";
+            this.btnCatToast.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -192,7 +193,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.btnCatPizza);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.pictureBox3);
@@ -201,19 +202,19 @@
             this.panel2.Size = new System.Drawing.Size(200, 230);
             this.panel2.TabIndex = 7;
             // 
-            // button3
+            // btnCatPizza
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.button3.Location = new System.Drawing.Point(62, 194);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 25);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Read More";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnCatPizza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.btnCatPizza.FlatAppearance.BorderSize = 0;
+            this.btnCatPizza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCatPizza.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCatPizza.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.btnCatPizza.Location = new System.Drawing.Point(62, 194);
+            this.btnCatPizza.Name = "btnCatPizza";
+            this.btnCatPizza.Size = new System.Drawing.Size(80, 25);
+            this.btnCatPizza.TabIndex = 4;
+            this.btnCatPizza.Text = "Read More";
+            this.btnCatPizza.UseVisualStyleBackColor = false;
             // 
             // label8
             // 
@@ -250,7 +251,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.btnCatSalad);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.pictureBox4);
@@ -259,19 +260,19 @@
             this.panel3.Size = new System.Drawing.Size(200, 230);
             this.panel3.TabIndex = 8;
             // 
-            // button4
+            // btnCatSalad
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.button4.Location = new System.Drawing.Point(58, 191);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 25);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Read More";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCatSalad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.btnCatSalad.FlatAppearance.BorderSize = 0;
+            this.btnCatSalad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCatSalad.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCatSalad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.btnCatSalad.Location = new System.Drawing.Point(58, 191);
+            this.btnCatSalad.Name = "btnCatSalad";
+            this.btnCatSalad.Size = new System.Drawing.Size(80, 25);
+            this.btnCatSalad.TabIndex = 4;
+            this.btnCatSalad.Text = "Read More";
+            this.btnCatSalad.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
@@ -308,7 +309,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.button5);
+            this.panel5.Controls.Add(this.btnCatDrinks);
             this.panel5.Controls.Add(this.label14);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.pictureBox5);
@@ -317,19 +318,19 @@
             this.panel5.Size = new System.Drawing.Size(200, 230);
             this.panel5.TabIndex = 9;
             // 
-            // button5
+            // btnCatDrinks
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.button5.Location = new System.Drawing.Point(59, 195);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 25);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Read More";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnCatDrinks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.btnCatDrinks.FlatAppearance.BorderSize = 0;
+            this.btnCatDrinks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCatDrinks.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCatDrinks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.btnCatDrinks.Location = new System.Drawing.Point(59, 195);
+            this.btnCatDrinks.Name = "btnCatDrinks";
+            this.btnCatDrinks.Size = new System.Drawing.Size(80, 25);
+            this.btnCatDrinks.TabIndex = 4;
+            this.btnCatDrinks.Text = "Read More";
+            this.btnCatDrinks.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -366,7 +367,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.button6);
+            this.panel4.Controls.Add(this.btnCatDessert);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.label18);
             this.panel4.Controls.Add(this.pictureBox6);
@@ -375,19 +376,19 @@
             this.panel4.Size = new System.Drawing.Size(200, 230);
             this.panel4.TabIndex = 10;
             // 
-            // button6
+            // btnCatDessert
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.button6.Location = new System.Drawing.Point(59, 191);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 25);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Read More";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnCatDessert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.btnCatDessert.FlatAppearance.BorderSize = 0;
+            this.btnCatDessert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCatDessert.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCatDessert.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.btnCatDessert.Location = new System.Drawing.Point(59, 191);
+            this.btnCatDessert.Name = "btnCatDessert";
+            this.btnCatDessert.Size = new System.Drawing.Size(80, 25);
+            this.btnCatDessert.TabIndex = 4;
+            this.btnCatDessert.Text = "Read More";
+            this.btnCatDessert.UseVisualStyleBackColor = false;
             // 
             // label17
             // 
@@ -458,32 +459,32 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlCategory;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCatBurg;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCatToast;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCatPizza;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnCatSalad;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnCatDrinks;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnCatDessert;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox6;
