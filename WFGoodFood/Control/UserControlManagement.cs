@@ -263,6 +263,27 @@ namespace WFGoodFood.Control
         }
         #endregion
 
+        #region Product table
+        private void btnBrowseProd_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog opf = new OpenFileDialog()
+            { Filter = "Choose Image(*.JPG; *.PNG;*.GIF)|*.jpg; *.png; *.gif" })
+                if (opf.ShowDialog() == DialogResult.OK)
+                {
+                    pBoxImage.Image = Image.FromFile(opf.FileName);
+                    Burger obj = burgerBindingSource.Current as Burger;
+                    if (obj != null)
+                        obj.ImageUrl = opf.FileName;
+                }
+        }
+
+
+
+
+
+
+
 
     }
+        #endregion
 }

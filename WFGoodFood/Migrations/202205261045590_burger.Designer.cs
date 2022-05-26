@@ -7,13 +7,13 @@ namespace WFGoodFood.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class product : IMigrationMetadata
+    public sealed partial class burger : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(product));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(burger));
         
         string IMigrationMetadata.Id
         {
-            get { return "202205260937267_product"; }
+            get { return "202205261045590_burger"; }
         }
         
         string IMigrationMetadata.Source

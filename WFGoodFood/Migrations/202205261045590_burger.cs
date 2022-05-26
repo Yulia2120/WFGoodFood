@@ -3,12 +3,12 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class product : DbMigration
+    public partial class burger : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.Products",
+                "dbo.Burgers",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -27,9 +27,9 @@
         
         public override void Down()
         {
-            DropForeignKey("dbo.Products", "Category_Id", "dbo.Categories");
-            DropIndex("dbo.Products", new[] { "Category_Id" });
-            DropTable("dbo.Products");
+            DropForeignKey("dbo.Burgers", "Category_Id", "dbo.Categories");
+            DropIndex("dbo.Burgers", new[] { "Category_Id" });
+            DropTable("dbo.Burgers");
         }
     }
 }

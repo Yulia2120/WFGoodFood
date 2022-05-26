@@ -81,9 +81,9 @@
       <DependentUpon>UserControlManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="DataModel\Admin.cs" />
+    <Compile Include="DataModel\Burger.cs" />
     <Compile Include="DataModel\Category.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
-    <Compile Include="DataModel\Product.cs" />
     <Compile Include="DataModel\User.cs" />
     <Compile Include="GUI\FormLoading.cs">
       <SubType>Form</SubType>
@@ -121,9 +121,9 @@
     <Compile Include="Migrations\202205260746406_category.designer.cs">
       <DependentUpon>202205260746406_category.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202205260937267_product.cs" />
-    <Compile Include="Migrations\202205260937267_product.designer.cs">
-      <DependentUpon>202205260937267_product.cs</DependentUpon>
+    <Compile Include="Migrations\202205261045590_burger.cs" />
+    <Compile Include="Migrations\202205261045590_burger.designer.cs">
+      <DependentUpon>202205261045590_burger.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -161,8 +161,8 @@
     <EmbeddedResource Include="Migrations\202205260746406_category.resx">
       <DependentUpon>202205260746406_category.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202205260937267_product.resx">
-      <DependentUpon>202205260937267_product.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202205261045590_burger.resx">
+      <DependentUpon>202205261045590_burger.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -171,7 +171,9 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Admin.datasource" />
+    <None Include="Properties\DataSources\WFGoodFood.DataModel.Burger.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Category.datasource" />
+    <None Include="Properties\DataSources\WFGoodFood.DataModel.Product.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
