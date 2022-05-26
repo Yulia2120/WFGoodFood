@@ -84,12 +84,6 @@
     <Compile Include="DataModel\Category.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
     <Compile Include="DataModel\User.cs" />
-    <Compile Include="GUI\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\FormLoading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +116,10 @@
     <Compile Include="Migrations\202205251728319_user1.designer.cs">
       <DependentUpon>202205251728319_user1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205260746406_category.cs" />
+    <Compile Include="Migrations\202205260746406_category.designer.cs">
+      <DependentUpon>202205260746406_category.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -136,9 +134,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Control\UserControlManagement.resx">
       <DependentUpon>UserControlManagement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormLoading.resx">
       <DependentUpon>FormLoading.cs</DependentUpon>
@@ -157,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205251728319_user1.resx">
       <DependentUpon>202205251728319_user1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205260746406_category.resx">
+      <DependentUpon>202205260746406_category.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
