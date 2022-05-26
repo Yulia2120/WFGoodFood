@@ -38,7 +38,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtboxPassword = new System.Windows.Forms.TextBox();
             this.btnlogin = new System.Windows.Forms.Button();
-            this.comboBoxLogin = new System.Windows.Forms.ComboBox();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.pBImg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pBImg)).BeginInit();
@@ -156,21 +155,6 @@
             this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
-            // comboBoxLogin
-            // 
-            this.comboBoxLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.comboBoxLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxLogin.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBoxLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.comboBoxLogin.FormattingEnabled = true;
-            this.comboBoxLogin.Items.AddRange(new object[] {
-            "Admin",
-            "Seller"});
-            this.comboBoxLogin.Location = new System.Drawing.Point(455, 150);
-            this.comboBoxLogin.Name = "comboBoxLogin";
-            this.comboBoxLogin.Size = new System.Drawing.Size(121, 25);
-            this.comboBoxLogin.TabIndex = 18;
-            // 
             // btnSignUp
             // 
             this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
@@ -203,7 +187,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(630, 450);
             this.Controls.Add(this.btnSignUp);
-            this.Controls.Add(this.comboBoxLogin);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtboxPassword);
@@ -239,7 +222,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtboxPassword;
         private System.Windows.Forms.Button btnlogin;
-        private System.Windows.Forms.ComboBox comboBoxLogin;
         private System.Windows.Forms.Button btnSignUp;
     }
 }

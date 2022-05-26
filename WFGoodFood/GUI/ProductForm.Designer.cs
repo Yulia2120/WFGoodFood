@@ -214,6 +214,7 @@
             this.userControlManagement1.Name = "userControlManagement1";
             this.userControlManagement1.Size = new System.Drawing.Size(880, 530);
             this.userControlManagement1.TabIndex = 18;
+       
             // 
             // ProductForm
             // 

@@ -62,5 +62,7 @@ namespace WFGoodFood
             pnlRed.Top = btnManagement.Top;
             userControlManagement1.BringToFront();
         }
+
+       
     }
 }
