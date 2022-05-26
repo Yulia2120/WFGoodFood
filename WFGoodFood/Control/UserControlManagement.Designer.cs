@@ -96,25 +96,25 @@
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ImageUrl = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.btnSaveProduct = new System.Windows.Forms.Button();
-            this.btnCancelProduct = new System.Windows.Forms.Button();
-            this.btnDeleteProduct = new System.Windows.Forms.Button();
-            this.btnEditProduct = new System.Windows.Forms.Button();
-            this.btnAddProduct = new System.Windows.Forms.Button();
-            this.txtBoxDescripProd = new System.Windows.Forms.TextBox();
+            this.btnSaveBurger = new System.Windows.Forms.Button();
+            this.btnCancelBurger = new System.Windows.Forms.Button();
+            this.btnDeleteBurger = new System.Windows.Forms.Button();
+            this.btnEditBurger = new System.Windows.Forms.Button();
+            this.btnAddBurger = new System.Windows.Forms.Button();
+            this.txtBoxDescripBurg = new System.Windows.Forms.TextBox();
+            this.burgerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbDescript = new System.Windows.Forms.Label();
             this.txtBoxPrice = new System.Windows.Forms.TextBox();
             this.lbPrice = new System.Windows.Forms.Label();
             this.txtBoxQuantity = new System.Windows.Forms.TextBox();
             this.lbQuantity = new System.Windows.Forms.Label();
-            this.txtBoxProdNameProd = new System.Windows.Forms.TextBox();
+            this.txtBoxProdNameBurg = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtBoxIdProd = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnBrowseProd = new System.Windows.Forms.Button();
+            this.btnBrowseBurg = new System.Windows.Forms.Button();
             this.pBoxImage = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.burgerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewBurger = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageUrlDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -134,9 +134,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.burgerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBurger)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -777,85 +777,95 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.btnSaveProduct);
-            this.tabPage4.Controls.Add(this.btnCancelProduct);
-            this.tabPage4.Controls.Add(this.btnDeleteProduct);
-            this.tabPage4.Controls.Add(this.btnEditProduct);
-            this.tabPage4.Controls.Add(this.btnAddProduct);
-            this.tabPage4.Controls.Add(this.txtBoxDescripProd);
+            this.tabPage4.Controls.Add(this.btnSaveBurger);
+            this.tabPage4.Controls.Add(this.btnCancelBurger);
+            this.tabPage4.Controls.Add(this.btnDeleteBurger);
+            this.tabPage4.Controls.Add(this.btnEditBurger);
+            this.tabPage4.Controls.Add(this.btnAddBurger);
+            this.tabPage4.Controls.Add(this.txtBoxDescripBurg);
             this.tabPage4.Controls.Add(this.lbDescript);
             this.tabPage4.Controls.Add(this.txtBoxPrice);
             this.tabPage4.Controls.Add(this.lbPrice);
             this.tabPage4.Controls.Add(this.txtBoxQuantity);
             this.tabPage4.Controls.Add(this.lbQuantity);
-            this.tabPage4.Controls.Add(this.txtBoxProdNameProd);
+            this.tabPage4.Controls.Add(this.txtBoxProdNameBurg);
             this.tabPage4.Controls.Add(this.label4);
             this.tabPage4.Controls.Add(this.txtBoxIdProd);
             this.tabPage4.Controls.Add(this.label3);
-            this.tabPage4.Controls.Add(this.btnBrowseProd);
+            this.tabPage4.Controls.Add(this.btnBrowseBurg);
             this.tabPage4.Controls.Add(this.pBoxImage);
-            this.tabPage4.Controls.Add(this.dataGridView1);
+            this.tabPage4.Controls.Add(this.dataGridViewBurger);
             this.tabPage4.Location = new System.Drawing.Point(4, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(872, 504);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Burger";
             this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage4_MouseDoubleClick);
             // 
-            // btnSaveProduct
+            // btnSaveBurger
             // 
-            this.btnSaveProduct.Location = new System.Drawing.Point(475, 446);
-            this.btnSaveProduct.Name = "btnSaveProduct";
-            this.btnSaveProduct.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveProduct.TabIndex = 33;
-            this.btnSaveProduct.Text = "Save";
-            this.btnSaveProduct.UseVisualStyleBackColor = true;
+            this.btnSaveBurger.Location = new System.Drawing.Point(475, 446);
+            this.btnSaveBurger.Name = "btnSaveBurger";
+            this.btnSaveBurger.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveBurger.TabIndex = 33;
+            this.btnSaveBurger.Text = "Save";
+            this.btnSaveBurger.UseVisualStyleBackColor = true;
+            this.btnSaveBurger.Click += new System.EventHandler(this.btnSaveBurger_Click);
             // 
-            // btnCancelProduct
+            // btnCancelBurger
             // 
-            this.btnCancelProduct.Location = new System.Drawing.Point(289, 446);
-            this.btnCancelProduct.Name = "btnCancelProduct";
-            this.btnCancelProduct.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelProduct.TabIndex = 32;
-            this.btnCancelProduct.Text = "Cancel";
-            this.btnCancelProduct.UseVisualStyleBackColor = true;
+            this.btnCancelBurger.Location = new System.Drawing.Point(289, 446);
+            this.btnCancelBurger.Name = "btnCancelBurger";
+            this.btnCancelBurger.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelBurger.TabIndex = 32;
+            this.btnCancelBurger.Text = "Cancel";
+            this.btnCancelBurger.UseVisualStyleBackColor = true;
+            this.btnCancelBurger.Click += new System.EventHandler(this.btnCancelBurger_Click);
             // 
-            // btnDeleteProduct
+            // btnDeleteBurger
             // 
-            this.btnDeleteProduct.Location = new System.Drawing.Point(382, 446);
-            this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteProduct.TabIndex = 31;
-            this.btnDeleteProduct.Text = "Delete";
-            this.btnDeleteProduct.UseVisualStyleBackColor = true;
+            this.btnDeleteBurger.Location = new System.Drawing.Point(382, 446);
+            this.btnDeleteBurger.Name = "btnDeleteBurger";
+            this.btnDeleteBurger.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteBurger.TabIndex = 31;
+            this.btnDeleteBurger.Text = "Delete";
+            this.btnDeleteBurger.UseVisualStyleBackColor = true;
+            this.btnDeleteBurger.Click += new System.EventHandler(this.btnDeleteBurger_Click);
             // 
-            // btnEditProduct
+            // btnEditBurger
             // 
-            this.btnEditProduct.Location = new System.Drawing.Point(196, 446);
-            this.btnEditProduct.Name = "btnEditProduct";
-            this.btnEditProduct.Size = new System.Drawing.Size(75, 23);
-            this.btnEditProduct.TabIndex = 30;
-            this.btnEditProduct.Text = "Edit";
-            this.btnEditProduct.UseVisualStyleBackColor = true;
+            this.btnEditBurger.Location = new System.Drawing.Point(196, 446);
+            this.btnEditBurger.Name = "btnEditBurger";
+            this.btnEditBurger.Size = new System.Drawing.Size(75, 23);
+            this.btnEditBurger.TabIndex = 30;
+            this.btnEditBurger.Text = "Edit";
+            this.btnEditBurger.UseVisualStyleBackColor = true;
+            this.btnEditBurger.Click += new System.EventHandler(this.btnEditBurger_Click);
             // 
-            // btnAddProduct
+            // btnAddBurger
             // 
-            this.btnAddProduct.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddProduct.Location = new System.Drawing.Point(103, 446);
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(75, 23);
-            this.btnAddProduct.TabIndex = 29;
-            this.btnAddProduct.Text = "Add";
-            this.btnAddProduct.UseVisualStyleBackColor = false;
+            this.btnAddBurger.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAddBurger.Location = new System.Drawing.Point(103, 446);
+            this.btnAddBurger.Name = "btnAddBurger";
+            this.btnAddBurger.Size = new System.Drawing.Size(75, 23);
+            this.btnAddBurger.TabIndex = 29;
+            this.btnAddBurger.Text = "Add";
+            this.btnAddBurger.UseVisualStyleBackColor = false;
+            this.btnAddBurger.Click += new System.EventHandler(this.btnAddBurger_Click);
             // 
-            // txtBoxDescripProd
+            // txtBoxDescripBurg
             // 
-            this.txtBoxDescripProd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.burgerBindingSource, "Description", true));
-            this.txtBoxDescripProd.Location = new System.Drawing.Point(665, 395);
-            this.txtBoxDescripProd.Multiline = true;
-            this.txtBoxDescripProd.Name = "txtBoxDescripProd";
-            this.txtBoxDescripProd.Size = new System.Drawing.Size(175, 74);
-            this.txtBoxDescripProd.TabIndex = 12;
+            this.txtBoxDescripBurg.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.burgerBindingSource, "Description", true));
+            this.txtBoxDescripBurg.Location = new System.Drawing.Point(665, 395);
+            this.txtBoxDescripBurg.Multiline = true;
+            this.txtBoxDescripBurg.Name = "txtBoxDescripBurg";
+            this.txtBoxDescripBurg.Size = new System.Drawing.Size(175, 74);
+            this.txtBoxDescripBurg.TabIndex = 12;
+            // 
+            // burgerBindingSource
+            // 
+            this.burgerBindingSource.DataSource = typeof(WFGoodFood.DataModel.Burger);
             // 
             // lbDescript
             // 
@@ -900,13 +910,13 @@
             this.lbQuantity.TabIndex = 7;
             this.lbQuantity.Text = "Quantity";
             // 
-            // txtBoxProdNameProd
+            // txtBoxProdNameBurg
             // 
-            this.txtBoxProdNameProd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.burgerBindingSource, "ProductName", true));
-            this.txtBoxProdNameProd.Location = new System.Drawing.Point(665, 259);
-            this.txtBoxProdNameProd.Name = "txtBoxProdNameProd";
-            this.txtBoxProdNameProd.Size = new System.Drawing.Size(175, 20);
-            this.txtBoxProdNameProd.TabIndex = 6;
+            this.txtBoxProdNameBurg.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.burgerBindingSource, "ProductName", true));
+            this.txtBoxProdNameBurg.Location = new System.Drawing.Point(665, 259);
+            this.txtBoxProdNameBurg.Name = "txtBoxProdNameBurg";
+            this.txtBoxProdNameBurg.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxProdNameBurg.TabIndex = 6;
             // 
             // label4
             // 
@@ -934,15 +944,15 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Id:";
             // 
-            // btnBrowseProd
+            // btnBrowseBurg
             // 
-            this.btnBrowseProd.Location = new System.Drawing.Point(690, 172);
-            this.btnBrowseProd.Name = "btnBrowseProd";
-            this.btnBrowseProd.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseProd.TabIndex = 2;
-            this.btnBrowseProd.Text = "Browse";
-            this.btnBrowseProd.UseVisualStyleBackColor = true;
-            this.btnBrowseProd.Click += new System.EventHandler(this.btnBrowseProd_Click);
+            this.btnBrowseBurg.Location = new System.Drawing.Point(690, 172);
+            this.btnBrowseBurg.Name = "btnBrowseBurg";
+            this.btnBrowseBurg.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseBurg.TabIndex = 2;
+            this.btnBrowseBurg.Text = "Browse";
+            this.btnBrowseBurg.UseVisualStyleBackColor = true;
+            this.btnBrowseBurg.Click += new System.EventHandler(this.btnBrowseBurg_Click);
             // 
             // pBoxImage
             // 
@@ -954,12 +964,12 @@
             this.pBoxImage.TabIndex = 1;
             this.pBoxImage.TabStop = false;
             // 
-            // dataGridView1
+            // dataGridViewBurger
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewBurger.AutoGenerateColumns = false;
+            this.dataGridViewBurger.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewBurger.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBurger.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn3,
             this.productNameDataGridViewTextBoxColumn1,
             this.imageUrlDataGridViewTextBoxColumn,
@@ -967,15 +977,12 @@
             this.priceDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn1,
             this.categoryDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.burgerBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(545, 395);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // burgerBindingSource
-            // 
-            this.burgerBindingSource.DataSource = typeof(WFGoodFood.DataModel.Burger);
+            this.dataGridViewBurger.DataSource = this.burgerBindingSource;
+            this.dataGridViewBurger.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewBurger.Name = "dataGridViewBurger";
+            this.dataGridViewBurger.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewBurger.TabIndex = 0;
+            this.dataGridViewBurger.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBurger_CellClick);
             // 
             // idDataGridViewTextBoxColumn3
             // 
@@ -1043,9 +1050,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.burgerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBurger)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1123,19 +1130,19 @@
         private System.Windows.Forms.Label lbPrice;
         private System.Windows.Forms.TextBox txtBoxQuantity;
         private System.Windows.Forms.Label lbQuantity;
-        private System.Windows.Forms.TextBox txtBoxProdNameProd;
+        private System.Windows.Forms.TextBox txtBoxProdNameBurg;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtBoxIdProd;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnBrowseProd;
+        private System.Windows.Forms.Button btnBrowseBurg;
         private System.Windows.Forms.PictureBox pBoxImage;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnSaveProduct;
-        private System.Windows.Forms.Button btnCancelProduct;
-        private System.Windows.Forms.Button btnDeleteProduct;
-        private System.Windows.Forms.Button btnEditProduct;
-        private System.Windows.Forms.Button btnAddProduct;
-        private System.Windows.Forms.TextBox txtBoxDescripProd;
+        private System.Windows.Forms.DataGridView dataGridViewBurger;
+        private System.Windows.Forms.Button btnSaveBurger;
+        private System.Windows.Forms.Button btnCancelBurger;
+        private System.Windows.Forms.Button btnDeleteBurger;
+        private System.Windows.Forms.Button btnEditBurger;
+        private System.Windows.Forms.Button btnAddBurger;
+        private System.Windows.Forms.TextBox txtBoxDescripBurg;
         private System.Windows.Forms.Label lbDescript;
         private System.Windows.Forms.BindingSource burgerBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn3;

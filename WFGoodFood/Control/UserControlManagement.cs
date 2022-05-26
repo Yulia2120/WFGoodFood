@@ -263,8 +263,10 @@ namespace WFGoodFood.Control
         }
         #endregion
 
-        #region Product table
-        private void btnBrowseProd_Click(object sender, EventArgs e)
+        #region Burger table
+       
+
+        private void btnBrowseBurg_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog opf = new OpenFileDialog()
             { Filter = "Choose Image(*.JPG; *.PNG;*.GIF)|*.jpg; *.png; *.gif" })
@@ -275,15 +277,87 @@ namespace WFGoodFood.Control
                     if (obj != null)
                         obj.ImageUrl = opf.FileName;
                 }
+
         }
 
+        private void btnAddBurger_Click(object sender, EventArgs e)
+        {
+            pBoxImage.Image = null;
+            burgerBindingSource.Add(new Burger());
+            burgerBindingSource.MoveLast();
+            txtBoxProdName.Focus();
+        }
 
+        private void tabPage4_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                burgerBindingSource.DataSource = db.BurgerList.ToList();
+            }
+            Burger obj = burgerBindingSource.Current as Burger;
+            if (obj != null)
+                pBoxImage.Image = Image.FromFile(obj.ImageUrl);
+        }
 
+        private void btnEditBurger_Click(object sender, EventArgs e)
+        {
+            txtBoxProdNameBurg.Enabled = true;
+            txtBoxDescripBurg.Enabled = true;
+            txtBoxProdNameBurg.Focus();
+        }
 
+        private void btnCancelBurger_Click(object sender, EventArgs e)
+        {
+            burgerBindingSource.ResetBindings(false);
+        }
 
+        private void btnDeleteBurger_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                using (ModelContext db = new ModelContext())
+                {
+                    Burger obj = burgerBindingSource.Current as Burger;
+                    if (obj != null)
+                    {
+                        if (db.Entry<Burger>(obj).State == System.Data.Entity.EntityState.Detached)
+                            db.Set<Burger>().Attach(obj);
+                        db.Entry<Burger>(obj).State = System.Data.Entity.EntityState.Deleted;
+                        db.SaveChanges();
+                        burgerBindingSource.RemoveCurrent();
+                        pBoxImage.Image = null;
 
+                    }
+                }
+            }
+        }
 
+        private void btnSaveBurger_Click(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Burger obj = burgerBindingSource.Current as Burger;
+                if (obj != null)
+                {
+                    if (db.Entry<Burger>(obj).State == System.Data.Entity.EntityState.Detached)
+                        db.Set<Burger>().Attach(obj);
+                    if (obj.Id == 0)
+                        db.Entry<Burger>(obj).State = System.Data.Entity.EntityState.Added;
+                    else
+                        db.Entry<Burger>(obj).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    dataGridViewBurger.Refresh();
 
+                }
+            }
+        }
+
+        private void dataGridViewBurger_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Burger obj = burgerBindingSource.Current as Burger;
+            if (obj != null)
+                pBoxImage.Image = Image.FromFile(obj.ImageUrl);
+        }
     }
         #endregion
 }
