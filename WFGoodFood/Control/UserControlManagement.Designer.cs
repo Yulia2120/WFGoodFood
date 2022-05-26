@@ -76,7 +76,24 @@
             this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnSaveCat = new System.Windows.Forms.Button();
+            this.btnCancelCat = new System.Windows.Forms.Button();
+            this.btnDeleteCat = new System.Windows.Forms.Button();
+            this.btnEditCat = new System.Windows.Forms.Button();
+            this.btnAddCat = new System.Windows.Forms.Button();
+            this.txtBoxDescript = new System.Windows.Forms.TextBox();
+            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtBoxProdName = new System.Windows.Forms.TextBox();
+            this.lbProdName = new System.Windows.Forms.Label();
+            this.txtBoxId = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.pBoxImg = new System.Windows.Forms.PictureBox();
             this.dataGridViewCategory = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
@@ -85,6 +102,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmin)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).BeginInit();
             this.SuspendLayout();
             // 
@@ -202,7 +221,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(737, 457);
+            this.btnSave.Location = new System.Drawing.Point(763, 457);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 15;
@@ -212,7 +231,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(551, 457);
+            this.btnCancel.Location = new System.Drawing.Point(577, 457);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 14;
@@ -222,7 +241,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(644, 457);
+            this.btnDelete.Location = new System.Drawing.Point(670, 457);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 13;
@@ -232,7 +251,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(458, 457);
+            this.btnEdit.Location = new System.Drawing.Point(484, 457);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 12;
@@ -242,7 +261,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(365, 457);
+            this.btnAdd.Location = new System.Drawing.Point(391, 457);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 11;
@@ -528,6 +547,19 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btnSaveCat);
+            this.tabPage3.Controls.Add(this.btnCancelCat);
+            this.tabPage3.Controls.Add(this.btnDeleteCat);
+            this.tabPage3.Controls.Add(this.btnEditCat);
+            this.tabPage3.Controls.Add(this.btnAddCat);
+            this.tabPage3.Controls.Add(this.txtBoxDescript);
+            this.tabPage3.Controls.Add(this.label2);
+            this.tabPage3.Controls.Add(this.txtBoxProdName);
+            this.tabPage3.Controls.Add(this.lbProdName);
+            this.tabPage3.Controls.Add(this.txtBoxId);
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.btnBrowse);
+            this.tabPage3.Controls.Add(this.pBoxImg);
             this.tabPage3.Controls.Add(this.dataGridViewCategory);
             this.tabPage3.Location = new System.Drawing.Point(4, 4);
             this.tabPage3.Name = "tabPage3";
@@ -536,15 +568,166 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Category";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage3_MouseDoubleClick);
+            // 
+            // btnSaveCat
+            // 
+            this.btnSaveCat.Location = new System.Drawing.Point(769, 457);
+            this.btnSaveCat.Name = "btnSaveCat";
+            this.btnSaveCat.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveCat.TabIndex = 28;
+            this.btnSaveCat.Text = "Save";
+            this.btnSaveCat.UseVisualStyleBackColor = true;
+            this.btnSaveCat.Click += new System.EventHandler(this.btnSaveCat_Click);
+            // 
+            // btnCancelCat
+            // 
+            this.btnCancelCat.Location = new System.Drawing.Point(583, 457);
+            this.btnCancelCat.Name = "btnCancelCat";
+            this.btnCancelCat.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelCat.TabIndex = 27;
+            this.btnCancelCat.Text = "Cancel";
+            this.btnCancelCat.UseVisualStyleBackColor = true;
+            this.btnCancelCat.Click += new System.EventHandler(this.btnCancelCat_Click);
+            // 
+            // btnDeleteCat
+            // 
+            this.btnDeleteCat.Location = new System.Drawing.Point(676, 457);
+            this.btnDeleteCat.Name = "btnDeleteCat";
+            this.btnDeleteCat.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteCat.TabIndex = 26;
+            this.btnDeleteCat.Text = "Delete";
+            this.btnDeleteCat.UseVisualStyleBackColor = true;
+            this.btnDeleteCat.Click += new System.EventHandler(this.btnDeleteCat_Click);
+            // 
+            // btnEditCat
+            // 
+            this.btnEditCat.Location = new System.Drawing.Point(490, 457);
+            this.btnEditCat.Name = "btnEditCat";
+            this.btnEditCat.Size = new System.Drawing.Size(75, 23);
+            this.btnEditCat.TabIndex = 25;
+            this.btnEditCat.Text = "Edit";
+            this.btnEditCat.UseVisualStyleBackColor = true;
+            this.btnEditCat.Click += new System.EventHandler(this.btnEditCat_Click);
+            // 
+            // btnAddCat
+            // 
+            this.btnAddCat.Location = new System.Drawing.Point(397, 457);
+            this.btnAddCat.Name = "btnAddCat";
+            this.btnAddCat.Size = new System.Drawing.Size(75, 23);
+            this.btnAddCat.TabIndex = 24;
+            this.btnAddCat.Text = "Add";
+            this.btnAddCat.UseVisualStyleBackColor = true;
+            this.btnAddCat.Click += new System.EventHandler(this.btnAddCat_Click);
+            // 
+            // txtBoxDescript
+            // 
+            this.txtBoxDescript.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoryBindingSource, "Description", true));
+            this.txtBoxDescript.Location = new System.Drawing.Point(669, 313);
+            this.txtBoxDescript.Multiline = true;
+            this.txtBoxDescript.Name = "txtBoxDescript";
+            this.txtBoxDescript.Size = new System.Drawing.Size(178, 87);
+            this.txtBoxDescript.TabIndex = 8;
+            // 
+            // categoryBindingSource
+            // 
+            this.categoryBindingSource.DataSource = typeof(WFGoodFood.DataModel.Category);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(568, 313);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Description:";
+            // 
+            // txtBoxProdName
+            // 
+            this.txtBoxProdName.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoryBindingSource, "ProductName", true));
+            this.txtBoxProdName.Location = new System.Drawing.Point(669, 260);
+            this.txtBoxProdName.Name = "txtBoxProdName";
+            this.txtBoxProdName.Size = new System.Drawing.Size(178, 20);
+            this.txtBoxProdName.TabIndex = 6;
+            // 
+            // lbProdName
+            // 
+            this.lbProdName.AutoSize = true;
+            this.lbProdName.Location = new System.Drawing.Point(568, 267);
+            this.lbProdName.Name = "lbProdName";
+            this.lbProdName.Size = new System.Drawing.Size(75, 13);
+            this.lbProdName.TabIndex = 5;
+            this.lbProdName.Text = "ProductName:";
+            // 
+            // txtBoxId
+            // 
+            this.txtBoxId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.categoryBindingSource, "Id", true));
+            this.txtBoxId.Location = new System.Drawing.Point(669, 223);
+            this.txtBoxId.Name = "txtBoxId";
+            this.txtBoxId.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxId.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(568, 226);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Id:";
+            // 
+            // btnBrowse
+            // 
+            this.btnBrowse.Location = new System.Drawing.Point(604, 169);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowse.TabIndex = 2;
+            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
+            // 
+            // pBoxImg
+            // 
+            this.pBoxImg.Location = new System.Drawing.Point(571, 19);
+            this.pBoxImg.Name = "pBoxImg";
+            this.pBoxImg.Size = new System.Drawing.Size(130, 130);
+            this.pBoxImg.TabIndex = 1;
+            this.pBoxImg.TabStop = false;
             // 
             // dataGridViewCategory
             // 
+            this.dataGridViewCategory.AutoGenerateColumns = false;
             this.dataGridViewCategory.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCategory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn2,
+            this.productNameDataGridViewTextBoxColumn,
+            this.descriptionDataGridViewTextBoxColumn});
+            this.dataGridViewCategory.DataSource = this.categoryBindingSource;
             this.dataGridViewCategory.Location = new System.Drawing.Point(5, 5);
             this.dataGridViewCategory.Name = "dataGridViewCategory";
             this.dataGridViewCategory.Size = new System.Drawing.Size(545, 395);
             this.dataGridViewCategory.TabIndex = 0;
+            this.dataGridViewCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCategory_CellClick);
+            // 
+            // idDataGridViewTextBoxColumn2
+            // 
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn2.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            this.idDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // productNameDataGridViewTextBoxColumn
+            // 
+            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
+            this.productNameDataGridViewTextBoxColumn.HeaderText = "ProductName";
+            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             // 
             // UserControlManagement
             // 
@@ -563,6 +746,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmin)).EndInit();
             this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).EndInit();
             this.ResumeLayout(false);
 
@@ -618,5 +804,22 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataGridView dataGridViewCategory;
+        private System.Windows.Forms.PictureBox pBoxImg;
+        private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.Button btnSaveCat;
+        private System.Windows.Forms.Button btnCancelCat;
+        private System.Windows.Forms.Button btnDeleteCat;
+        private System.Windows.Forms.Button btnEditCat;
+        private System.Windows.Forms.Button btnAddCat;
+        private System.Windows.Forms.TextBox txtBoxDescript;
+        private System.Windows.Forms.BindingSource categoryBindingSource;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtBoxProdName;
+        private System.Windows.Forms.Label lbProdName;
+        private System.Windows.Forms.TextBox txtBoxId;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
     }
 }

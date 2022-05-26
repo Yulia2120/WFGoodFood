@@ -163,6 +163,7 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Admin.datasource" />
+    <None Include="Properties\DataSources\WFGoodFood.DataModel.Category.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -185,9 +186,7 @@
   <ItemGroup>
     <None Include="Resources\bl011.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\icons8_facebook_f_32px.png" />
   </ItemGroup>
@@ -232,6 +231,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pablo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\california burger-6-310x260.png" />
+    <Content Include="Images\chocolate fudge cake-3-310x260.png" />
+    <Content Include="Images\pina colada-1-310x260.png" />
+    <Content Include="Images\pizzas-1-310x260.png" />
+    <Content Include="Images\tomato toast-1-310x260.png" />
+    <Content Include="Images\Turkey salads-4-310x260.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

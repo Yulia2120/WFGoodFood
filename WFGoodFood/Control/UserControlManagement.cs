@@ -167,5 +167,92 @@ namespace WFGoodFood.Control
 
         #endregion
 
+        #region Category table
+        private void btnBrowse_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog opf = new OpenFileDialog()
+            { Filter = "Choose Image(*.JPG; *.PNG;*.GIF)|*.jpg; *.png; *.gif" })
+                if (opf.ShowDialog() == DialogResult.OK)
+                {
+                    pBoxImg.Image = Image.FromFile(opf.FileName);
+                    Category obj = categoryBindingSource.Current as Category;
+                    if (obj != null)
+                        obj.ImageUrl = opf.FileName;
+                }
+        }
+
+        private void tabPage3_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                categoryBindingSource.DataSource = db.CategoryList.ToList();
+            }
+        }
+
+        private void btnAddCat_Click(object sender, EventArgs e)
+        {
+            categoryBindingSource.Add(new Category());
+            categoryBindingSource.MoveLast();
+            txtBoxProdName.Focus();
+        }
+
+        private void btnEditCat_Click(object sender, EventArgs e)
+        {
+            txtBoxProdName.Enabled = true;
+            txtBoxDescript.Enabled = true;
+            txtBoxProdName.Focus();
+
+        }
+
+        private void btnCancelCat_Click(object sender, EventArgs e)
+        {
+            categoryBindingSource.ResetBindings(false);
+        }
+
+        private void btnDeleteCat_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                using (ModelContext db = new ModelContext())
+                {
+                    Category obj = categoryBindingSource.Current as Category;
+                    if (obj != null)
+                    {
+                        if (db.Entry<Category>(obj).State == System.Data.Entity.EntityState.Detached)
+                            db.Set<Category>().Attach(obj);
+                        db.Entry<Category>(obj).State = System.Data.Entity.EntityState.Deleted;
+                        db.SaveChanges();
+                        categoryBindingSource.RemoveCurrent();
+
+                    }
+                }
+            }
+        }
+
+        private void dataGridViewCategory_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Category obj = categoryBindingSource.Current as Category;
+        }
+
+        private void btnSaveCat_Click(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Category obj = adminBindingSource.Current as Category;
+                if (obj != null)
+                {
+                    if (db.Entry<Category>(obj).State == System.Data.Entity.EntityState.Detached)
+                        db.Set<Category>().Attach(obj);
+                    if (obj.Id == 0)
+                        db.Entry<Category>(obj).State = System.Data.Entity.EntityState.Added;
+                    else
+                        db.Entry<Category>(obj).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    dataGridViewCategory.Refresh();
+
+                }
+            }
+        }
+        #endregion
     }
 }
