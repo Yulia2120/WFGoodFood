@@ -128,6 +128,32 @@
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewToast = new System.Windows.Forms.DataGridView();
+            this.txtBoxDesToast = new System.Windows.Forms.TextBox();
+            this.lbDesToast = new System.Windows.Forms.Label();
+            this.txtBoxPriceToast = new System.Windows.Forms.TextBox();
+            this.lbPriceToast = new System.Windows.Forms.Label();
+            this.txtBoxQuantityToast = new System.Windows.Forms.TextBox();
+            this.lbQuantToast = new System.Windows.Forms.Label();
+            this.txtBoxProdToast = new System.Windows.Forms.TextBox();
+            this.lbProdToast = new System.Windows.Forms.Label();
+            this.txtBoxIdToast = new System.Windows.Forms.TextBox();
+            this.lbIdToast = new System.Windows.Forms.Label();
+            this.btnBrowseToast = new System.Windows.Forms.Button();
+            this.pBoxImgToast = new System.Windows.Forms.PictureBox();
+            this.btnSaveToast = new System.Windows.Forms.Button();
+            this.btnCancelToast = new System.Windows.Forms.Button();
+            this.btnDeleteToast = new System.Windows.Forms.Button();
+            this.btnEditToast = new System.Windows.Forms.Button();
+            this.btnAddtoast = new System.Windows.Forms.Button();
+            this.toastBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageUrlDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -139,10 +165,14 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBurger)).BeginInit();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.burgerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewToast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgToast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toastBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -916,6 +946,24 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.btnSaveToast);
+            this.tabPage5.Controls.Add(this.btnCancelToast);
+            this.tabPage5.Controls.Add(this.btnDeleteToast);
+            this.tabPage5.Controls.Add(this.btnEditToast);
+            this.tabPage5.Controls.Add(this.btnAddtoast);
+            this.tabPage5.Controls.Add(this.txtBoxDesToast);
+            this.tabPage5.Controls.Add(this.lbDesToast);
+            this.tabPage5.Controls.Add(this.txtBoxPriceToast);
+            this.tabPage5.Controls.Add(this.lbPriceToast);
+            this.tabPage5.Controls.Add(this.txtBoxQuantityToast);
+            this.tabPage5.Controls.Add(this.lbQuantToast);
+            this.tabPage5.Controls.Add(this.txtBoxProdToast);
+            this.tabPage5.Controls.Add(this.lbProdToast);
+            this.tabPage5.Controls.Add(this.txtBoxIdToast);
+            this.tabPage5.Controls.Add(this.lbIdToast);
+            this.tabPage5.Controls.Add(this.btnBrowseToast);
+            this.tabPage5.Controls.Add(this.pBoxImgToast);
+            this.tabPage5.Controls.Add(this.dataGridViewToast);
             this.tabPage5.Location = new System.Drawing.Point(4, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(872, 504);
@@ -1095,6 +1143,226 @@
             this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
             this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
             // 
+            // dataGridViewToast
+            // 
+            this.dataGridViewToast.AutoGenerateColumns = false;
+            this.dataGridViewToast.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewToast.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewToast.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn4,
+            this.productNameDataGridViewTextBoxColumn2,
+            this.imageUrlDataGridViewTextBoxColumn1,
+            this.quantityDataGridViewTextBoxColumn1,
+            this.priceDataGridViewTextBoxColumn1,
+            this.descriptionDataGridViewTextBoxColumn2,
+            this.categoryDataGridViewTextBoxColumn1});
+            this.dataGridViewToast.DataSource = this.toastBindingSource;
+            this.dataGridViewToast.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewToast.Name = "dataGridViewToast";
+            this.dataGridViewToast.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewToast.TabIndex = 0;
+            // 
+            // txtBoxDesToast
+            // 
+            this.txtBoxDesToast.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.toastBindingSource, "Description", true));
+            this.txtBoxDesToast.Location = new System.Drawing.Point(662, 391);
+            this.txtBoxDesToast.Multiline = true;
+            this.txtBoxDesToast.Name = "txtBoxDesToast";
+            this.txtBoxDesToast.Size = new System.Drawing.Size(175, 74);
+            this.txtBoxDesToast.TabIndex = 24;
+            // 
+            // lbDesToast
+            // 
+            this.lbDesToast.AutoSize = true;
+            this.lbDesToast.Location = new System.Drawing.Point(572, 391);
+            this.lbDesToast.Name = "lbDesToast";
+            this.lbDesToast.Size = new System.Drawing.Size(60, 13);
+            this.lbDesToast.TabIndex = 23;
+            this.lbDesToast.Text = "Description";
+            // 
+            // txtBoxPriceToast
+            // 
+            this.txtBoxPriceToast.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.toastBindingSource, "Price", true));
+            this.txtBoxPriceToast.Location = new System.Drawing.Point(662, 342);
+            this.txtBoxPriceToast.Name = "txtBoxPriceToast";
+            this.txtBoxPriceToast.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxPriceToast.TabIndex = 22;
+            // 
+            // lbPriceToast
+            // 
+            this.lbPriceToast.AutoSize = true;
+            this.lbPriceToast.Location = new System.Drawing.Point(575, 350);
+            this.lbPriceToast.Name = "lbPriceToast";
+            this.lbPriceToast.Size = new System.Drawing.Size(31, 13);
+            this.lbPriceToast.TabIndex = 21;
+            this.lbPriceToast.Text = "Price";
+            // 
+            // txtBoxQuantityToast
+            // 
+            this.txtBoxQuantityToast.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.toastBindingSource, "Quantity", true));
+            this.txtBoxQuantityToast.Location = new System.Drawing.Point(662, 298);
+            this.txtBoxQuantityToast.Name = "txtBoxQuantityToast";
+            this.txtBoxQuantityToast.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxQuantityToast.TabIndex = 20;
+            // 
+            // lbQuantToast
+            // 
+            this.lbQuantToast.AutoSize = true;
+            this.lbQuantToast.Location = new System.Drawing.Point(572, 306);
+            this.lbQuantToast.Name = "lbQuantToast";
+            this.lbQuantToast.Size = new System.Drawing.Size(46, 13);
+            this.lbQuantToast.TabIndex = 19;
+            this.lbQuantToast.Text = "Quantity";
+            // 
+            // txtBoxProdToast
+            // 
+            this.txtBoxProdToast.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.toastBindingSource, "ProductName", true));
+            this.txtBoxProdToast.Location = new System.Drawing.Point(662, 255);
+            this.txtBoxProdToast.Name = "txtBoxProdToast";
+            this.txtBoxProdToast.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxProdToast.TabIndex = 18;
+            // 
+            // lbProdToast
+            // 
+            this.lbProdToast.AutoSize = true;
+            this.lbProdToast.Location = new System.Drawing.Point(569, 263);
+            this.lbProdToast.Name = "lbProdToast";
+            this.lbProdToast.Size = new System.Drawing.Size(72, 13);
+            this.lbProdToast.TabIndex = 17;
+            this.lbProdToast.Text = "ProductName";
+            // 
+            // txtBoxIdToast
+            // 
+            this.txtBoxIdToast.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.toastBindingSource, "Id", true));
+            this.txtBoxIdToast.Location = new System.Drawing.Point(662, 214);
+            this.txtBoxIdToast.Name = "txtBoxIdToast";
+            this.txtBoxIdToast.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxIdToast.TabIndex = 16;
+            // 
+            // lbIdToast
+            // 
+            this.lbIdToast.AutoSize = true;
+            this.lbIdToast.Location = new System.Drawing.Point(569, 221);
+            this.lbIdToast.Name = "lbIdToast";
+            this.lbIdToast.Size = new System.Drawing.Size(19, 13);
+            this.lbIdToast.TabIndex = 15;
+            this.lbIdToast.Text = "Id:";
+            // 
+            // btnBrowseToast
+            // 
+            this.btnBrowseToast.BackColor = System.Drawing.Color.MistyRose;
+            this.btnBrowseToast.Location = new System.Drawing.Point(687, 168);
+            this.btnBrowseToast.Name = "btnBrowseToast";
+            this.btnBrowseToast.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseToast.TabIndex = 14;
+            this.btnBrowseToast.Text = "Browse";
+            this.btnBrowseToast.UseVisualStyleBackColor = false;
+            // 
+            // pBoxImgToast
+            // 
+            this.pBoxImgToast.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pBoxImgToast.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.burgerBindingSource, "ImageUrl", true));
+            this.pBoxImgToast.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.toastBindingSource, "ImageUrl", true));
+            this.pBoxImgToast.Location = new System.Drawing.Point(662, 15);
+            this.pBoxImgToast.Name = "pBoxImgToast";
+            this.pBoxImgToast.Size = new System.Drawing.Size(130, 130);
+            this.pBoxImgToast.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxImgToast.TabIndex = 13;
+            this.pBoxImgToast.TabStop = false;
+            // 
+            // btnSaveToast
+            // 
+            this.btnSaveToast.Location = new System.Drawing.Point(478, 442);
+            this.btnSaveToast.Name = "btnSaveToast";
+            this.btnSaveToast.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveToast.TabIndex = 38;
+            this.btnSaveToast.Text = "Save";
+            this.btnSaveToast.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelToast
+            // 
+            this.btnCancelToast.Location = new System.Drawing.Point(292, 442);
+            this.btnCancelToast.Name = "btnCancelToast";
+            this.btnCancelToast.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelToast.TabIndex = 37;
+            this.btnCancelToast.Text = "Cancel";
+            this.btnCancelToast.UseVisualStyleBackColor = true;
+            // 
+            // btnDeleteToast
+            // 
+            this.btnDeleteToast.Location = new System.Drawing.Point(385, 442);
+            this.btnDeleteToast.Name = "btnDeleteToast";
+            this.btnDeleteToast.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteToast.TabIndex = 36;
+            this.btnDeleteToast.Text = "Delete";
+            this.btnDeleteToast.UseVisualStyleBackColor = true;
+            // 
+            // btnEditToast
+            // 
+            this.btnEditToast.Location = new System.Drawing.Point(199, 442);
+            this.btnEditToast.Name = "btnEditToast";
+            this.btnEditToast.Size = new System.Drawing.Size(75, 23);
+            this.btnEditToast.TabIndex = 35;
+            this.btnEditToast.Text = "Edit";
+            this.btnEditToast.UseVisualStyleBackColor = true;
+            // 
+            // btnAddtoast
+            // 
+            this.btnAddtoast.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAddtoast.Location = new System.Drawing.Point(106, 442);
+            this.btnAddtoast.Name = "btnAddtoast";
+            this.btnAddtoast.Size = new System.Drawing.Size(75, 23);
+            this.btnAddtoast.TabIndex = 34;
+            this.btnAddtoast.Text = "Add";
+            this.btnAddtoast.UseVisualStyleBackColor = false;
+            // 
+            // toastBindingSource
+            // 
+            this.toastBindingSource.DataSource = typeof(WFGoodFood.DataModel.Toast);
+            // 
+            // idDataGridViewTextBoxColumn4
+            // 
+            this.idDataGridViewTextBoxColumn4.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn4.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn4.Name = "idDataGridViewTextBoxColumn4";
+            this.idDataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // productNameDataGridViewTextBoxColumn2
+            // 
+            this.productNameDataGridViewTextBoxColumn2.DataPropertyName = "ProductName";
+            this.productNameDataGridViewTextBoxColumn2.HeaderText = "ProductName";
+            this.productNameDataGridViewTextBoxColumn2.Name = "productNameDataGridViewTextBoxColumn2";
+            // 
+            // imageUrlDataGridViewTextBoxColumn1
+            // 
+            this.imageUrlDataGridViewTextBoxColumn1.DataPropertyName = "ImageUrl";
+            this.imageUrlDataGridViewTextBoxColumn1.HeaderText = "ImageUrl";
+            this.imageUrlDataGridViewTextBoxColumn1.Name = "imageUrlDataGridViewTextBoxColumn1";
+            // 
+            // quantityDataGridViewTextBoxColumn1
+            // 
+            this.quantityDataGridViewTextBoxColumn1.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn1.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn1.Name = "quantityDataGridViewTextBoxColumn1";
+            // 
+            // priceDataGridViewTextBoxColumn1
+            // 
+            this.priceDataGridViewTextBoxColumn1.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn1.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn1.Name = "priceDataGridViewTextBoxColumn1";
+            // 
+            // descriptionDataGridViewTextBoxColumn2
+            // 
+            this.descriptionDataGridViewTextBoxColumn2.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn2.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn2.Name = "descriptionDataGridViewTextBoxColumn2";
+            // 
+            // categoryDataGridViewTextBoxColumn1
+            // 
+            this.categoryDataGridViewTextBoxColumn1.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn1.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn1.Name = "categoryDataGridViewTextBoxColumn1";
+            // 
             // UserControlManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1117,10 +1385,15 @@
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBurger)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.burgerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewToast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgToast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toastBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1226,5 +1499,31 @@
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.TabPage tabPage10;
+        private System.Windows.Forms.Button btnSaveToast;
+        private System.Windows.Forms.Button btnCancelToast;
+        private System.Windows.Forms.Button btnDeleteToast;
+        private System.Windows.Forms.Button btnEditToast;
+        private System.Windows.Forms.Button btnAddtoast;
+        private System.Windows.Forms.TextBox txtBoxDesToast;
+        private System.Windows.Forms.BindingSource toastBindingSource;
+        private System.Windows.Forms.Label lbDesToast;
+        private System.Windows.Forms.TextBox txtBoxPriceToast;
+        private System.Windows.Forms.Label lbPriceToast;
+        private System.Windows.Forms.TextBox txtBoxQuantityToast;
+        private System.Windows.Forms.Label lbQuantToast;
+        private System.Windows.Forms.TextBox txtBoxProdToast;
+        private System.Windows.Forms.Label lbProdToast;
+        private System.Windows.Forms.TextBox txtBoxIdToast;
+        private System.Windows.Forms.Label lbIdToast;
+        private System.Windows.Forms.Button btnBrowseToast;
+        private System.Windows.Forms.PictureBox pBoxImgToast;
+        private System.Windows.Forms.DataGridView dataGridViewToast;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imageUrlDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn1;
     }
 }

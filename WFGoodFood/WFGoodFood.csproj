@@ -90,6 +90,7 @@
     <Compile Include="DataModel\Burger.cs" />
     <Compile Include="DataModel\Category.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
+    <Compile Include="DataModel\Toast.cs" />
     <Compile Include="DataModel\User.cs" />
     <Compile Include="GUI\FormLoading.cs">
       <SubType>Form</SubType>
@@ -130,6 +131,10 @@
     <Compile Include="Migrations\202205261045590_burger.cs" />
     <Compile Include="Migrations\202205261045590_burger.designer.cs">
       <DependentUpon>202205261045590_burger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205261814543_toast.cs" />
+    <Compile Include="Migrations\202205261814543_toast.designer.cs">
+      <DependentUpon>202205261814543_toast.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -173,6 +178,9 @@
     <EmbeddedResource Include="Migrations\202205261045590_burger.resx">
       <DependentUpon>202205261045590_burger.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205261814543_toast.resx">
+      <DependentUpon>202205261814543_toast.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -183,6 +191,7 @@
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Burger.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Category.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Product.datasource" />
+    <None Include="Properties\DataSources\WFGoodFood.DataModel.Toast.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

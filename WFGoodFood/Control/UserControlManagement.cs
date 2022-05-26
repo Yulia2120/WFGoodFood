@@ -355,9 +355,21 @@ namespace WFGoodFood.Control
         private void dataGridViewBurger_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Burger obj = burgerBindingSource.Current as Burger;
-            if (obj != null) //To Do
+            try
+            {
+
+            if (obj != null)
                 pBoxImage.Image = Image.FromFile(obj.ImageUrl);
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
-    }
         #endregion
+
+
+        #region Toast table
+
+    }
+    #endregion
 }
