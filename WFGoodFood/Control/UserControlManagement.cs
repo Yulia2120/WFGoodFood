@@ -187,10 +187,14 @@ namespace WFGoodFood.Control
             {
                 categoryBindingSource.DataSource = db.CategoryList.ToList();
             }
+            Category obj = categoryBindingSource.Current as Category;
+            if (obj != null)
+                pBoxImg.Image = Image.FromFile(obj.ImageUrl);
         }
 
         private void btnAddCat_Click(object sender, EventArgs e)
         {
+            pBoxImg.Image = null;
             categoryBindingSource.Add(new Category());
             categoryBindingSource.MoveLast();
             txtBoxProdName.Focus();
@@ -207,6 +211,7 @@ namespace WFGoodFood.Control
         private void btnCancelCat_Click(object sender, EventArgs e)
         {
             categoryBindingSource.ResetBindings(false);
+          
         }
 
         private void btnDeleteCat_Click(object sender, EventArgs e)
@@ -223,6 +228,7 @@ namespace WFGoodFood.Control
                         db.Entry<Category>(obj).State = System.Data.Entity.EntityState.Deleted;
                         db.SaveChanges();
                         categoryBindingSource.RemoveCurrent();
+                        pBoxImg.Image = null;
 
                     }
                 }
@@ -232,13 +238,15 @@ namespace WFGoodFood.Control
         private void dataGridViewCategory_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Category obj = categoryBindingSource.Current as Category;
+            if (obj != null)
+                pBoxImg.Image = Image.FromFile(obj.ImageUrl);
         }
 
         private void btnSaveCat_Click(object sender, EventArgs e)
         {
             using (ModelContext db = new ModelContext())
             {
-                Category obj = adminBindingSource.Current as Category;
+                Category obj = categoryBindingSource.Current as Category;
                 if (obj != null)
                 {
                     if (db.Entry<Category>(obj).State == System.Data.Entity.EntityState.Detached)
@@ -254,5 +262,7 @@ namespace WFGoodFood.Control
             }
         }
         #endregion
+
+
     }
 }
