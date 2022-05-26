@@ -95,6 +95,18 @@
             this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pBoxImage = new System.Windows.Forms.PictureBox();
+            this.btnBrowseProd = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtBoxIdProd = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtBoxProdNameProd = new System.Windows.Forms.TextBox();
+            this.lbQuantity = new System.Windows.Forms.Label();
+            this.txtBoxQuantity = new System.Windows.Forms.TextBox();
+            this.lbPrice = new System.Windows.Forms.Label();
+            this.txtBoxPrice = new System.Windows.Forms.TextBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -106,6 +118,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -114,6 +129,7 @@
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
+            this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.HotTrack = true;
             this.tabControl.Location = new System.Drawing.Point(0, 0);
@@ -743,6 +759,117 @@
             this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.txtBoxPrice);
+            this.tabPage4.Controls.Add(this.lbPrice);
+            this.tabPage4.Controls.Add(this.txtBoxQuantity);
+            this.tabPage4.Controls.Add(this.lbQuantity);
+            this.tabPage4.Controls.Add(this.txtBoxProdNameProd);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.txtBoxIdProd);
+            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.btnBrowseProd);
+            this.tabPage4.Controls.Add(this.pBoxImage);
+            this.tabPage4.Controls.Add(this.dataGridView1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(872, 504);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Product";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(5, 5);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(545, 395);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // pBoxImage
+            // 
+            this.pBoxImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pBoxImage.Location = new System.Drawing.Point(572, 21);
+            this.pBoxImage.Name = "pBoxImage";
+            this.pBoxImage.Size = new System.Drawing.Size(130, 130);
+            this.pBoxImage.TabIndex = 1;
+            this.pBoxImage.TabStop = false;
+            // 
+            // btnBrowseProd
+            // 
+            this.btnBrowseProd.Location = new System.Drawing.Point(603, 173);
+            this.btnBrowseProd.Name = "btnBrowseProd";
+            this.btnBrowseProd.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseProd.TabIndex = 2;
+            this.btnBrowseProd.Text = "Browse";
+            this.btnBrowseProd.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(572, 225);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(19, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Id:";
+            // 
+            // txtBoxIdProd
+            // 
+            this.txtBoxIdProd.Location = new System.Drawing.Point(665, 218);
+            this.txtBoxIdProd.Name = "txtBoxIdProd";
+            this.txtBoxIdProd.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxIdProd.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(572, 267);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "ProductName";
+            // 
+            // txtBoxProdNameProd
+            // 
+            this.txtBoxProdNameProd.Location = new System.Drawing.Point(665, 259);
+            this.txtBoxProdNameProd.Name = "txtBoxProdNameProd";
+            this.txtBoxProdNameProd.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxProdNameProd.TabIndex = 6;
+            // 
+            // lbQuantity
+            // 
+            this.lbQuantity.AutoSize = true;
+            this.lbQuantity.Location = new System.Drawing.Point(575, 310);
+            this.lbQuantity.Name = "lbQuantity";
+            this.lbQuantity.Size = new System.Drawing.Size(46, 13);
+            this.lbQuantity.TabIndex = 7;
+            this.lbQuantity.Text = "Quantity";
+            // 
+            // txtBoxQuantity
+            // 
+            this.txtBoxQuantity.Location = new System.Drawing.Point(665, 302);
+            this.txtBoxQuantity.Name = "txtBoxQuantity";
+            this.txtBoxQuantity.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxQuantity.TabIndex = 8;
+            // 
+            // lbPrice
+            // 
+            this.lbPrice.AutoSize = true;
+            this.lbPrice.Location = new System.Drawing.Point(578, 354);
+            this.lbPrice.Name = "lbPrice";
+            this.lbPrice.Size = new System.Drawing.Size(31, 13);
+            this.lbPrice.TabIndex = 9;
+            this.lbPrice.Text = "Price";
+            // 
+            // txtBoxPrice
+            // 
+            this.txtBoxPrice.Location = new System.Drawing.Point(665, 346);
+            this.txtBoxPrice.Name = "txtBoxPrice";
+            this.txtBoxPrice.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxPrice.TabIndex = 10;
+            // 
             // UserControlManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -764,6 +891,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -836,5 +967,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ImageUrl;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TextBox txtBoxPrice;
+        private System.Windows.Forms.Label lbPrice;
+        private System.Windows.Forms.TextBox txtBoxQuantity;
+        private System.Windows.Forms.Label lbQuantity;
+        private System.Windows.Forms.TextBox txtBoxProdNameProd;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtBoxIdProd;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnBrowseProd;
+        private System.Windows.Forms.PictureBox pBoxImage;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
