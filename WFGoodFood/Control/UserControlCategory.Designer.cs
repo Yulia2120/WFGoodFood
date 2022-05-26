@@ -98,7 +98,7 @@
             this.btnCatBurg.TabIndex = 4;
             this.btnCatBurg.Text = "Read More";
             this.btnCatBurg.UseVisualStyleBackColor = false;
-            this.btnCatBurg.Click += new System.EventHandler(this.btnCatBurg_Click);
+        
             // 
             // label2
             // 

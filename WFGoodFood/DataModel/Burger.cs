@@ -10,12 +10,7 @@ namespace WFGoodFood.DataModel
 {
     public class Burger
     {
-        //public Burger(string productName, decimal price, string imageUrl)
-        //{
-        //    ProductName = productName;
-        //    Price = price;
-        //    ImageUrl = imageUrl;
-        //}
+     
 
         public int Id { get; set; }
         [StringLength(255)]

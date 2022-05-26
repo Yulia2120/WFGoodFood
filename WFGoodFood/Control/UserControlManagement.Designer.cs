@@ -100,6 +100,12 @@
             this.btnBrowseBurg = new System.Windows.Forms.Button();
             this.pBoxImage = new System.Windows.Forms.PictureBox();
             this.dataGridViewBurger = new System.Windows.Forms.DataGridView();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -122,12 +128,6 @@
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -664,12 +664,13 @@
             // 
             // btnBrowse
             // 
+            this.btnBrowse.BackColor = System.Drawing.Color.MistyRose;
             this.btnBrowse.Location = new System.Drawing.Point(604, 169);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse.TabIndex = 2;
             this.btnBrowse.Text = "Browse";
-            this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.UseVisualStyleBackColor = false;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // pBoxImg
@@ -679,7 +680,7 @@
             this.pBoxImg.Location = new System.Drawing.Point(571, 19);
             this.pBoxImg.Name = "pBoxImg";
             this.pBoxImg.Size = new System.Drawing.Size(130, 130);
-            this.pBoxImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBoxImg.TabIndex = 1;
             this.pBoxImg.TabStop = false;
             // 
@@ -873,12 +874,13 @@
             // 
             // btnBrowseBurg
             // 
+            this.btnBrowseBurg.BackColor = System.Drawing.Color.MistyRose;
             this.btnBrowseBurg.Location = new System.Drawing.Point(690, 172);
             this.btnBrowseBurg.Name = "btnBrowseBurg";
             this.btnBrowseBurg.Size = new System.Drawing.Size(75, 23);
             this.btnBrowseBurg.TabIndex = 2;
             this.btnBrowseBurg.Text = "Browse";
-            this.btnBrowseBurg.UseVisualStyleBackColor = true;
+            this.btnBrowseBurg.UseVisualStyleBackColor = false;
             this.btnBrowseBurg.Click += new System.EventHandler(this.btnBrowseBurg_Click);
             // 
             // pBoxImage
@@ -911,6 +913,59 @@
             this.dataGridViewBurger.Size = new System.Drawing.Size(545, 395);
             this.dataGridViewBurger.TabIndex = 0;
             this.dataGridViewBurger.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBurger_CellClick);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 4);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(872, 504);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Toasts";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Location = new System.Drawing.Point(4, 4);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(872, 504);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Pizzas";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 4);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(872, 504);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Salads";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 4);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(872, 504);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Drinks";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 4);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(872, 504);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Desserts";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Location = new System.Drawing.Point(4, 4);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(872, 504);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // userBindingSource
             // 
@@ -1039,59 +1094,6 @@
             this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
             this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
             this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 4);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(872, 504);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Toasts";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 4);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(872, 504);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Pizzas";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 4);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(872, 504);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Salads";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 4);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(872, 504);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Drinks";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 4);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(872, 504);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Desserts";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Location = new System.Drawing.Point(4, 4);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(872, 504);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // UserControlManagement
             // 
