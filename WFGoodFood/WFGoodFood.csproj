@@ -81,6 +81,7 @@
       <DependentUpon>UserControlManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="DataModel\Admin.cs" />
+    <Compile Include="DataModel\Category.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
     <Compile Include="DataModel\User.cs" />
     <Compile Include="GUI\Form1.cs">
