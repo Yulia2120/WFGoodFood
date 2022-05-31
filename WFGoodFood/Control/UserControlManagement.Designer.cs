@@ -178,6 +178,24 @@
             this.btnDeleteDrink = new System.Windows.Forms.Button();
             this.btnEditDrink = new System.Windows.Forms.Button();
             this.btnAddDrink = new System.Windows.Forms.Button();
+            this.dataGridViewDesert = new System.Windows.Forms.DataGridView();
+            this.txtBoxDesDesert = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtBoxPriceDesert = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtBoxQuantDesert = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtBoxProdNameDesert = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtBoxIdDesert = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.btnBrowseDesert = new System.Windows.Forms.Button();
+            this.pBoxImgDesert = new System.Windows.Forms.PictureBox();
+            this.btnSaveDesert = new System.Windows.Forms.Button();
+            this.btnCancelDesert = new System.Windows.Forms.Button();
+            this.btnDeleteDesert = new System.Windows.Forms.Button();
+            this.btnEditDesert = new System.Windows.Forms.Button();
+            this.btnAddDesert = new System.Windows.Forms.Button();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -232,24 +250,14 @@
             this.priceDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewDesert = new System.Windows.Forms.DataGridView();
-            this.txtBoxDesDesert = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtBoxPriceDesert = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtBoxQuantDesert = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtBoxProdNameDesert = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txtBoxIdDesert = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.btnBrowseDesert = new System.Windows.Forms.Button();
-            this.pBoxImgDesert = new System.Windows.Forms.PictureBox();
-            this.btnSaveDesert = new System.Windows.Forms.Button();
-            this.btnCancelDesert = new System.Windows.Forms.Button();
-            this.btnDeleteDesert = new System.Windows.Forms.Button();
-            this.btnEditDesert = new System.Windows.Forms.Button();
-            this.btnAddDesert = new System.Windows.Forms.Button();
+            this.desertBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageUrlDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -274,6 +282,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDrink)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDrink)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDesert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDesert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
@@ -282,8 +292,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pizzasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.saladBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.drinkBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDesert)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDesert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.desertBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -1372,6 +1381,7 @@
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Desserts";
             this.tabPage9.UseVisualStyleBackColor = true;
+            this.tabPage9.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage9_MouseDoubleClick);
             // 
             // tabPage10
             // 
@@ -1920,6 +1930,186 @@
             this.btnAddDrink.UseVisualStyleBackColor = false;
             this.btnAddDrink.Click += new System.EventHandler(this.btnAddDrink_Click);
             // 
+            // dataGridViewDesert
+            // 
+            this.dataGridViewDesert.AutoGenerateColumns = false;
+            this.dataGridViewDesert.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewDesert.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDesert.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn8,
+            this.productNameDataGridViewTextBoxColumn6,
+            this.imageUrlDataGridViewTextBoxColumn5,
+            this.quantityDataGridViewTextBoxColumn5,
+            this.priceDataGridViewTextBoxColumn5,
+            this.descriptionDataGridViewTextBoxColumn6,
+            this.categoryDataGridViewTextBoxColumn5});
+            this.dataGridViewDesert.DataSource = this.desertBindingSource;
+            this.dataGridViewDesert.GridColor = System.Drawing.Color.White;
+            this.dataGridViewDesert.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewDesert.Name = "dataGridViewDesert";
+            this.dataGridViewDesert.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewDesert.TabIndex = 0;
+            this.dataGridViewDesert.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDesert_CellClick);
+            // 
+            // txtBoxDesDesert
+            // 
+            this.txtBoxDesDesert.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desertBindingSource, "Description", true));
+            this.txtBoxDesDesert.Location = new System.Drawing.Point(670, 395);
+            this.txtBoxDesDesert.Multiline = true;
+            this.txtBoxDesDesert.Name = "txtBoxDesDesert";
+            this.txtBoxDesDesert.Size = new System.Drawing.Size(175, 74);
+            this.txtBoxDesDesert.TabIndex = 72;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(580, 395);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(60, 13);
+            this.label14.TabIndex = 71;
+            this.label14.Text = "Description";
+            // 
+            // txtBoxPriceDesert
+            // 
+            this.txtBoxPriceDesert.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desertBindingSource, "Price", true));
+            this.txtBoxPriceDesert.Location = new System.Drawing.Point(670, 346);
+            this.txtBoxPriceDesert.Name = "txtBoxPriceDesert";
+            this.txtBoxPriceDesert.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxPriceDesert.TabIndex = 70;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(583, 354);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(31, 13);
+            this.label15.TabIndex = 69;
+            this.label15.Text = "Price";
+            // 
+            // txtBoxQuantDesert
+            // 
+            this.txtBoxQuantDesert.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desertBindingSource, "Quantity", true));
+            this.txtBoxQuantDesert.Location = new System.Drawing.Point(670, 302);
+            this.txtBoxQuantDesert.Name = "txtBoxQuantDesert";
+            this.txtBoxQuantDesert.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxQuantDesert.TabIndex = 68;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(580, 310);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(46, 13);
+            this.label16.TabIndex = 67;
+            this.label16.Text = "Quantity";
+            // 
+            // txtBoxProdNameDesert
+            // 
+            this.txtBoxProdNameDesert.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desertBindingSource, "ProductName", true));
+            this.txtBoxProdNameDesert.Location = new System.Drawing.Point(670, 259);
+            this.txtBoxProdNameDesert.Name = "txtBoxProdNameDesert";
+            this.txtBoxProdNameDesert.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxProdNameDesert.TabIndex = 66;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(577, 267);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(72, 13);
+            this.label17.TabIndex = 65;
+            this.label17.Text = "ProductName";
+            // 
+            // txtBoxIdDesert
+            // 
+            this.txtBoxIdDesert.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.desertBindingSource, "Id", true));
+            this.txtBoxIdDesert.Location = new System.Drawing.Point(670, 218);
+            this.txtBoxIdDesert.Name = "txtBoxIdDesert";
+            this.txtBoxIdDesert.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxIdDesert.TabIndex = 64;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(577, 225);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(19, 13);
+            this.label18.TabIndex = 63;
+            this.label18.Text = "Id:";
+            // 
+            // btnBrowseDesert
+            // 
+            this.btnBrowseDesert.BackColor = System.Drawing.Color.MistyRose;
+            this.btnBrowseDesert.Location = new System.Drawing.Point(695, 172);
+            this.btnBrowseDesert.Name = "btnBrowseDesert";
+            this.btnBrowseDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseDesert.TabIndex = 62;
+            this.btnBrowseDesert.Text = "Browse";
+            this.btnBrowseDesert.UseVisualStyleBackColor = false;
+            this.btnBrowseDesert.Click += new System.EventHandler(this.btnBrowseDesert_Click);
+            // 
+            // pBoxImgDesert
+            // 
+            this.pBoxImgDesert.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pBoxImgDesert.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.desertBindingSource, "ImageUrl", true));
+            this.pBoxImgDesert.Location = new System.Drawing.Point(670, 19);
+            this.pBoxImgDesert.Name = "pBoxImgDesert";
+            this.pBoxImgDesert.Size = new System.Drawing.Size(130, 130);
+            this.pBoxImgDesert.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxImgDesert.TabIndex = 61;
+            this.pBoxImgDesert.TabStop = false;
+            // 
+            // btnSaveDesert
+            // 
+            this.btnSaveDesert.Location = new System.Drawing.Point(479, 446);
+            this.btnSaveDesert.Name = "btnSaveDesert";
+            this.btnSaveDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveDesert.TabIndex = 77;
+            this.btnSaveDesert.Text = "Save";
+            this.btnSaveDesert.UseVisualStyleBackColor = true;
+            this.btnSaveDesert.Click += new System.EventHandler(this.btnSaveDesert_Click);
+            // 
+            // btnCancelDesert
+            // 
+            this.btnCancelDesert.Location = new System.Drawing.Point(293, 446);
+            this.btnCancelDesert.Name = "btnCancelDesert";
+            this.btnCancelDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelDesert.TabIndex = 76;
+            this.btnCancelDesert.Text = "Cancel";
+            this.btnCancelDesert.UseVisualStyleBackColor = true;
+            this.btnCancelDesert.Click += new System.EventHandler(this.btnCancelDesert_Click);
+            // 
+            // btnDeleteDesert
+            // 
+            this.btnDeleteDesert.Location = new System.Drawing.Point(386, 446);
+            this.btnDeleteDesert.Name = "btnDeleteDesert";
+            this.btnDeleteDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteDesert.TabIndex = 75;
+            this.btnDeleteDesert.Text = "Delete";
+            this.btnDeleteDesert.UseVisualStyleBackColor = true;
+            this.btnDeleteDesert.Click += new System.EventHandler(this.btnDeleteDesert_Click);
+            // 
+            // btnEditDesert
+            // 
+            this.btnEditDesert.Location = new System.Drawing.Point(200, 446);
+            this.btnEditDesert.Name = "btnEditDesert";
+            this.btnEditDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnEditDesert.TabIndex = 74;
+            this.btnEditDesert.Text = "Edit";
+            this.btnEditDesert.UseVisualStyleBackColor = true;
+            this.btnEditDesert.Click += new System.EventHandler(this.btnEditDesert_Click);
+            // 
+            // btnAddDesert
+            // 
+            this.btnAddDesert.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAddDesert.Location = new System.Drawing.Point(107, 446);
+            this.btnAddDesert.Name = "btnAddDesert";
+            this.btnAddDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnAddDesert.TabIndex = 73;
+            this.btnAddDesert.Text = "Add";
+            this.btnAddDesert.UseVisualStyleBackColor = false;
+            this.btnAddDesert.Click += new System.EventHandler(this.btnAddDesert_Click);
+            // 
             // userBindingSource
             // 
             this.userBindingSource.DataSource = typeof(WFGoodFood.DataModel.User);
@@ -2236,163 +2426,52 @@
             this.categoryDataGridViewTextBoxColumn4.HeaderText = "Category";
             this.categoryDataGridViewTextBoxColumn4.Name = "categoryDataGridViewTextBoxColumn4";
             // 
-            // dataGridViewDesert
+            // desertBindingSource
             // 
-            this.dataGridViewDesert.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewDesert.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDesert.GridColor = System.Drawing.Color.White;
-            this.dataGridViewDesert.Location = new System.Drawing.Point(5, 5);
-            this.dataGridViewDesert.Name = "dataGridViewDesert";
-            this.dataGridViewDesert.Size = new System.Drawing.Size(545, 395);
-            this.dataGridViewDesert.TabIndex = 0;
+            this.desertBindingSource.DataSource = typeof(WFGoodFood.DataModel.Desert);
             // 
-            // txtBoxDesDesert
+            // idDataGridViewTextBoxColumn8
             // 
-            this.txtBoxDesDesert.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.drinkBindingSource, "Description", true));
-            this.txtBoxDesDesert.Location = new System.Drawing.Point(670, 395);
-            this.txtBoxDesDesert.Multiline = true;
-            this.txtBoxDesDesert.Name = "txtBoxDesDesert";
-            this.txtBoxDesDesert.Size = new System.Drawing.Size(175, 74);
-            this.txtBoxDesDesert.TabIndex = 72;
+            this.idDataGridViewTextBoxColumn8.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn8.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn8.Name = "idDataGridViewTextBoxColumn8";
+            this.idDataGridViewTextBoxColumn8.ReadOnly = true;
             // 
-            // label14
+            // productNameDataGridViewTextBoxColumn6
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(580, 395);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 13);
-            this.label14.TabIndex = 71;
-            this.label14.Text = "Description";
+            this.productNameDataGridViewTextBoxColumn6.DataPropertyName = "ProductName";
+            this.productNameDataGridViewTextBoxColumn6.HeaderText = "ProductName";
+            this.productNameDataGridViewTextBoxColumn6.Name = "productNameDataGridViewTextBoxColumn6";
             // 
-            // txtBoxPriceDesert
+            // imageUrlDataGridViewTextBoxColumn5
             // 
-            this.txtBoxPriceDesert.Location = new System.Drawing.Point(670, 346);
-            this.txtBoxPriceDesert.Name = "txtBoxPriceDesert";
-            this.txtBoxPriceDesert.Size = new System.Drawing.Size(175, 20);
-            this.txtBoxPriceDesert.TabIndex = 70;
+            this.imageUrlDataGridViewTextBoxColumn5.DataPropertyName = "ImageUrl";
+            this.imageUrlDataGridViewTextBoxColumn5.HeaderText = "ImageUrl";
+            this.imageUrlDataGridViewTextBoxColumn5.Name = "imageUrlDataGridViewTextBoxColumn5";
             // 
-            // label15
+            // quantityDataGridViewTextBoxColumn5
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(583, 354);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(31, 13);
-            this.label15.TabIndex = 69;
-            this.label15.Text = "Price";
+            this.quantityDataGridViewTextBoxColumn5.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn5.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn5.Name = "quantityDataGridViewTextBoxColumn5";
             // 
-            // txtBoxQuantDesert
+            // priceDataGridViewTextBoxColumn5
             // 
-            this.txtBoxQuantDesert.Location = new System.Drawing.Point(670, 302);
-            this.txtBoxQuantDesert.Name = "txtBoxQuantDesert";
-            this.txtBoxQuantDesert.Size = new System.Drawing.Size(175, 20);
-            this.txtBoxQuantDesert.TabIndex = 68;
+            this.priceDataGridViewTextBoxColumn5.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn5.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn5.Name = "priceDataGridViewTextBoxColumn5";
             // 
-            // label16
+            // descriptionDataGridViewTextBoxColumn6
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(580, 310);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(46, 13);
-            this.label16.TabIndex = 67;
-            this.label16.Text = "Quantity";
+            this.descriptionDataGridViewTextBoxColumn6.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn6.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn6.Name = "descriptionDataGridViewTextBoxColumn6";
             // 
-            // txtBoxProdNameDesert
+            // categoryDataGridViewTextBoxColumn5
             // 
-            this.txtBoxProdNameDesert.Location = new System.Drawing.Point(670, 259);
-            this.txtBoxProdNameDesert.Name = "txtBoxProdNameDesert";
-            this.txtBoxProdNameDesert.Size = new System.Drawing.Size(175, 20);
-            this.txtBoxProdNameDesert.TabIndex = 66;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(577, 267);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(72, 13);
-            this.label17.TabIndex = 65;
-            this.label17.Text = "ProductName";
-            // 
-            // txtBoxIdDesert
-            // 
-            this.txtBoxIdDesert.Location = new System.Drawing.Point(670, 218);
-            this.txtBoxIdDesert.Name = "txtBoxIdDesert";
-            this.txtBoxIdDesert.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxIdDesert.TabIndex = 64;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(577, 225);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(19, 13);
-            this.label18.TabIndex = 63;
-            this.label18.Text = "Id:";
-            // 
-            // btnBrowseDesert
-            // 
-            this.btnBrowseDesert.BackColor = System.Drawing.Color.MistyRose;
-            this.btnBrowseDesert.Location = new System.Drawing.Point(695, 172);
-            this.btnBrowseDesert.Name = "btnBrowseDesert";
-            this.btnBrowseDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseDesert.TabIndex = 62;
-            this.btnBrowseDesert.Text = "Browse";
-            this.btnBrowseDesert.UseVisualStyleBackColor = false;
-            // 
-            // pBoxImgDesert
-            // 
-            this.pBoxImgDesert.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pBoxImgDesert.Location = new System.Drawing.Point(670, 19);
-            this.pBoxImgDesert.Name = "pBoxImgDesert";
-            this.pBoxImgDesert.Size = new System.Drawing.Size(130, 130);
-            this.pBoxImgDesert.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBoxImgDesert.TabIndex = 61;
-            this.pBoxImgDesert.TabStop = false;
-            // 
-            // btnSaveDesert
-            // 
-            this.btnSaveDesert.Location = new System.Drawing.Point(479, 446);
-            this.btnSaveDesert.Name = "btnSaveDesert";
-            this.btnSaveDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveDesert.TabIndex = 77;
-            this.btnSaveDesert.Text = "Save";
-            this.btnSaveDesert.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelDesert
-            // 
-            this.btnCancelDesert.Location = new System.Drawing.Point(293, 446);
-            this.btnCancelDesert.Name = "btnCancelDesert";
-            this.btnCancelDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelDesert.TabIndex = 76;
-            this.btnCancelDesert.Text = "Cancel";
-            this.btnCancelDesert.UseVisualStyleBackColor = true;
-            // 
-            // btnDeleteDesert
-            // 
-            this.btnDeleteDesert.Location = new System.Drawing.Point(386, 446);
-            this.btnDeleteDesert.Name = "btnDeleteDesert";
-            this.btnDeleteDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteDesert.TabIndex = 75;
-            this.btnDeleteDesert.Text = "Delete";
-            this.btnDeleteDesert.UseVisualStyleBackColor = true;
-            // 
-            // btnEditDesert
-            // 
-            this.btnEditDesert.Location = new System.Drawing.Point(200, 446);
-            this.btnEditDesert.Name = "btnEditDesert";
-            this.btnEditDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnEditDesert.TabIndex = 74;
-            this.btnEditDesert.Text = "Edit";
-            this.btnEditDesert.UseVisualStyleBackColor = true;
-            // 
-            // btnAddDesert
-            // 
-            this.btnAddDesert.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddDesert.Location = new System.Drawing.Point(107, 446);
-            this.btnAddDesert.Name = "btnAddDesert";
-            this.btnAddDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnAddDesert.TabIndex = 73;
-            this.btnAddDesert.Text = "Add";
-            this.btnAddDesert.UseVisualStyleBackColor = false;
+            this.categoryDataGridViewTextBoxColumn5.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn5.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn5.Name = "categoryDataGridViewTextBoxColumn5";
             // 
             // UserControlManagement
             // 
@@ -2434,6 +2513,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDrink)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDrink)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDesert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDesert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
@@ -2442,8 +2523,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pizzasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.saladBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.drinkBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDesert)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDesert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.desertBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2671,5 +2751,13 @@
         private System.Windows.Forms.Button btnBrowseDesert;
         private System.Windows.Forms.PictureBox pBoxImgDesert;
         private System.Windows.Forms.DataGridView dataGridViewDesert;
+        private System.Windows.Forms.BindingSource desertBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imageUrlDataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn5;
     }
 }

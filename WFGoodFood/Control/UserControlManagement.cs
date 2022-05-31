@@ -791,6 +791,112 @@ namespace WFGoodFood.Control
                 }
             }
         }
-    #endregion
+        #endregion
+        #region Desert table
+        private void btnBrowseDesert_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog opf = new OpenFileDialog()
+            { Filter = "Choose Image(*.JPG; *.PNG;*.GIF)|*.jpg; *.png; *.gif" })
+                if (opf.ShowDialog() == DialogResult.OK)
+                {
+                    pBoxImgDesert.Image = Image.FromFile(opf.FileName);
+                    Desert obj = desertBindingSource.Current as Desert;
+                    if (obj != null)
+                        obj.ImageUrl = opf.FileName;
+                }
+        }
+
+        private void btnAddDesert_Click(object sender, EventArgs e)
+        {
+            pBoxImgDesert.Image = null;
+            desertBindingSource.Add(new Desert());
+            desertBindingSource.MoveLast();
+            txtBoxProdNameDesert.Focus();
+        }
+
+        private void btnEditDesert_Click(object sender, EventArgs e)
+        {
+            txtBoxProdNameDesert.Enabled = true;
+            txtBoxDesDesert.Enabled = true;
+            txtBoxProdNameDesert.Focus();
+        }
+
+        private void btnCancelDesert_Click(object sender, EventArgs e)
+        {
+            desertBindingSource.ResetBindings(false);
+        }
+
+        private void dataGridViewDesert_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Desert obj = desertBindingSource.Current as Desert;
+            try
+            {
+
+                if (obj != null)
+                    pBoxImgDesert.Image = Image.FromFile(obj.ImageUrl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void tabPage9_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                desertBindingSource.DataSource = db.DesertList.ToList();
+            }
+            Desert obj = desertBindingSource.Current as Desert;
+            if (obj != null)
+                pBoxImgDesert.Image = Image.FromFile(obj.ImageUrl);
+        }
+
+        private void btnDeleteDesert_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                using (ModelContext db = new ModelContext())
+                {
+                    Desert obj = desertBindingSource.Current as Desert;
+                    if (obj != null)
+                    {
+                        if (db.Entry<Desert>(obj).State == System.Data.Entity.EntityState.Detached)
+                            db.Set<Desert>().Attach(obj);
+                        db.Entry<Desert>(obj).State = System.Data.Entity.EntityState.Deleted;
+                        db.SaveChanges();
+                        desertBindingSource.RemoveCurrent();
+                        pBoxImgDesert.Image = null;
+
+                    }
+                }
+            }
+        }
+        private void btnSaveDesert_Click(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Desert obj = desertBindingSource.Current as Desert;
+                if (obj != null)
+                {
+                    if (db.Entry<Desert>(obj).State == System.Data.Entity.EntityState.Detached)
+                        db.Set<Desert>().Attach(obj);
+                    if (obj.Id == 0)
+                        db.Entry<Desert>(obj).State = System.Data.Entity.EntityState.Added;
+                    else
+                        db.Entry<Desert>(obj).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    dataGridViewDesert.Refresh();
+
+                }
+            }
+        }
+
+        #endregion
+
+
+
+
+
     }
 }
