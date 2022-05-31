@@ -173,36 +173,6 @@ namespace WFGoodFood.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_facebook_f_32px {
-            get {
-                object obj = ResourceManager.GetObject("icons8_facebook_f_32px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_google_32px {
-            get {
-                object obj = ResourceManager.GetObject("icons8_google_32px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_instagram_logo_30px {
-            get {
-                object obj = ResourceManager.GetObject("icons8_instagram_logo_30px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap mini_burger_4_310x260 {
             get {
                 object obj = ResourceManager.GetObject("mini burger-4-310x260", resourceCulture);
@@ -246,6 +216,26 @@ namespace WFGoodFood.Properties {
         internal static System.Drawing.Bitmap pizzas_5_310x260 {
             get {
                 object obj = ResourceManager.GetObject("pizzas-5-310x260", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngwing_com__1_ {
+            get {
+                object obj = ResourceManager.GetObject("pngwing.com (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngwing_com__2_ {
+            get {
+                object obj = ResourceManager.GetObject("pngwing.com (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

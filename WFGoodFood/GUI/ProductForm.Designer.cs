@@ -30,6 +30,7 @@
         {
             this.lbClose = new System.Windows.Forms.Label();
             this.pnlSide = new System.Windows.Forms.Panel();
+            this.btnProducts = new System.Windows.Forms.Button();
             this.pnlRed = new System.Windows.Forms.Panel();
             this.btnManagement = new System.Windows.Forms.Button();
             this.btnDelivery = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
             this.userControlCategory1 = new WFGoodFood.Control.UserControlCategory();
             this.userControlDelivery2 = new WFGoodFood.Control.UserControlDelivery();
-            this.btnProducts = new System.Windows.Forms.Button();
             this.userControlBurger = new WFGoodFood.Control.UserControlBurger();
             this.pnlSide.SuspendLayout();
             this.pnlTop.SuspendLayout();
@@ -76,6 +76,20 @@
             this.pnlSide.Name = "pnlSide";
             this.pnlSide.Size = new System.Drawing.Size(200, 650);
             this.pnlSide.TabIndex = 13;
+            // 
+            // btnProducts
+            // 
+            this.btnProducts.FlatAppearance.BorderSize = 0;
+            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.btnProducts.Location = new System.Drawing.Point(1, 302);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(200, 45);
+            this.btnProducts.TabIndex = 17;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // pnlRed
             // 
@@ -189,7 +203,7 @@
             // 
             // userControlManagement1
             // 
-            this.userControlManagement1.Location = new System.Drawing.Point(203, 96);
+            this.userControlManagement1.Location = new System.Drawing.Point(202, 95);
             this.userControlManagement1.Name = "userControlManagement1";
             this.userControlManagement1.Size = new System.Drawing.Size(880, 530);
             this.userControlManagement1.TabIndex = 18;
@@ -218,24 +232,10 @@
             this.userControlDelivery2.Size = new System.Drawing.Size(842, 530);
             this.userControlDelivery2.TabIndex = 15;
             // 
-            // btnProducts
-            // 
-            this.btnProducts.FlatAppearance.BorderSize = 0;
-            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProducts.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.btnProducts.Location = new System.Drawing.Point(1, 302);
-            this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(200, 45);
-            this.btnProducts.TabIndex = 17;
-            this.btnProducts.Text = "Products";
-            this.btnProducts.UseVisualStyleBackColor = true;
-            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
-            // 
             // userControlBurger
             // 
             this.userControlBurger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlBurger.Location = new System.Drawing.Point(202, 96);
+            this.userControlBurger.Location = new System.Drawing.Point(202, 97);
             this.userControlBurger.Name = "userControlBurger";
             this.userControlBurger.Size = new System.Drawing.Size(880, 530);
             this.userControlBurger.TabIndex = 19;

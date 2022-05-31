@@ -120,11 +120,11 @@
             this.pBoxImgToast = new System.Windows.Forms.PictureBox();
             this.dataGridViewToast = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.dataGridViewPizza = new System.Windows.Forms.DataGridView();
+            this.btnSavePizza = new System.Windows.Forms.Button();
+            this.btnCancelPizza = new System.Windows.Forms.Button();
+            this.btnDeletePizza = new System.Windows.Forms.Button();
+            this.btnEditPizza = new System.Windows.Forms.Button();
+            this.btnAddPizza = new System.Windows.Forms.Button();
             this.txtBoxDesPizza = new System.Windows.Forms.TextBox();
             this.lbDesPizza = new System.Windows.Forms.Label();
             this.txtBoxPricePizza = new System.Windows.Forms.TextBox();
@@ -137,12 +137,13 @@
             this.lbIdPizza = new System.Windows.Forms.Label();
             this.btnBrowsePizza = new System.Windows.Forms.Button();
             this.pBoxImgPizza = new System.Windows.Forms.PictureBox();
-            this.btnSavePizza = new System.Windows.Forms.Button();
-            this.btnCancelPizza = new System.Windows.Forms.Button();
-            this.btnDeletePizza = new System.Windows.Forms.Button();
-            this.btnEditPizza = new System.Windows.Forms.Button();
-            this.btnAddPizza = new System.Windows.Forms.Button();
-            this.dataGridViewSalad = new System.Windows.Forms.DataGridView();
+            this.dataGridViewPizza = new System.Windows.Forms.DataGridView();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.btnSaveSalad = new System.Windows.Forms.Button();
+            this.btnCancelSalad = new System.Windows.Forms.Button();
+            this.btnDeleteSalad = new System.Windows.Forms.Button();
+            this.btnEditSalad = new System.Windows.Forms.Button();
+            this.btnAddSalad = new System.Windows.Forms.Button();
             this.txtBoxDesSalad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBoxPriceSalad = new System.Windows.Forms.TextBox();
@@ -155,12 +156,13 @@
             this.lbIdSal = new System.Windows.Forms.Label();
             this.btnBrowseSalad = new System.Windows.Forms.Button();
             this.pBoxImgSalad = new System.Windows.Forms.PictureBox();
-            this.btnSaveSalad = new System.Windows.Forms.Button();
-            this.btnCancelSalad = new System.Windows.Forms.Button();
-            this.btnDeleteSalad = new System.Windows.Forms.Button();
-            this.btnEditSalad = new System.Windows.Forms.Button();
-            this.btnAddSalad = new System.Windows.Forms.Button();
-            this.dataGridViewDrink = new System.Windows.Forms.DataGridView();
+            this.dataGridViewSalad = new System.Windows.Forms.DataGridView();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.btnSaveDrink = new System.Windows.Forms.Button();
+            this.btnCancelDrink = new System.Windows.Forms.Button();
+            this.btnDeleteDrink = new System.Windows.Forms.Button();
+            this.btnEditDrink = new System.Windows.Forms.Button();
+            this.btnAddDrink = new System.Windows.Forms.Button();
             this.txtBoxDesDrink = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtBoxPriceDrink = new System.Windows.Forms.TextBox();
@@ -173,12 +175,13 @@
             this.label13 = new System.Windows.Forms.Label();
             this.btnBrowseDrink = new System.Windows.Forms.Button();
             this.pBoxImgDrink = new System.Windows.Forms.PictureBox();
-            this.btnSaveDrink = new System.Windows.Forms.Button();
-            this.btnCancelDrink = new System.Windows.Forms.Button();
-            this.btnDeleteDrink = new System.Windows.Forms.Button();
-            this.btnEditDrink = new System.Windows.Forms.Button();
-            this.btnAddDrink = new System.Windows.Forms.Button();
-            this.dataGridViewDesert = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDrink = new System.Windows.Forms.DataGridView();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.btnSaveDesert = new System.Windows.Forms.Button();
+            this.btnCancelDesert = new System.Windows.Forms.Button();
+            this.btnDeleteDesert = new System.Windows.Forms.Button();
+            this.btnEditDesert = new System.Windows.Forms.Button();
+            this.btnAddDesert = new System.Windows.Forms.Button();
             this.txtBoxDesDesert = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtBoxPriceDesert = new System.Windows.Forms.TextBox();
@@ -191,11 +194,8 @@
             this.label18 = new System.Windows.Forms.Label();
             this.btnBrowseDesert = new System.Windows.Forms.Button();
             this.pBoxImgDesert = new System.Windows.Forms.PictureBox();
-            this.btnSaveDesert = new System.Windows.Forms.Button();
-            this.btnCancelDesert = new System.Windows.Forms.Button();
-            this.btnDeleteDesert = new System.Windows.Forms.Button();
-            this.btnEditDesert = new System.Windows.Forms.Button();
-            this.btnAddDesert = new System.Windows.Forms.Button();
+            this.dataGridViewDesert = new System.Windows.Forms.DataGridView();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -273,17 +273,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgToast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewToast)).BeginInit();
             this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgPizza)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizza)).BeginInit();
+            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgSalad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDrink)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalad)).BeginInit();
+            this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDrink)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDesert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDrink)).BeginInit();
+            this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDesert)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDesert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
@@ -1299,117 +1299,56 @@
             this.tabPage6.UseVisualStyleBackColor = true;
             this.tabPage6.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage6_MouseDoubleClick);
             // 
-            // tabPage7
+            // btnSavePizza
             // 
-            this.tabPage7.Controls.Add(this.btnSaveSalad);
-            this.tabPage7.Controls.Add(this.btnCancelSalad);
-            this.tabPage7.Controls.Add(this.btnDeleteSalad);
-            this.tabPage7.Controls.Add(this.btnEditSalad);
-            this.tabPage7.Controls.Add(this.btnAddSalad);
-            this.tabPage7.Controls.Add(this.txtBoxDesSalad);
-            this.tabPage7.Controls.Add(this.label5);
-            this.tabPage7.Controls.Add(this.txtBoxPriceSalad);
-            this.tabPage7.Controls.Add(this.label6);
-            this.tabPage7.Controls.Add(this.txtBoxQuantSalad);
-            this.tabPage7.Controls.Add(this.label7);
-            this.tabPage7.Controls.Add(this.txtBoxProdNameSalad);
-            this.tabPage7.Controls.Add(this.label8);
-            this.tabPage7.Controls.Add(this.txtBoxIdSalad);
-            this.tabPage7.Controls.Add(this.lbIdSal);
-            this.tabPage7.Controls.Add(this.btnBrowseSalad);
-            this.tabPage7.Controls.Add(this.pBoxImgSalad);
-            this.tabPage7.Controls.Add(this.dataGridViewSalad);
-            this.tabPage7.Location = new System.Drawing.Point(4, 4);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(872, 504);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Salads";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            this.tabPage7.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage7_MouseDoubleClick);
+            this.btnSavePizza.Location = new System.Drawing.Point(477, 444);
+            this.btnSavePizza.Name = "btnSavePizza";
+            this.btnSavePizza.Size = new System.Drawing.Size(75, 23);
+            this.btnSavePizza.TabIndex = 43;
+            this.btnSavePizza.Text = "Save";
+            this.btnSavePizza.UseVisualStyleBackColor = true;
+            this.btnSavePizza.Click += new System.EventHandler(this.btnSavePizza_Click);
             // 
-            // tabPage8
+            // btnCancelPizza
             // 
-            this.tabPage8.Controls.Add(this.btnSaveDrink);
-            this.tabPage8.Controls.Add(this.btnCancelDrink);
-            this.tabPage8.Controls.Add(this.btnDeleteDrink);
-            this.tabPage8.Controls.Add(this.btnEditDrink);
-            this.tabPage8.Controls.Add(this.btnAddDrink);
-            this.tabPage8.Controls.Add(this.txtBoxDesDrink);
-            this.tabPage8.Controls.Add(this.label9);
-            this.tabPage8.Controls.Add(this.txtBoxPriceDrink);
-            this.tabPage8.Controls.Add(this.label10);
-            this.tabPage8.Controls.Add(this.txtBoxQuantDrink);
-            this.tabPage8.Controls.Add(this.label11);
-            this.tabPage8.Controls.Add(this.txtBoxProdNameDrink);
-            this.tabPage8.Controls.Add(this.label12);
-            this.tabPage8.Controls.Add(this.txtBoxIdDrink);
-            this.tabPage8.Controls.Add(this.label13);
-            this.tabPage8.Controls.Add(this.btnBrowseDrink);
-            this.tabPage8.Controls.Add(this.pBoxImgDrink);
-            this.tabPage8.Controls.Add(this.dataGridViewDrink);
-            this.tabPage8.Location = new System.Drawing.Point(4, 4);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(872, 504);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Drinks";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            this.tabPage8.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage8_MouseDoubleClick);
+            this.btnCancelPizza.Location = new System.Drawing.Point(291, 444);
+            this.btnCancelPizza.Name = "btnCancelPizza";
+            this.btnCancelPizza.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelPizza.TabIndex = 42;
+            this.btnCancelPizza.Text = "Cancel";
+            this.btnCancelPizza.UseVisualStyleBackColor = true;
+            this.btnCancelPizza.Click += new System.EventHandler(this.btnCancelPizza_Click);
             // 
-            // tabPage9
+            // btnDeletePizza
             // 
-            this.tabPage9.Controls.Add(this.btnSaveDesert);
-            this.tabPage9.Controls.Add(this.btnCancelDesert);
-            this.tabPage9.Controls.Add(this.btnDeleteDesert);
-            this.tabPage9.Controls.Add(this.btnEditDesert);
-            this.tabPage9.Controls.Add(this.btnAddDesert);
-            this.tabPage9.Controls.Add(this.txtBoxDesDesert);
-            this.tabPage9.Controls.Add(this.label14);
-            this.tabPage9.Controls.Add(this.txtBoxPriceDesert);
-            this.tabPage9.Controls.Add(this.label15);
-            this.tabPage9.Controls.Add(this.txtBoxQuantDesert);
-            this.tabPage9.Controls.Add(this.label16);
-            this.tabPage9.Controls.Add(this.txtBoxProdNameDesert);
-            this.tabPage9.Controls.Add(this.label17);
-            this.tabPage9.Controls.Add(this.txtBoxIdDesert);
-            this.tabPage9.Controls.Add(this.label18);
-            this.tabPage9.Controls.Add(this.btnBrowseDesert);
-            this.tabPage9.Controls.Add(this.pBoxImgDesert);
-            this.tabPage9.Controls.Add(this.dataGridViewDesert);
-            this.tabPage9.Location = new System.Drawing.Point(4, 4);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(872, 504);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Desserts";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            this.tabPage9.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage9_MouseDoubleClick);
+            this.btnDeletePizza.Location = new System.Drawing.Point(384, 444);
+            this.btnDeletePizza.Name = "btnDeletePizza";
+            this.btnDeletePizza.Size = new System.Drawing.Size(75, 23);
+            this.btnDeletePizza.TabIndex = 41;
+            this.btnDeletePizza.Text = "Delete";
+            this.btnDeletePizza.UseVisualStyleBackColor = true;
+            this.btnDeletePizza.Click += new System.EventHandler(this.btnDeletePizza_Click);
             // 
-            // tabPage10
+            // btnEditPizza
             // 
-            this.tabPage10.Location = new System.Drawing.Point(4, 4);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(872, 504);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.UseVisualStyleBackColor = true;
+            this.btnEditPizza.Location = new System.Drawing.Point(198, 444);
+            this.btnEditPizza.Name = "btnEditPizza";
+            this.btnEditPizza.Size = new System.Drawing.Size(75, 23);
+            this.btnEditPizza.TabIndex = 40;
+            this.btnEditPizza.Text = "Edit";
+            this.btnEditPizza.UseVisualStyleBackColor = true;
+            this.btnEditPizza.Click += new System.EventHandler(this.btnEditPizza_Click);
             // 
-            // dataGridViewPizza
+            // btnAddPizza
             // 
-            this.dataGridViewPizza.AutoGenerateColumns = false;
-            this.dataGridViewPizza.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewPizza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPizza.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn5,
-            this.productNameDataGridViewTextBoxColumn3,
-            this.imageUrlDataGridViewTextBoxColumn2,
-            this.quantityDataGridViewTextBoxColumn2,
-            this.priceDataGridViewTextBoxColumn2,
-            this.descriptionDataGridViewTextBoxColumn3,
-            this.categoryDataGridViewTextBoxColumn2});
-            this.dataGridViewPizza.DataSource = this.pizzasBindingSource;
-            this.dataGridViewPizza.Location = new System.Drawing.Point(5, 5);
-            this.dataGridViewPizza.Name = "dataGridViewPizza";
-            this.dataGridViewPizza.Size = new System.Drawing.Size(545, 395);
-            this.dataGridViewPizza.TabIndex = 0;
-            this.dataGridViewPizza.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPizza_CellClick);
+            this.btnAddPizza.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAddPizza.Location = new System.Drawing.Point(105, 444);
+            this.btnAddPizza.Name = "btnAddPizza";
+            this.btnAddPizza.Size = new System.Drawing.Size(75, 23);
+            this.btnAddPizza.TabIndex = 39;
+            this.btnAddPizza.Text = "Add";
+            this.btnAddPizza.UseVisualStyleBackColor = false;
+            this.btnAddPizza.Click += new System.EventHandler(this.btnAddPizza_Click);
             // 
             // txtBoxDesPizza
             // 
@@ -1519,77 +1458,104 @@
             this.pBoxImgPizza.TabIndex = 25;
             this.pBoxImgPizza.TabStop = false;
             // 
-            // btnSavePizza
+            // dataGridViewPizza
             // 
-            this.btnSavePizza.Location = new System.Drawing.Point(477, 444);
-            this.btnSavePizza.Name = "btnSavePizza";
-            this.btnSavePizza.Size = new System.Drawing.Size(75, 23);
-            this.btnSavePizza.TabIndex = 43;
-            this.btnSavePizza.Text = "Save";
-            this.btnSavePizza.UseVisualStyleBackColor = true;
-            this.btnSavePizza.Click += new System.EventHandler(this.btnSavePizza_Click);
+            this.dataGridViewPizza.AutoGenerateColumns = false;
+            this.dataGridViewPizza.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewPizza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPizza.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn5,
+            this.productNameDataGridViewTextBoxColumn3,
+            this.imageUrlDataGridViewTextBoxColumn2,
+            this.quantityDataGridViewTextBoxColumn2,
+            this.priceDataGridViewTextBoxColumn2,
+            this.descriptionDataGridViewTextBoxColumn3,
+            this.categoryDataGridViewTextBoxColumn2});
+            this.dataGridViewPizza.DataSource = this.pizzasBindingSource;
+            this.dataGridViewPizza.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewPizza.Name = "dataGridViewPizza";
+            this.dataGridViewPizza.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewPizza.TabIndex = 0;
+            this.dataGridViewPizza.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPizza_CellClick);
             // 
-            // btnCancelPizza
+            // tabPage7
             // 
-            this.btnCancelPizza.Location = new System.Drawing.Point(291, 444);
-            this.btnCancelPizza.Name = "btnCancelPizza";
-            this.btnCancelPizza.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelPizza.TabIndex = 42;
-            this.btnCancelPizza.Text = "Cancel";
-            this.btnCancelPizza.UseVisualStyleBackColor = true;
-            this.btnCancelPizza.Click += new System.EventHandler(this.btnCancelPizza_Click);
+            this.tabPage7.Controls.Add(this.btnSaveSalad);
+            this.tabPage7.Controls.Add(this.btnCancelSalad);
+            this.tabPage7.Controls.Add(this.btnDeleteSalad);
+            this.tabPage7.Controls.Add(this.btnEditSalad);
+            this.tabPage7.Controls.Add(this.btnAddSalad);
+            this.tabPage7.Controls.Add(this.txtBoxDesSalad);
+            this.tabPage7.Controls.Add(this.label5);
+            this.tabPage7.Controls.Add(this.txtBoxPriceSalad);
+            this.tabPage7.Controls.Add(this.label6);
+            this.tabPage7.Controls.Add(this.txtBoxQuantSalad);
+            this.tabPage7.Controls.Add(this.label7);
+            this.tabPage7.Controls.Add(this.txtBoxProdNameSalad);
+            this.tabPage7.Controls.Add(this.label8);
+            this.tabPage7.Controls.Add(this.txtBoxIdSalad);
+            this.tabPage7.Controls.Add(this.lbIdSal);
+            this.tabPage7.Controls.Add(this.btnBrowseSalad);
+            this.tabPage7.Controls.Add(this.pBoxImgSalad);
+            this.tabPage7.Controls.Add(this.dataGridViewSalad);
+            this.tabPage7.Location = new System.Drawing.Point(4, 4);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(872, 504);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Salads";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            this.tabPage7.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage7_MouseDoubleClick);
             // 
-            // btnDeletePizza
+            // btnSaveSalad
             // 
-            this.btnDeletePizza.Location = new System.Drawing.Point(384, 444);
-            this.btnDeletePizza.Name = "btnDeletePizza";
-            this.btnDeletePizza.Size = new System.Drawing.Size(75, 23);
-            this.btnDeletePizza.TabIndex = 41;
-            this.btnDeletePizza.Text = "Delete";
-            this.btnDeletePizza.UseVisualStyleBackColor = true;
-            this.btnDeletePizza.Click += new System.EventHandler(this.btnDeletePizza_Click);
+            this.btnSaveSalad.Location = new System.Drawing.Point(474, 447);
+            this.btnSaveSalad.Name = "btnSaveSalad";
+            this.btnSaveSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveSalad.TabIndex = 53;
+            this.btnSaveSalad.Text = "Save";
+            this.btnSaveSalad.UseVisualStyleBackColor = true;
+            this.btnSaveSalad.Click += new System.EventHandler(this.btnSaveSalad_Click);
             // 
-            // btnEditPizza
+            // btnCancelSalad
             // 
-            this.btnEditPizza.Location = new System.Drawing.Point(198, 444);
-            this.btnEditPizza.Name = "btnEditPizza";
-            this.btnEditPizza.Size = new System.Drawing.Size(75, 23);
-            this.btnEditPizza.TabIndex = 40;
-            this.btnEditPizza.Text = "Edit";
-            this.btnEditPizza.UseVisualStyleBackColor = true;
-            this.btnEditPizza.Click += new System.EventHandler(this.btnEditPizza_Click);
+            this.btnCancelSalad.Location = new System.Drawing.Point(288, 447);
+            this.btnCancelSalad.Name = "btnCancelSalad";
+            this.btnCancelSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelSalad.TabIndex = 52;
+            this.btnCancelSalad.Text = "Cancel";
+            this.btnCancelSalad.UseVisualStyleBackColor = true;
+            this.btnCancelSalad.Click += new System.EventHandler(this.btnCancelSalad_Click);
             // 
-            // btnAddPizza
+            // btnDeleteSalad
             // 
-            this.btnAddPizza.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddPizza.Location = new System.Drawing.Point(105, 444);
-            this.btnAddPizza.Name = "btnAddPizza";
-            this.btnAddPizza.Size = new System.Drawing.Size(75, 23);
-            this.btnAddPizza.TabIndex = 39;
-            this.btnAddPizza.Text = "Add";
-            this.btnAddPizza.UseVisualStyleBackColor = false;
-            this.btnAddPizza.Click += new System.EventHandler(this.btnAddPizza_Click);
+            this.btnDeleteSalad.Location = new System.Drawing.Point(381, 447);
+            this.btnDeleteSalad.Name = "btnDeleteSalad";
+            this.btnDeleteSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteSalad.TabIndex = 51;
+            this.btnDeleteSalad.Text = "Delete";
+            this.btnDeleteSalad.UseVisualStyleBackColor = true;
+            this.btnDeleteSalad.Click += new System.EventHandler(this.btnDeleteSalad_Click);
             // 
-            // dataGridViewSalad
+            // btnEditSalad
             // 
-            this.dataGridViewSalad.AutoGenerateColumns = false;
-            this.dataGridViewSalad.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewSalad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSalad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn6,
-            this.productNameDataGridViewTextBoxColumn4,
-            this.imageUrlDataGridViewTextBoxColumn3,
-            this.quantityDataGridViewTextBoxColumn3,
-            this.priceDataGridViewTextBoxColumn3,
-            this.descriptionDataGridViewTextBoxColumn4,
-            this.categoryDataGridViewTextBoxColumn3});
-            this.dataGridViewSalad.DataSource = this.saladBindingSource;
-            this.dataGridViewSalad.GridColor = System.Drawing.Color.White;
-            this.dataGridViewSalad.Location = new System.Drawing.Point(5, 5);
-            this.dataGridViewSalad.Name = "dataGridViewSalad";
-            this.dataGridViewSalad.Size = new System.Drawing.Size(545, 395);
-            this.dataGridViewSalad.TabIndex = 0;
-            this.dataGridViewSalad.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSalad_CellClick);
+            this.btnEditSalad.Location = new System.Drawing.Point(195, 447);
+            this.btnEditSalad.Name = "btnEditSalad";
+            this.btnEditSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnEditSalad.TabIndex = 50;
+            this.btnEditSalad.Text = "Edit";
+            this.btnEditSalad.UseVisualStyleBackColor = true;
+            this.btnEditSalad.Click += new System.EventHandler(this.btnEditSalad_Click);
+            // 
+            // btnAddSalad
+            // 
+            this.btnAddSalad.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAddSalad.Location = new System.Drawing.Point(102, 447);
+            this.btnAddSalad.Name = "btnAddSalad";
+            this.btnAddSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnAddSalad.TabIndex = 49;
+            this.btnAddSalad.Text = "Add";
+            this.btnAddSalad.UseVisualStyleBackColor = false;
+            this.btnAddSalad.Click += new System.EventHandler(this.btnAddSalad_Click);
             // 
             // txtBoxDesSalad
             // 
@@ -1699,77 +1665,104 @@
             this.pBoxImgSalad.TabIndex = 37;
             this.pBoxImgSalad.TabStop = false;
             // 
-            // btnSaveSalad
+            // dataGridViewSalad
             // 
-            this.btnSaveSalad.Location = new System.Drawing.Point(474, 447);
-            this.btnSaveSalad.Name = "btnSaveSalad";
-            this.btnSaveSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveSalad.TabIndex = 53;
-            this.btnSaveSalad.Text = "Save";
-            this.btnSaveSalad.UseVisualStyleBackColor = true;
-            this.btnSaveSalad.Click += new System.EventHandler(this.btnSaveSalad_Click);
+            this.dataGridViewSalad.AutoGenerateColumns = false;
+            this.dataGridViewSalad.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewSalad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSalad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn6,
+            this.productNameDataGridViewTextBoxColumn4,
+            this.imageUrlDataGridViewTextBoxColumn3,
+            this.quantityDataGridViewTextBoxColumn3,
+            this.priceDataGridViewTextBoxColumn3,
+            this.descriptionDataGridViewTextBoxColumn4,
+            this.categoryDataGridViewTextBoxColumn3});
+            this.dataGridViewSalad.DataSource = this.saladBindingSource;
+            this.dataGridViewSalad.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewSalad.Name = "dataGridViewSalad";
+            this.dataGridViewSalad.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewSalad.TabIndex = 0;
+            this.dataGridViewSalad.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSalad_CellClick);
             // 
-            // btnCancelSalad
+            // tabPage8
             // 
-            this.btnCancelSalad.Location = new System.Drawing.Point(288, 447);
-            this.btnCancelSalad.Name = "btnCancelSalad";
-            this.btnCancelSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelSalad.TabIndex = 52;
-            this.btnCancelSalad.Text = "Cancel";
-            this.btnCancelSalad.UseVisualStyleBackColor = true;
-            this.btnCancelSalad.Click += new System.EventHandler(this.btnCancelSalad_Click);
+            this.tabPage8.Controls.Add(this.btnSaveDrink);
+            this.tabPage8.Controls.Add(this.btnCancelDrink);
+            this.tabPage8.Controls.Add(this.btnDeleteDrink);
+            this.tabPage8.Controls.Add(this.btnEditDrink);
+            this.tabPage8.Controls.Add(this.btnAddDrink);
+            this.tabPage8.Controls.Add(this.txtBoxDesDrink);
+            this.tabPage8.Controls.Add(this.label9);
+            this.tabPage8.Controls.Add(this.txtBoxPriceDrink);
+            this.tabPage8.Controls.Add(this.label10);
+            this.tabPage8.Controls.Add(this.txtBoxQuantDrink);
+            this.tabPage8.Controls.Add(this.label11);
+            this.tabPage8.Controls.Add(this.txtBoxProdNameDrink);
+            this.tabPage8.Controls.Add(this.label12);
+            this.tabPage8.Controls.Add(this.txtBoxIdDrink);
+            this.tabPage8.Controls.Add(this.label13);
+            this.tabPage8.Controls.Add(this.btnBrowseDrink);
+            this.tabPage8.Controls.Add(this.pBoxImgDrink);
+            this.tabPage8.Controls.Add(this.dataGridViewDrink);
+            this.tabPage8.Location = new System.Drawing.Point(4, 4);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(872, 504);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Drinks";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            this.tabPage8.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage8_MouseDoubleClick);
             // 
-            // btnDeleteSalad
+            // btnSaveDrink
             // 
-            this.btnDeleteSalad.Location = new System.Drawing.Point(381, 447);
-            this.btnDeleteSalad.Name = "btnDeleteSalad";
-            this.btnDeleteSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteSalad.TabIndex = 51;
-            this.btnDeleteSalad.Text = "Delete";
-            this.btnDeleteSalad.UseVisualStyleBackColor = true;
-            this.btnDeleteSalad.Click += new System.EventHandler(this.btnDeleteSalad_Click);
+            this.btnSaveDrink.Location = new System.Drawing.Point(475, 444);
+            this.btnSaveDrink.Name = "btnSaveDrink";
+            this.btnSaveDrink.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveDrink.TabIndex = 65;
+            this.btnSaveDrink.Text = "Save";
+            this.btnSaveDrink.UseVisualStyleBackColor = true;
+            this.btnSaveDrink.Click += new System.EventHandler(this.btnSaveDrink_Click);
             // 
-            // btnEditSalad
+            // btnCancelDrink
             // 
-            this.btnEditSalad.Location = new System.Drawing.Point(195, 447);
-            this.btnEditSalad.Name = "btnEditSalad";
-            this.btnEditSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnEditSalad.TabIndex = 50;
-            this.btnEditSalad.Text = "Edit";
-            this.btnEditSalad.UseVisualStyleBackColor = true;
-            this.btnEditSalad.Click += new System.EventHandler(this.btnEditSalad_Click);
+            this.btnCancelDrink.Location = new System.Drawing.Point(289, 444);
+            this.btnCancelDrink.Name = "btnCancelDrink";
+            this.btnCancelDrink.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelDrink.TabIndex = 64;
+            this.btnCancelDrink.Text = "Cancel";
+            this.btnCancelDrink.UseVisualStyleBackColor = true;
+            this.btnCancelDrink.Click += new System.EventHandler(this.btnCancelDrink_Click);
             // 
-            // btnAddSalad
+            // btnDeleteDrink
             // 
-            this.btnAddSalad.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddSalad.Location = new System.Drawing.Point(102, 447);
-            this.btnAddSalad.Name = "btnAddSalad";
-            this.btnAddSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnAddSalad.TabIndex = 49;
-            this.btnAddSalad.Text = "Add";
-            this.btnAddSalad.UseVisualStyleBackColor = false;
-            this.btnAddSalad.Click += new System.EventHandler(this.btnAddSalad_Click);
+            this.btnDeleteDrink.Location = new System.Drawing.Point(382, 444);
+            this.btnDeleteDrink.Name = "btnDeleteDrink";
+            this.btnDeleteDrink.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteDrink.TabIndex = 63;
+            this.btnDeleteDrink.Text = "Delete";
+            this.btnDeleteDrink.UseVisualStyleBackColor = true;
+            this.btnDeleteDrink.Click += new System.EventHandler(this.btnDeleteDrink_Click);
             // 
-            // dataGridViewDrink
+            // btnEditDrink
             // 
-            this.dataGridViewDrink.AutoGenerateColumns = false;
-            this.dataGridViewDrink.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewDrink.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDrink.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn7,
-            this.productNameDataGridViewTextBoxColumn5,
-            this.imageUrlDataGridViewTextBoxColumn4,
-            this.quantityDataGridViewTextBoxColumn4,
-            this.priceDataGridViewTextBoxColumn4,
-            this.descriptionDataGridViewTextBoxColumn5,
-            this.categoryDataGridViewTextBoxColumn4});
-            this.dataGridViewDrink.DataSource = this.drinkBindingSource;
-            this.dataGridViewDrink.GridColor = System.Drawing.Color.White;
-            this.dataGridViewDrink.Location = new System.Drawing.Point(5, 5);
-            this.dataGridViewDrink.Name = "dataGridViewDrink";
-            this.dataGridViewDrink.Size = new System.Drawing.Size(545, 395);
-            this.dataGridViewDrink.TabIndex = 0;
-            this.dataGridViewDrink.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDrink_CellClick);
+            this.btnEditDrink.Location = new System.Drawing.Point(196, 444);
+            this.btnEditDrink.Name = "btnEditDrink";
+            this.btnEditDrink.Size = new System.Drawing.Size(75, 23);
+            this.btnEditDrink.TabIndex = 62;
+            this.btnEditDrink.Text = "Edit";
+            this.btnEditDrink.UseVisualStyleBackColor = true;
+            this.btnEditDrink.Click += new System.EventHandler(this.btnEditDrink_Click);
+            // 
+            // btnAddDrink
+            // 
+            this.btnAddDrink.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAddDrink.Location = new System.Drawing.Point(103, 444);
+            this.btnAddDrink.Name = "btnAddDrink";
+            this.btnAddDrink.Size = new System.Drawing.Size(75, 23);
+            this.btnAddDrink.TabIndex = 61;
+            this.btnAddDrink.Text = "Add";
+            this.btnAddDrink.UseVisualStyleBackColor = false;
+            this.btnAddDrink.Click += new System.EventHandler(this.btnAddDrink_Click);
             // 
             // txtBoxDesDrink
             // 
@@ -1879,77 +1872,104 @@
             this.pBoxImgDrink.TabIndex = 49;
             this.pBoxImgDrink.TabStop = false;
             // 
-            // btnSaveDrink
+            // dataGridViewDrink
             // 
-            this.btnSaveDrink.Location = new System.Drawing.Point(475, 444);
-            this.btnSaveDrink.Name = "btnSaveDrink";
-            this.btnSaveDrink.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveDrink.TabIndex = 65;
-            this.btnSaveDrink.Text = "Save";
-            this.btnSaveDrink.UseVisualStyleBackColor = true;
-            this.btnSaveDrink.Click += new System.EventHandler(this.btnSaveDrink_Click);
+            this.dataGridViewDrink.AutoGenerateColumns = false;
+            this.dataGridViewDrink.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewDrink.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDrink.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn7,
+            this.productNameDataGridViewTextBoxColumn5,
+            this.imageUrlDataGridViewTextBoxColumn4,
+            this.quantityDataGridViewTextBoxColumn4,
+            this.priceDataGridViewTextBoxColumn4,
+            this.descriptionDataGridViewTextBoxColumn5,
+            this.categoryDataGridViewTextBoxColumn4});
+            this.dataGridViewDrink.DataSource = this.drinkBindingSource;
+            this.dataGridViewDrink.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewDrink.Name = "dataGridViewDrink";
+            this.dataGridViewDrink.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewDrink.TabIndex = 0;
+            this.dataGridViewDrink.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDrink_CellClick);
             // 
-            // btnCancelDrink
+            // tabPage9
             // 
-            this.btnCancelDrink.Location = new System.Drawing.Point(289, 444);
-            this.btnCancelDrink.Name = "btnCancelDrink";
-            this.btnCancelDrink.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelDrink.TabIndex = 64;
-            this.btnCancelDrink.Text = "Cancel";
-            this.btnCancelDrink.UseVisualStyleBackColor = true;
-            this.btnCancelDrink.Click += new System.EventHandler(this.btnCancelDrink_Click);
+            this.tabPage9.Controls.Add(this.btnSaveDesert);
+            this.tabPage9.Controls.Add(this.btnCancelDesert);
+            this.tabPage9.Controls.Add(this.btnDeleteDesert);
+            this.tabPage9.Controls.Add(this.btnEditDesert);
+            this.tabPage9.Controls.Add(this.btnAddDesert);
+            this.tabPage9.Controls.Add(this.txtBoxDesDesert);
+            this.tabPage9.Controls.Add(this.label14);
+            this.tabPage9.Controls.Add(this.txtBoxPriceDesert);
+            this.tabPage9.Controls.Add(this.label15);
+            this.tabPage9.Controls.Add(this.txtBoxQuantDesert);
+            this.tabPage9.Controls.Add(this.label16);
+            this.tabPage9.Controls.Add(this.txtBoxProdNameDesert);
+            this.tabPage9.Controls.Add(this.label17);
+            this.tabPage9.Controls.Add(this.txtBoxIdDesert);
+            this.tabPage9.Controls.Add(this.label18);
+            this.tabPage9.Controls.Add(this.btnBrowseDesert);
+            this.tabPage9.Controls.Add(this.pBoxImgDesert);
+            this.tabPage9.Controls.Add(this.dataGridViewDesert);
+            this.tabPage9.Location = new System.Drawing.Point(4, 4);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(872, 504);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Desserts";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            this.tabPage9.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage9_MouseDoubleClick);
             // 
-            // btnDeleteDrink
+            // btnSaveDesert
             // 
-            this.btnDeleteDrink.Location = new System.Drawing.Point(382, 444);
-            this.btnDeleteDrink.Name = "btnDeleteDrink";
-            this.btnDeleteDrink.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteDrink.TabIndex = 63;
-            this.btnDeleteDrink.Text = "Delete";
-            this.btnDeleteDrink.UseVisualStyleBackColor = true;
-            this.btnDeleteDrink.Click += new System.EventHandler(this.btnDeleteDrink_Click);
+            this.btnSaveDesert.Location = new System.Drawing.Point(479, 446);
+            this.btnSaveDesert.Name = "btnSaveDesert";
+            this.btnSaveDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveDesert.TabIndex = 77;
+            this.btnSaveDesert.Text = "Save";
+            this.btnSaveDesert.UseVisualStyleBackColor = true;
+            this.btnSaveDesert.Click += new System.EventHandler(this.btnSaveDesert_Click);
             // 
-            // btnEditDrink
+            // btnCancelDesert
             // 
-            this.btnEditDrink.Location = new System.Drawing.Point(196, 444);
-            this.btnEditDrink.Name = "btnEditDrink";
-            this.btnEditDrink.Size = new System.Drawing.Size(75, 23);
-            this.btnEditDrink.TabIndex = 62;
-            this.btnEditDrink.Text = "Edit";
-            this.btnEditDrink.UseVisualStyleBackColor = true;
-            this.btnEditDrink.Click += new System.EventHandler(this.btnEditDrink_Click);
+            this.btnCancelDesert.Location = new System.Drawing.Point(293, 446);
+            this.btnCancelDesert.Name = "btnCancelDesert";
+            this.btnCancelDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelDesert.TabIndex = 76;
+            this.btnCancelDesert.Text = "Cancel";
+            this.btnCancelDesert.UseVisualStyleBackColor = true;
+            this.btnCancelDesert.Click += new System.EventHandler(this.btnCancelDesert_Click);
             // 
-            // btnAddDrink
+            // btnDeleteDesert
             // 
-            this.btnAddDrink.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddDrink.Location = new System.Drawing.Point(103, 444);
-            this.btnAddDrink.Name = "btnAddDrink";
-            this.btnAddDrink.Size = new System.Drawing.Size(75, 23);
-            this.btnAddDrink.TabIndex = 61;
-            this.btnAddDrink.Text = "Add";
-            this.btnAddDrink.UseVisualStyleBackColor = false;
-            this.btnAddDrink.Click += new System.EventHandler(this.btnAddDrink_Click);
+            this.btnDeleteDesert.Location = new System.Drawing.Point(386, 446);
+            this.btnDeleteDesert.Name = "btnDeleteDesert";
+            this.btnDeleteDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteDesert.TabIndex = 75;
+            this.btnDeleteDesert.Text = "Delete";
+            this.btnDeleteDesert.UseVisualStyleBackColor = true;
+            this.btnDeleteDesert.Click += new System.EventHandler(this.btnDeleteDesert_Click);
             // 
-            // dataGridViewDesert
+            // btnEditDesert
             // 
-            this.dataGridViewDesert.AutoGenerateColumns = false;
-            this.dataGridViewDesert.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewDesert.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDesert.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn8,
-            this.productNameDataGridViewTextBoxColumn6,
-            this.imageUrlDataGridViewTextBoxColumn5,
-            this.quantityDataGridViewTextBoxColumn5,
-            this.priceDataGridViewTextBoxColumn5,
-            this.descriptionDataGridViewTextBoxColumn6,
-            this.categoryDataGridViewTextBoxColumn5});
-            this.dataGridViewDesert.DataSource = this.desertBindingSource;
-            this.dataGridViewDesert.GridColor = System.Drawing.Color.White;
-            this.dataGridViewDesert.Location = new System.Drawing.Point(5, 5);
-            this.dataGridViewDesert.Name = "dataGridViewDesert";
-            this.dataGridViewDesert.Size = new System.Drawing.Size(545, 395);
-            this.dataGridViewDesert.TabIndex = 0;
-            this.dataGridViewDesert.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDesert_CellClick);
+            this.btnEditDesert.Location = new System.Drawing.Point(200, 446);
+            this.btnEditDesert.Name = "btnEditDesert";
+            this.btnEditDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnEditDesert.TabIndex = 74;
+            this.btnEditDesert.Text = "Edit";
+            this.btnEditDesert.UseVisualStyleBackColor = true;
+            this.btnEditDesert.Click += new System.EventHandler(this.btnEditDesert_Click);
+            // 
+            // btnAddDesert
+            // 
+            this.btnAddDesert.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAddDesert.Location = new System.Drawing.Point(107, 446);
+            this.btnAddDesert.Name = "btnAddDesert";
+            this.btnAddDesert.Size = new System.Drawing.Size(75, 23);
+            this.btnAddDesert.TabIndex = 73;
+            this.btnAddDesert.Text = "Add";
+            this.btnAddDesert.UseVisualStyleBackColor = false;
+            this.btnAddDesert.Click += new System.EventHandler(this.btnAddDesert_Click);
             // 
             // txtBoxDesDesert
             // 
@@ -2059,56 +2079,33 @@
             this.pBoxImgDesert.TabIndex = 61;
             this.pBoxImgDesert.TabStop = false;
             // 
-            // btnSaveDesert
+            // dataGridViewDesert
             // 
-            this.btnSaveDesert.Location = new System.Drawing.Point(479, 446);
-            this.btnSaveDesert.Name = "btnSaveDesert";
-            this.btnSaveDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveDesert.TabIndex = 77;
-            this.btnSaveDesert.Text = "Save";
-            this.btnSaveDesert.UseVisualStyleBackColor = true;
-            this.btnSaveDesert.Click += new System.EventHandler(this.btnSaveDesert_Click);
+            this.dataGridViewDesert.AutoGenerateColumns = false;
+            this.dataGridViewDesert.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewDesert.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDesert.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn8,
+            this.productNameDataGridViewTextBoxColumn6,
+            this.imageUrlDataGridViewTextBoxColumn5,
+            this.quantityDataGridViewTextBoxColumn5,
+            this.priceDataGridViewTextBoxColumn5,
+            this.descriptionDataGridViewTextBoxColumn6,
+            this.categoryDataGridViewTextBoxColumn5});
+            this.dataGridViewDesert.DataSource = this.desertBindingSource;
+            this.dataGridViewDesert.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewDesert.Name = "dataGridViewDesert";
+            this.dataGridViewDesert.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewDesert.TabIndex = 0;
+            this.dataGridViewDesert.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDesert_CellClick);
             // 
-            // btnCancelDesert
+            // tabPage10
             // 
-            this.btnCancelDesert.Location = new System.Drawing.Point(293, 446);
-            this.btnCancelDesert.Name = "btnCancelDesert";
-            this.btnCancelDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelDesert.TabIndex = 76;
-            this.btnCancelDesert.Text = "Cancel";
-            this.btnCancelDesert.UseVisualStyleBackColor = true;
-            this.btnCancelDesert.Click += new System.EventHandler(this.btnCancelDesert_Click);
-            // 
-            // btnDeleteDesert
-            // 
-            this.btnDeleteDesert.Location = new System.Drawing.Point(386, 446);
-            this.btnDeleteDesert.Name = "btnDeleteDesert";
-            this.btnDeleteDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteDesert.TabIndex = 75;
-            this.btnDeleteDesert.Text = "Delete";
-            this.btnDeleteDesert.UseVisualStyleBackColor = true;
-            this.btnDeleteDesert.Click += new System.EventHandler(this.btnDeleteDesert_Click);
-            // 
-            // btnEditDesert
-            // 
-            this.btnEditDesert.Location = new System.Drawing.Point(200, 446);
-            this.btnEditDesert.Name = "btnEditDesert";
-            this.btnEditDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnEditDesert.TabIndex = 74;
-            this.btnEditDesert.Text = "Edit";
-            this.btnEditDesert.UseVisualStyleBackColor = true;
-            this.btnEditDesert.Click += new System.EventHandler(this.btnEditDesert_Click);
-            // 
-            // btnAddDesert
-            // 
-            this.btnAddDesert.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddDesert.Location = new System.Drawing.Point(107, 446);
-            this.btnAddDesert.Name = "btnAddDesert";
-            this.btnAddDesert.Size = new System.Drawing.Size(75, 23);
-            this.btnAddDesert.TabIndex = 73;
-            this.btnAddDesert.Text = "Add";
-            this.btnAddDesert.UseVisualStyleBackColor = false;
-            this.btnAddDesert.Click += new System.EventHandler(this.btnAddDesert_Click);
+            this.tabPage10.Location = new System.Drawing.Point(4, 4);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(872, 504);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // userBindingSource
             // 
@@ -2501,20 +2498,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewToast)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgPizza)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizza)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgSalad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalad)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDrink)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDrink)).EndInit();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizza)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgPizza)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgSalad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDrink)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDrink)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDesert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDesert)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDesert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();

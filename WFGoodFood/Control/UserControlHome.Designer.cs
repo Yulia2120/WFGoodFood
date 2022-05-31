@@ -95,6 +95,7 @@
             this.btnOrder.TabIndex = 4;
             this.btnOrder.Text = "Order Now";
             this.btnOrder.UseVisualStyleBackColor = false;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // pictureBox1
             // 

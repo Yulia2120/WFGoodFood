@@ -102,6 +102,12 @@
     <Compile Include="GUI\FormLoading.Designer.cs">
       <DependentUpon>FormLoading.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormShoppingCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormShoppingCart.Designer.cs">
+      <DependentUpon>FormShoppingCart.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormLoading.resx">
       <DependentUpon>FormLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormShoppingCart.resx">
+      <DependentUpon>FormShoppingCart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -304,6 +313,8 @@
     <None Include="Resources\pablo.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\pngwing.com %282%29.png" />
+    <None Include="Resources\pngwing.com %281%29.png" />
     <None Include="Images\buffalo bleu salads-6-310x260.png" />
     <None Include="Images\blue moon-4-310x260.png" />
     <Content Include="Images\california burger-6-310x260.png" />
