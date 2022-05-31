@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WFGoodFood.DataModel
 {
-    public class Toast
+    public class Pizzas
     {
         public int Id { get; set; }
         [StringLength(255)]
@@ -19,5 +19,4 @@ namespace WFGoodFood.DataModel
         public Category Category { get; set; }
 
     }
-
 }

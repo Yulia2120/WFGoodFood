@@ -37,7 +37,6 @@
             this.lbUserNameuser = new System.Windows.Forms.Label();
             this.lbIduser = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
-            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbPhone = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -53,11 +52,6 @@
             this.txtId = new System.Windows.Forms.TextBox();
             this.lbId = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnSaveAdmin = new System.Windows.Forms.Button();
             this.btnCancelAdmin = new System.Windows.Forms.Button();
@@ -65,16 +59,12 @@
             this.btnEditAdmin = new System.Windows.Forms.Button();
             this.btnAddAdmin = new System.Windows.Forms.Button();
             this.txtPasswordAdmin = new System.Windows.Forms.TextBox();
-            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbPasswordAdmin = new System.Windows.Forms.Label();
             this.txtLoginAdmin = new System.Windows.Forms.TextBox();
             this.lbLoginAdmin = new System.Windows.Forms.Label();
             this.txtIdAdmin = new System.Windows.Forms.TextBox();
             this.lbIdadmin = new System.Windows.Forms.Label();
             this.dataGridViewAdmin = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnSaveCat = new System.Windows.Forms.Button();
             this.btnCancelCat = new System.Windows.Forms.Button();
@@ -82,7 +72,6 @@
             this.btnEditCat = new System.Windows.Forms.Button();
             this.btnAddCat = new System.Windows.Forms.Button();
             this.txtBoxDescript = new System.Windows.Forms.TextBox();
-            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.txtBoxProdName = new System.Windows.Forms.TextBox();
             this.lbProdName = new System.Windows.Forms.Label();
@@ -91,9 +80,6 @@
             this.btnBrowse = new System.Windows.Forms.Button();
             this.pBoxImg = new System.Windows.Forms.PictureBox();
             this.dataGridViewCategory = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ImageUrl = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnSaveBurger = new System.Windows.Forms.Button();
@@ -102,7 +88,6 @@
             this.btnEditBurger = new System.Windows.Forms.Button();
             this.btnAddBurger = new System.Windows.Forms.Button();
             this.txtBoxDescripBurg = new System.Windows.Forms.TextBox();
-            this.burgerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbDescript = new System.Windows.Forms.Label();
             this.txtBoxPrice = new System.Windows.Forms.TextBox();
             this.lbPrice = new System.Windows.Forms.Label();
@@ -115,13 +100,6 @@
             this.btnBrowseBurg = new System.Windows.Forms.Button();
             this.pBoxImage = new System.Windows.Forms.PictureBox();
             this.dataGridViewBurger = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imageUrlDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.btnSaveToast = new System.Windows.Forms.Button();
             this.btnCancelToast = new System.Windows.Forms.Button();
@@ -129,7 +107,6 @@
             this.btnEditToast = new System.Windows.Forms.Button();
             this.btnAddtoast = new System.Windows.Forms.Button();
             this.txtBoxDesToast = new System.Windows.Forms.TextBox();
-            this.toastBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbDesToast = new System.Windows.Forms.Label();
             this.txtBoxPriceToast = new System.Windows.Forms.TextBox();
             this.lbPriceToast = new System.Windows.Forms.Label();
@@ -142,6 +119,34 @@
             this.btnBrowseToast = new System.Windows.Forms.Button();
             this.pBoxImgToast = new System.Windows.Forms.PictureBox();
             this.dataGridViewToast = new System.Windows.Forms.DataGridView();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.burgerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageUrlDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toastBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageUrlDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -149,30 +154,55 @@
             this.priceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.dataGridViewPizza = new System.Windows.Forms.DataGridView();
+            this.txtBoxDesPizza = new System.Windows.Forms.TextBox();
+            this.lbDesPizza = new System.Windows.Forms.Label();
+            this.txtBoxPricePizza = new System.Windows.Forms.TextBox();
+            this.lbPricePizza = new System.Windows.Forms.Label();
+            this.txtBoxQuantPizza = new System.Windows.Forms.TextBox();
+            this.lbQuanPizza = new System.Windows.Forms.Label();
+            this.txtBoxProdNamePizza = new System.Windows.Forms.TextBox();
+            this.lbNamePizza = new System.Windows.Forms.Label();
+            this.txtboxIdPizza = new System.Windows.Forms.TextBox();
+            this.lbIdPizza = new System.Windows.Forms.Label();
+            this.btnBrowsePizza = new System.Windows.Forms.Button();
+            this.pBoxImgPizza = new System.Windows.Forms.PictureBox();
+            this.btnSavePizza = new System.Windows.Forms.Button();
+            this.btnCancelPizza = new System.Windows.Forms.Button();
+            this.btnDeletePizza = new System.Windows.Forms.Button();
+            this.btnEditPizza = new System.Windows.Forms.Button();
+            this.btnAddPizza = new System.Windows.Forms.Button();
+            this.pizzasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageUrlDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmin)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.burgerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBurger)).BeginInit();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toastBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgToast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewToast)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.burgerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toastBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizza)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgPizza)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pizzasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -281,10 +311,6 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(204, 20);
             this.txtPhone.TabIndex = 17;
-            // 
-            // userBindingSource
-            // 
-            this.userBindingSource.DataSource = typeof(WFGoodFood.DataModel.User);
             // 
             // lbPhone
             // 
@@ -427,37 +453,6 @@
             this.dataGridView.TabIndex = 0;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            // 
-            // phoneDataGridViewTextBoxColumn
-            // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.btnSaveAdmin);
@@ -540,10 +535,6 @@
             this.txtPasswordAdmin.Size = new System.Drawing.Size(191, 20);
             this.txtPasswordAdmin.TabIndex = 18;
             // 
-            // adminBindingSource
-            // 
-            this.adminBindingSource.DataSource = typeof(WFGoodFood.DataModel.Admin);
-            // 
             // lbPasswordAdmin
             // 
             this.lbPasswordAdmin.AutoSize = true;
@@ -602,25 +593,6 @@
             this.dataGridViewAdmin.Size = new System.Drawing.Size(545, 395);
             this.dataGridViewAdmin.TabIndex = 0;
             this.dataGridViewAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdmin_CellClick);
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // loginDataGridViewTextBoxColumn
-            // 
-            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
-            this.loginDataGridViewTextBoxColumn.HeaderText = "Login";
-            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
-            // 
-            // passwordDataGridViewTextBoxColumn1
-            // 
-            this.passwordDataGridViewTextBoxColumn1.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn1.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn1.Name = "passwordDataGridViewTextBoxColumn1";
             // 
             // tabPage3
             // 
@@ -707,10 +679,6 @@
             this.txtBoxDescript.Size = new System.Drawing.Size(178, 87);
             this.txtBoxDescript.TabIndex = 8;
             // 
-            // categoryBindingSource
-            // 
-            this.categoryBindingSource.DataSource = typeof(WFGoodFood.DataModel.Category);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -792,25 +760,6 @@
             this.dataGridViewCategory.Size = new System.Drawing.Size(545, 395);
             this.dataGridViewCategory.TabIndex = 0;
             this.dataGridViewCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCategory_CellClick);
-            // 
-            // idDataGridViewTextBoxColumn2
-            // 
-            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn2.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
-            this.idDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // productNameDataGridViewTextBoxColumn
-            // 
-            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
-            this.productNameDataGridViewTextBoxColumn.HeaderText = "ProductName";
-            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             // 
             // ImageUrl
             // 
@@ -905,10 +854,6 @@
             this.txtBoxDescripBurg.Name = "txtBoxDescripBurg";
             this.txtBoxDescripBurg.Size = new System.Drawing.Size(175, 74);
             this.txtBoxDescripBurg.TabIndex = 12;
-            // 
-            // burgerBindingSource
-            // 
-            this.burgerBindingSource.DataSource = typeof(WFGoodFood.DataModel.Burger);
             // 
             // lbDescript
             // 
@@ -1029,49 +974,6 @@
             this.dataGridViewBurger.TabIndex = 0;
             this.dataGridViewBurger.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBurger_CellClick);
             // 
-            // idDataGridViewTextBoxColumn3
-            // 
-            this.idDataGridViewTextBoxColumn3.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn3.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn3.Name = "idDataGridViewTextBoxColumn3";
-            this.idDataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // productNameDataGridViewTextBoxColumn1
-            // 
-            this.productNameDataGridViewTextBoxColumn1.DataPropertyName = "ProductName";
-            this.productNameDataGridViewTextBoxColumn1.HeaderText = "ProductName";
-            this.productNameDataGridViewTextBoxColumn1.Name = "productNameDataGridViewTextBoxColumn1";
-            // 
-            // imageUrlDataGridViewTextBoxColumn
-            // 
-            this.imageUrlDataGridViewTextBoxColumn.DataPropertyName = "ImageUrl";
-            this.imageUrlDataGridViewTextBoxColumn.HeaderText = "ImageUrl";
-            this.imageUrlDataGridViewTextBoxColumn.Name = "imageUrlDataGridViewTextBoxColumn";
-            // 
-            // quantityDataGridViewTextBoxColumn
-            // 
-            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            // 
-            // descriptionDataGridViewTextBoxColumn1
-            // 
-            this.descriptionDataGridViewTextBoxColumn1.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn1.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn1.Name = "descriptionDataGridViewTextBoxColumn1";
-            // 
-            // categoryDataGridViewTextBoxColumn
-            // 
-            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
-            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
-            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.btnSaveToast);
@@ -1159,10 +1061,6 @@
             this.txtBoxDesToast.Name = "txtBoxDesToast";
             this.txtBoxDesToast.Size = new System.Drawing.Size(175, 74);
             this.txtBoxDesToast.TabIndex = 24;
-            // 
-            // toastBindingSource
-            // 
-            this.toastBindingSource.DataSource = typeof(WFGoodFood.DataModel.Toast);
             // 
             // lbDesToast
             // 
@@ -1283,6 +1181,201 @@
             this.dataGridViewToast.TabIndex = 0;
             this.dataGridViewToast.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewToast_CellClick);
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.btnSavePizza);
+            this.tabPage6.Controls.Add(this.btnCancelPizza);
+            this.tabPage6.Controls.Add(this.btnDeletePizza);
+            this.tabPage6.Controls.Add(this.btnEditPizza);
+            this.tabPage6.Controls.Add(this.btnAddPizza);
+            this.tabPage6.Controls.Add(this.txtBoxDesPizza);
+            this.tabPage6.Controls.Add(this.lbDesPizza);
+            this.tabPage6.Controls.Add(this.txtBoxPricePizza);
+            this.tabPage6.Controls.Add(this.lbPricePizza);
+            this.tabPage6.Controls.Add(this.txtBoxQuantPizza);
+            this.tabPage6.Controls.Add(this.lbQuanPizza);
+            this.tabPage6.Controls.Add(this.txtBoxProdNamePizza);
+            this.tabPage6.Controls.Add(this.lbNamePizza);
+            this.tabPage6.Controls.Add(this.txtboxIdPizza);
+            this.tabPage6.Controls.Add(this.lbIdPizza);
+            this.tabPage6.Controls.Add(this.btnBrowsePizza);
+            this.tabPage6.Controls.Add(this.pBoxImgPizza);
+            this.tabPage6.Controls.Add(this.dataGridViewPizza);
+            this.tabPage6.Location = new System.Drawing.Point(4, 4);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(872, 504);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Pizzas";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            this.tabPage6.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage6_MouseDoubleClick);
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Location = new System.Drawing.Point(4, 4);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(872, 504);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Salads";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Location = new System.Drawing.Point(4, 4);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(872, 504);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Drinks";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 4);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(872, 504);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Desserts";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Location = new System.Drawing.Point(4, 4);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(872, 504);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // userBindingSource
+            // 
+            this.userBindingSource.DataSource = typeof(WFGoodFood.DataModel.User);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // userNameDataGridViewTextBoxColumn
+            // 
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            // 
+            // adminBindingSource
+            // 
+            this.adminBindingSource.DataSource = typeof(WFGoodFood.DataModel.Admin);
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // loginDataGridViewTextBoxColumn
+            // 
+            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
+            this.loginDataGridViewTextBoxColumn.HeaderText = "Login";
+            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
+            // 
+            // passwordDataGridViewTextBoxColumn1
+            // 
+            this.passwordDataGridViewTextBoxColumn1.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn1.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn1.Name = "passwordDataGridViewTextBoxColumn1";
+            // 
+            // categoryBindingSource
+            // 
+            this.categoryBindingSource.DataSource = typeof(WFGoodFood.DataModel.Category);
+            // 
+            // idDataGridViewTextBoxColumn2
+            // 
+            this.idDataGridViewTextBoxColumn2.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn2.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
+            this.idDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // productNameDataGridViewTextBoxColumn
+            // 
+            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
+            this.productNameDataGridViewTextBoxColumn.HeaderText = "ProductName";
+            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            // 
+            // burgerBindingSource
+            // 
+            this.burgerBindingSource.DataSource = typeof(WFGoodFood.DataModel.Burger);
+            // 
+            // idDataGridViewTextBoxColumn3
+            // 
+            this.idDataGridViewTextBoxColumn3.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn3.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn3.Name = "idDataGridViewTextBoxColumn3";
+            this.idDataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // productNameDataGridViewTextBoxColumn1
+            // 
+            this.productNameDataGridViewTextBoxColumn1.DataPropertyName = "ProductName";
+            this.productNameDataGridViewTextBoxColumn1.HeaderText = "ProductName";
+            this.productNameDataGridViewTextBoxColumn1.Name = "productNameDataGridViewTextBoxColumn1";
+            // 
+            // imageUrlDataGridViewTextBoxColumn
+            // 
+            this.imageUrlDataGridViewTextBoxColumn.DataPropertyName = "ImageUrl";
+            this.imageUrlDataGridViewTextBoxColumn.HeaderText = "ImageUrl";
+            this.imageUrlDataGridViewTextBoxColumn.Name = "imageUrlDataGridViewTextBoxColumn";
+            // 
+            // quantityDataGridViewTextBoxColumn
+            // 
+            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            // 
+            // descriptionDataGridViewTextBoxColumn1
+            // 
+            this.descriptionDataGridViewTextBoxColumn1.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn1.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn1.Name = "descriptionDataGridViewTextBoxColumn1";
+            // 
+            // categoryDataGridViewTextBoxColumn
+            // 
+            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            // 
+            // toastBindingSource
+            // 
+            this.toastBindingSource.DataSource = typeof(WFGoodFood.DataModel.Toast);
+            // 
             // idDataGridViewTextBoxColumn4
             // 
             this.idDataGridViewTextBoxColumn4.DataPropertyName = "Id";
@@ -1326,49 +1419,231 @@
             this.categoryDataGridViewTextBoxColumn1.HeaderText = "Category";
             this.categoryDataGridViewTextBoxColumn1.Name = "categoryDataGridViewTextBoxColumn1";
             // 
-            // tabPage6
+            // dataGridViewPizza
             // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 4);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(872, 504);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Pizzas";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            this.dataGridViewPizza.AutoGenerateColumns = false;
+            this.dataGridViewPizza.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewPizza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPizza.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn5,
+            this.productNameDataGridViewTextBoxColumn3,
+            this.imageUrlDataGridViewTextBoxColumn2,
+            this.quantityDataGridViewTextBoxColumn2,
+            this.priceDataGridViewTextBoxColumn2,
+            this.descriptionDataGridViewTextBoxColumn3,
+            this.categoryDataGridViewTextBoxColumn2});
+            this.dataGridViewPizza.DataSource = this.pizzasBindingSource;
+            this.dataGridViewPizza.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewPizza.Name = "dataGridViewPizza";
+            this.dataGridViewPizza.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewPizza.TabIndex = 0;
+            this.dataGridViewPizza.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPizza_CellClick);
             // 
-            // tabPage7
+            // txtBoxDesPizza
             // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 4);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(872, 504);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Salads";
-            this.tabPage7.UseVisualStyleBackColor = true;
+            this.txtBoxDesPizza.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pizzasBindingSource, "Description", true));
+            this.txtBoxDesPizza.Location = new System.Drawing.Point(660, 393);
+            this.txtBoxDesPizza.Multiline = true;
+            this.txtBoxDesPizza.Name = "txtBoxDesPizza";
+            this.txtBoxDesPizza.Size = new System.Drawing.Size(175, 74);
+            this.txtBoxDesPizza.TabIndex = 36;
             // 
-            // tabPage8
+            // lbDesPizza
             // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 4);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(872, 504);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Drinks";
-            this.tabPage8.UseVisualStyleBackColor = true;
+            this.lbDesPizza.AutoSize = true;
+            this.lbDesPizza.Location = new System.Drawing.Point(570, 393);
+            this.lbDesPizza.Name = "lbDesPizza";
+            this.lbDesPizza.Size = new System.Drawing.Size(60, 13);
+            this.lbDesPizza.TabIndex = 35;
+            this.lbDesPizza.Text = "Description";
             // 
-            // tabPage9
+            // txtBoxPricePizza
             // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 4);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(872, 504);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Desserts";
-            this.tabPage9.UseVisualStyleBackColor = true;
+            this.txtBoxPricePizza.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pizzasBindingSource, "Price", true));
+            this.txtBoxPricePizza.Location = new System.Drawing.Point(660, 344);
+            this.txtBoxPricePizza.Name = "txtBoxPricePizza";
+            this.txtBoxPricePizza.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxPricePizza.TabIndex = 34;
             // 
-            // tabPage10
+            // lbPricePizza
             // 
-            this.tabPage10.Location = new System.Drawing.Point(4, 4);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(872, 504);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.UseVisualStyleBackColor = true;
+            this.lbPricePizza.AutoSize = true;
+            this.lbPricePizza.Location = new System.Drawing.Point(573, 352);
+            this.lbPricePizza.Name = "lbPricePizza";
+            this.lbPricePizza.Size = new System.Drawing.Size(31, 13);
+            this.lbPricePizza.TabIndex = 33;
+            this.lbPricePizza.Text = "Price";
+            // 
+            // txtBoxQuantPizza
+            // 
+            this.txtBoxQuantPizza.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pizzasBindingSource, "Quantity", true));
+            this.txtBoxQuantPizza.Location = new System.Drawing.Point(660, 300);
+            this.txtBoxQuantPizza.Name = "txtBoxQuantPizza";
+            this.txtBoxQuantPizza.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxQuantPizza.TabIndex = 32;
+            // 
+            // lbQuanPizza
+            // 
+            this.lbQuanPizza.AutoSize = true;
+            this.lbQuanPizza.Location = new System.Drawing.Point(570, 308);
+            this.lbQuanPizza.Name = "lbQuanPizza";
+            this.lbQuanPizza.Size = new System.Drawing.Size(46, 13);
+            this.lbQuanPizza.TabIndex = 31;
+            this.lbQuanPizza.Text = "Quantity";
+            // 
+            // txtBoxProdNamePizza
+            // 
+            this.txtBoxProdNamePizza.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pizzasBindingSource, "ProductName", true));
+            this.txtBoxProdNamePizza.Location = new System.Drawing.Point(660, 257);
+            this.txtBoxProdNamePizza.Name = "txtBoxProdNamePizza";
+            this.txtBoxProdNamePizza.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxProdNamePizza.TabIndex = 30;
+            // 
+            // lbNamePizza
+            // 
+            this.lbNamePizza.AutoSize = true;
+            this.lbNamePizza.Location = new System.Drawing.Point(567, 265);
+            this.lbNamePizza.Name = "lbNamePizza";
+            this.lbNamePizza.Size = new System.Drawing.Size(72, 13);
+            this.lbNamePizza.TabIndex = 29;
+            this.lbNamePizza.Text = "ProductName";
+            // 
+            // txtboxIdPizza
+            // 
+            this.txtboxIdPizza.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pizzasBindingSource, "Id", true));
+            this.txtboxIdPizza.Location = new System.Drawing.Point(660, 216);
+            this.txtboxIdPizza.Name = "txtboxIdPizza";
+            this.txtboxIdPizza.Size = new System.Drawing.Size(100, 20);
+            this.txtboxIdPizza.TabIndex = 28;
+            // 
+            // lbIdPizza
+            // 
+            this.lbIdPizza.AutoSize = true;
+            this.lbIdPizza.Location = new System.Drawing.Point(567, 223);
+            this.lbIdPizza.Name = "lbIdPizza";
+            this.lbIdPizza.Size = new System.Drawing.Size(19, 13);
+            this.lbIdPizza.TabIndex = 27;
+            this.lbIdPizza.Text = "Id:";
+            // 
+            // btnBrowsePizza
+            // 
+            this.btnBrowsePizza.BackColor = System.Drawing.Color.MistyRose;
+            this.btnBrowsePizza.Location = new System.Drawing.Point(685, 170);
+            this.btnBrowsePizza.Name = "btnBrowsePizza";
+            this.btnBrowsePizza.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowsePizza.TabIndex = 26;
+            this.btnBrowsePizza.Text = "Browse";
+            this.btnBrowsePizza.UseVisualStyleBackColor = false;
+            this.btnBrowsePizza.Click += new System.EventHandler(this.btnBrowsePizza_Click);
+            // 
+            // pBoxImgPizza
+            // 
+            this.pBoxImgPizza.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pBoxImgPizza.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.pizzasBindingSource, "ImageUrl", true));
+            this.pBoxImgPizza.Location = new System.Drawing.Point(660, 17);
+            this.pBoxImgPizza.Name = "pBoxImgPizza";
+            this.pBoxImgPizza.Size = new System.Drawing.Size(130, 130);
+            this.pBoxImgPizza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxImgPizza.TabIndex = 25;
+            this.pBoxImgPizza.TabStop = false;
+            // 
+            // btnSavePizza
+            // 
+            this.btnSavePizza.Location = new System.Drawing.Point(477, 444);
+            this.btnSavePizza.Name = "btnSavePizza";
+            this.btnSavePizza.Size = new System.Drawing.Size(75, 23);
+            this.btnSavePizza.TabIndex = 43;
+            this.btnSavePizza.Text = "Save";
+            this.btnSavePizza.UseVisualStyleBackColor = true;
+            this.btnSavePizza.Click += new System.EventHandler(this.btnSavePizza_Click);
+            // 
+            // btnCancelPizza
+            // 
+            this.btnCancelPizza.Location = new System.Drawing.Point(291, 444);
+            this.btnCancelPizza.Name = "btnCancelPizza";
+            this.btnCancelPizza.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelPizza.TabIndex = 42;
+            this.btnCancelPizza.Text = "Cancel";
+            this.btnCancelPizza.UseVisualStyleBackColor = true;
+            this.btnCancelPizza.Click += new System.EventHandler(this.btnCancelPizza_Click);
+            // 
+            // btnDeletePizza
+            // 
+            this.btnDeletePizza.Location = new System.Drawing.Point(384, 444);
+            this.btnDeletePizza.Name = "btnDeletePizza";
+            this.btnDeletePizza.Size = new System.Drawing.Size(75, 23);
+            this.btnDeletePizza.TabIndex = 41;
+            this.btnDeletePizza.Text = "Delete";
+            this.btnDeletePizza.UseVisualStyleBackColor = true;
+            this.btnDeletePizza.Click += new System.EventHandler(this.btnDeletePizza_Click);
+            // 
+            // btnEditPizza
+            // 
+            this.btnEditPizza.Location = new System.Drawing.Point(198, 444);
+            this.btnEditPizza.Name = "btnEditPizza";
+            this.btnEditPizza.Size = new System.Drawing.Size(75, 23);
+            this.btnEditPizza.TabIndex = 40;
+            this.btnEditPizza.Text = "Edit";
+            this.btnEditPizza.UseVisualStyleBackColor = true;
+            this.btnEditPizza.Click += new System.EventHandler(this.btnEditPizza_Click);
+            // 
+            // btnAddPizza
+            // 
+            this.btnAddPizza.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAddPizza.Location = new System.Drawing.Point(105, 444);
+            this.btnAddPizza.Name = "btnAddPizza";
+            this.btnAddPizza.Size = new System.Drawing.Size(75, 23);
+            this.btnAddPizza.TabIndex = 39;
+            this.btnAddPizza.Text = "Add";
+            this.btnAddPizza.UseVisualStyleBackColor = false;
+            this.btnAddPizza.Click += new System.EventHandler(this.btnAddPizza_Click);
+            // 
+            // pizzasBindingSource
+            // 
+            this.pizzasBindingSource.DataSource = typeof(WFGoodFood.DataModel.Pizzas);
+            // 
+            // idDataGridViewTextBoxColumn5
+            // 
+            this.idDataGridViewTextBoxColumn5.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn5.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn5.Name = "idDataGridViewTextBoxColumn5";
+            this.idDataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // productNameDataGridViewTextBoxColumn3
+            // 
+            this.productNameDataGridViewTextBoxColumn3.DataPropertyName = "ProductName";
+            this.productNameDataGridViewTextBoxColumn3.HeaderText = "ProductName";
+            this.productNameDataGridViewTextBoxColumn3.Name = "productNameDataGridViewTextBoxColumn3";
+            // 
+            // imageUrlDataGridViewTextBoxColumn2
+            // 
+            this.imageUrlDataGridViewTextBoxColumn2.DataPropertyName = "ImageUrl";
+            this.imageUrlDataGridViewTextBoxColumn2.HeaderText = "ImageUrl";
+            this.imageUrlDataGridViewTextBoxColumn2.Name = "imageUrlDataGridViewTextBoxColumn2";
+            // 
+            // quantityDataGridViewTextBoxColumn2
+            // 
+            this.quantityDataGridViewTextBoxColumn2.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn2.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn2.Name = "quantityDataGridViewTextBoxColumn2";
+            // 
+            // priceDataGridViewTextBoxColumn2
+            // 
+            this.priceDataGridViewTextBoxColumn2.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn2.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn2.Name = "priceDataGridViewTextBoxColumn2";
+            // 
+            // descriptionDataGridViewTextBoxColumn3
+            // 
+            this.descriptionDataGridViewTextBoxColumn3.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn3.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn3.Name = "descriptionDataGridViewTextBoxColumn3";
+            // 
+            // categoryDataGridViewTextBoxColumn2
+            // 
+            this.categoryDataGridViewTextBoxColumn2.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn2.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn2.Name = "categoryDataGridViewTextBoxColumn2";
             // 
             // UserControlManagement
             // 
@@ -1380,27 +1655,32 @@
             this.tabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmin)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategory)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.burgerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBurger)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.toastBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgToast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewToast)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.burgerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toastBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizza)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgPizza)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pizzasBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1532,5 +1812,31 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button btnSavePizza;
+        private System.Windows.Forms.Button btnCancelPizza;
+        private System.Windows.Forms.Button btnDeletePizza;
+        private System.Windows.Forms.Button btnEditPizza;
+        private System.Windows.Forms.Button btnAddPizza;
+        private System.Windows.Forms.TextBox txtBoxDesPizza;
+        private System.Windows.Forms.BindingSource pizzasBindingSource;
+        private System.Windows.Forms.Label lbDesPizza;
+        private System.Windows.Forms.TextBox txtBoxPricePizza;
+        private System.Windows.Forms.Label lbPricePizza;
+        private System.Windows.Forms.TextBox txtBoxQuantPizza;
+        private System.Windows.Forms.Label lbQuanPizza;
+        private System.Windows.Forms.TextBox txtBoxProdNamePizza;
+        private System.Windows.Forms.Label lbNamePizza;
+        private System.Windows.Forms.TextBox txtboxIdPizza;
+        private System.Windows.Forms.Label lbIdPizza;
+        private System.Windows.Forms.Button btnBrowsePizza;
+        private System.Windows.Forms.PictureBox pBoxImgPizza;
+        private System.Windows.Forms.DataGridView dataGridViewPizza;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imageUrlDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn2;
     }
 }

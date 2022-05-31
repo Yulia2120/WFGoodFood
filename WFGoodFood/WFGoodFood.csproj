@@ -90,6 +90,7 @@
     <Compile Include="DataModel\Burger.cs" />
     <Compile Include="DataModel\Category.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
+    <Compile Include="DataModel\Pizzas.cs" />
     <Compile Include="DataModel\Toast.cs" />
     <Compile Include="DataModel\User.cs" />
     <Compile Include="GUI\FormLoading.cs">
@@ -136,6 +137,14 @@
     <Compile Include="Migrations\202205261814543_toast.designer.cs">
       <DependentUpon>202205261814543_toast.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205310721117_pizzas.cs" />
+    <Compile Include="Migrations\202205310721117_pizzas.designer.cs">
+      <DependentUpon>202205310721117_pizzas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205310725156_pizzas1.cs" />
+    <Compile Include="Migrations\202205310725156_pizzas1.designer.cs">
+      <DependentUpon>202205310725156_pizzas1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -181,6 +190,12 @@
     <EmbeddedResource Include="Migrations\202205261814543_toast.resx">
       <DependentUpon>202205261814543_toast.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205310721117_pizzas.resx">
+      <DependentUpon>202205310721117_pizzas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205310725156_pizzas1.resx">
+      <DependentUpon>202205310725156_pizzas1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -190,6 +205,7 @@
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Admin.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Burger.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Category.datasource" />
+    <None Include="Properties\DataSources\WFGoodFood.DataModel.Pizzas.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Product.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Toast.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.User.datasource" />

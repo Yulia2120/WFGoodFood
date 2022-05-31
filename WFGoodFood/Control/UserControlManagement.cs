@@ -478,10 +478,114 @@ namespace WFGoodFood.Control
                 }
             }
         }
-    }
 
+        #endregion
 
+        #region Pizzas table
 
+        private void btnBrowsePizza_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog opf = new OpenFileDialog()
+            { Filter = "Choose Image(*.JPG; *.PNG;*.GIF)|*.jpg; *.png; *.gif" })
+                if (opf.ShowDialog() == DialogResult.OK)
+                {
+                    pBoxImgPizza.Image = Image.FromFile(opf.FileName);
+                    Pizzas obj = pizzasBindingSource.Current as Pizzas;
+                    if (obj != null)
+                        obj.ImageUrl = opf.FileName;
+                }
 
+        }
+
+        private void btnAddPizza_Click(object sender, EventArgs e)
+        {
+            pBoxImgPizza.Image = null;
+            pizzasBindingSource.Add(new Pizzas());
+            pizzasBindingSource.MoveLast();
+            txtBoxProdNamePizza.Focus();
+        }
+
+        private void btnEditPizza_Click(object sender, EventArgs e)
+        {
+            txtBoxProdNamePizza.Enabled = true;
+            txtBoxDesPizza.Enabled = true;
+            txtBoxProdNamePizza.Focus();
+        }
+
+        private void dataGridViewPizza_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Pizzas obj = pizzasBindingSource.Current as Pizzas;
+            try
+            {
+
+                if (obj != null)
+                    pBoxImgPizza.Image = Image.FromFile(obj.ImageUrl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void tabPage6_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                pizzasBindingSource.DataSource = db.PizzasList.ToList();
+            }
+            Pizzas obj = pizzasBindingSource.Current as Pizzas;
+            if (obj != null)
+                pBoxImgPizza.Image = Image.FromFile(obj.ImageUrl);
+        }
+
+        private void btnCancelPizza_Click(object sender, EventArgs e)
+        {
+            pizzasBindingSource.ResetBindings(false);
+        }
+
+        private void btnDeletePizza_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                using (ModelContext db = new ModelContext())
+                {
+                    Pizzas obj = pizzasBindingSource.Current as Pizzas;
+                    if (obj != null)
+                    {
+                        if (db.Entry<Pizzas>(obj).State == System.Data.Entity.EntityState.Detached)
+                            db.Set<Pizzas>().Attach(obj);
+                        db.Entry<Pizzas>(obj).State = System.Data.Entity.EntityState.Deleted;
+                        db.SaveChanges();
+                        pizzasBindingSource.RemoveCurrent();
+                        pBoxImgPizza.Image = null;
+
+                    }
+                }
+            }
+        }
+
+        private void btnSavePizza_Click(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Pizzas obj = pizzasBindingSource.Current as Pizzas;
+                if (obj != null)
+                {
+                    if (db.Entry<Pizzas>(obj).State == System.Data.Entity.EntityState.Detached)
+                        db.Set<Pizzas>().Attach(obj);
+                    if (obj.Id == 0)
+                        db.Entry<Pizzas>(obj).State = System.Data.Entity.EntityState.Added;
+                    else
+                        db.Entry<Pizzas>(obj).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    dataGridViewPizza.Refresh();
+
+                }
+            }
+        }
     #endregion
+
+
+
+    }
 }
