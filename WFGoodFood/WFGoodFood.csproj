@@ -151,6 +151,10 @@
     <Compile Include="Migrations\202205310820246_salad.designer.cs">
       <DependentUpon>202205310820246_salad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205310920485_drink.cs" />
+    <Compile Include="Migrations\202205310920485_drink.designer.cs">
+      <DependentUpon>202205310920485_drink.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -205,6 +209,9 @@
     <EmbeddedResource Include="Migrations\202205310820246_salad.resx">
       <DependentUpon>202205310820246_salad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205310920485_drink.resx">
+      <DependentUpon>202205310920485_drink.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -214,6 +221,7 @@
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Admin.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Burger.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Category.datasource" />
+    <None Include="Properties\DataSources\WFGoodFood.DataModel.Drink.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Pizzas.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Product.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Salad.datasource" />

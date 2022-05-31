@@ -688,9 +688,109 @@ namespace WFGoodFood.Control
                 }
             }
         }
+
+
+        #endregion
+        #region Drink table
+        private void btnBrowseDrink_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog opf = new OpenFileDialog()
+            { Filter = "Choose Image(*.JPG; *.PNG;*.GIF)|*.jpg; *.png; *.gif" })
+                if (opf.ShowDialog() == DialogResult.OK)
+                {
+                    pBoxImgDrink.Image = Image.FromFile(opf.FileName);
+                    Drink obj = drinkBindingSource.Current as Drink;
+                    if (obj != null)
+                        obj.ImageUrl = opf.FileName;
+                }
+        }
+
+        private void btnAddDrink_Click(object sender, EventArgs e)
+        {
+            pBoxImgDrink.Image = null;
+            drinkBindingSource.Add(new Drink());
+            drinkBindingSource.MoveLast();
+            txtBoxProdNameDrink.Focus();
+        }
+
+        private void btnEditDrink_Click(object sender, EventArgs e)
+        {
+            txtBoxProdNameDrink.Enabled = true;
+            txtBoxDesDrink.Enabled = true;
+            txtBoxProdNameDrink.Focus();
+        }
+
+        private void btnCancelDrink_Click(object sender, EventArgs e)
+        {
+            drinkBindingSource.ResetBindings(false);
+        }
+
+        private void dataGridViewDrink_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Drink obj = drinkBindingSource.Current as Drink;
+            try
+            {
+
+                if (obj != null)
+                    pBoxImgDrink.Image = Image.FromFile(obj.ImageUrl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void tabPage8_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                drinkBindingSource.DataSource = db.DrinkList.ToList();
+            }
+            Drink obj = drinkBindingSource.Current as Drink;
+            if (obj != null)
+                pBoxImgDrink.Image = Image.FromFile(obj.ImageUrl);
+        }
+
+        private void btnDeleteDrink_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                using (ModelContext db = new ModelContext())
+                {
+                    Drink obj = drinkBindingSource.Current as Drink;
+                    if (obj != null)
+                    {
+                        if (db.Entry<Drink>(obj).State == System.Data.Entity.EntityState.Detached)
+                            db.Set<Drink>().Attach(obj);
+                        db.Entry<Drink>(obj).State = System.Data.Entity.EntityState.Deleted;
+                        db.SaveChanges();
+                        drinkBindingSource.RemoveCurrent();
+                        pBoxImgDrink.Image = null;
+
+                    }
+                }
+            }
+        }
+
+        private void btnSaveDrink_Click(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Drink obj = drinkBindingSource.Current as Drink;
+                if (obj != null)
+                {
+                    if (db.Entry<Drink>(obj).State == System.Data.Entity.EntityState.Detached)
+                        db.Set<Drink>().Attach(obj);
+                    if (obj.Id == 0)
+                        db.Entry<Drink>(obj).State = System.Data.Entity.EntityState.Added;
+                    else
+                        db.Entry<Drink>(obj).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    dataGridViewDrink.Refresh();
+
+                }
+            }
+        }
     #endregion
-
-
-
     }
 }
