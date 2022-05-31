@@ -89,6 +89,7 @@
     <Compile Include="DataModel\Admin.cs" />
     <Compile Include="DataModel\Burger.cs" />
     <Compile Include="DataModel\Category.cs" />
+    <Compile Include="DataModel\Drink.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
     <Compile Include="DataModel\Pizzas.cs" />
     <Compile Include="DataModel\Salad.cs" />
