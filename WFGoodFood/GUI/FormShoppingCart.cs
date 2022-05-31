@@ -19,7 +19,9 @@ namespace WFGoodFood.GUI
 
         private void lbClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            FormShopping_cart cart = new FormShopping_cart();
+            cart.Close();
+            this.Hide();
         }
 
         private void lbClose_MouseEnter(object sender, EventArgs e)
@@ -31,5 +33,16 @@ namespace WFGoodFood.GUI
         {
             lbClose.ForeColor = Color.Black;
         }
+
+        private void btnOrderShop_Click(object sender, EventArgs e)
+        {
+            if (txtBoxDelivShop.Text !=string.Empty && txtBoxNameShop.Text != string.Empty && txtBoxPhoneShop.Text != string.Empty)
+                MessageBox.Show("Order accepted! Have a good day!");
+
+            else MessageBox.Show("Please fill in the empty fields!");
+        }
+
+
+
     }
 }

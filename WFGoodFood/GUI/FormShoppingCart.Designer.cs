@@ -199,6 +199,7 @@
             this.btnOrderShop.TabIndex = 64;
             this.btnOrderShop.Text = "Confirm";
             this.btnOrderShop.UseVisualStyleBackColor = false;
+            this.btnOrderShop.Click += new System.EventHandler(this.btnOrderShop_Click);
             // 
             // pictureBox1
             // 
