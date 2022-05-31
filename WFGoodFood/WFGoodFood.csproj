@@ -91,6 +91,7 @@
     <Compile Include="DataModel\Category.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
     <Compile Include="DataModel\Pizzas.cs" />
+    <Compile Include="DataModel\Salad.cs" />
     <Compile Include="DataModel\Toast.cs" />
     <Compile Include="DataModel\User.cs" />
     <Compile Include="GUI\FormLoading.cs">
@@ -145,6 +146,10 @@
     <Compile Include="Migrations\202205310725156_pizzas1.designer.cs">
       <DependentUpon>202205310725156_pizzas1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205310820246_salad.cs" />
+    <Compile Include="Migrations\202205310820246_salad.designer.cs">
+      <DependentUpon>202205310820246_salad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -195,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205310725156_pizzas1.resx">
       <DependentUpon>202205310725156_pizzas1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205310820246_salad.resx">
+      <DependentUpon>202205310820246_salad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
