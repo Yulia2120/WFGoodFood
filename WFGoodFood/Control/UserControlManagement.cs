@@ -238,8 +238,16 @@ namespace WFGoodFood.Control
         private void dataGridViewCategory_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Category obj = categoryBindingSource.Current as Category;
-            if (obj != null)
-                pBoxImg.Image = Image.FromFile(obj.ImageUrl);
+            try
+            {
+
+                if (obj != null)
+                    pBoxImg.Image = Image.FromFile(obj.ImageUrl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnSaveCat_Click(object sender, EventArgs e)
@@ -285,7 +293,7 @@ namespace WFGoodFood.Control
             pBoxImage.Image = null;
             burgerBindingSource.Add(new Burger());
             burgerBindingSource.MoveLast();
-            txtBoxProdName.Focus();
+            txtBoxProdNameBurg.Focus();
         }
 
         private void tabPage4_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -365,11 +373,115 @@ namespace WFGoodFood.Control
                 MessageBox.Show(ex.Message);
             }
         }
-        #endregion
 
+        #endregion
 
         #region Toast table
 
+        private void btnBrowseToast_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog opf = new OpenFileDialog()
+            { Filter = "Choose Image(*.JPG; *.PNG;*.GIF)|*.jpg; *.png; *.gif" })
+                if (opf.ShowDialog() == DialogResult.OK)
+                {
+                    pBoxImgToast.Image = Image.FromFile(opf.FileName);
+                    Toast obj = toastBindingSource.Current as Toast;
+                    if (obj != null)
+                        obj.ImageUrl = opf.FileName;
+                }
+
+        }
+
+        private void btnAddtoast_Click(object sender, EventArgs e)
+        {
+            pBoxImgToast.Image = null;
+            toastBindingSource.Add(new Toast());
+            toastBindingSource.MoveLast();
+            txtBoxProdToast.Focus();
+        }
+
+        private void btnEditToast_Click(object sender, EventArgs e)
+        {
+            txtBoxProdToast.Enabled = true;
+            txtBoxDesToast.Enabled = true;
+            txtBoxProdToast.Focus();
+        }
+
+        private void dataGridViewToast_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Toast obj = toastBindingSource.Current as Toast;
+            try
+            {
+
+                if (obj != null)
+                    pBoxImgToast.Image = Image.FromFile(obj.ImageUrl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void tabPage5_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                toastBindingSource.DataSource = db.ToastList.ToList();
+            }
+            Toast obj = toastBindingSource.Current as Toast;
+            if (obj != null)
+                pBoxImgToast.Image = Image.FromFile(obj.ImageUrl);
+        }
+
+        private void btnCancelToast_Click(object sender, EventArgs e)
+        {
+            toastBindingSource.ResetBindings(false);
+        }
+
+        private void btnDeleteToast_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                using (ModelContext db = new ModelContext())
+                {
+                    Toast obj = toastBindingSource.Current as Toast;
+                    if (obj != null)
+                    {
+                        if (db.Entry<Toast>(obj).State == System.Data.Entity.EntityState.Detached)
+                            db.Set<Toast>().Attach(obj);
+                        db.Entry<Toast>(obj).State = System.Data.Entity.EntityState.Deleted;
+                        db.SaveChanges();
+                        toastBindingSource.RemoveCurrent();
+                        pBoxImgToast.Image = null;
+
+                    }
+                }
+            }
+        }
+
+        private void btnSaveToast_Click(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Toast obj = toastBindingSource.Current as Toast;
+                if (obj != null)
+                {
+                    if (db.Entry<Toast>(obj).State == System.Data.Entity.EntityState.Detached)
+                        db.Set<Toast>().Attach(obj);
+                    if (obj.Id == 0)
+                        db.Entry<Toast>(obj).State = System.Data.Entity.EntityState.Added;
+                    else
+                        db.Entry<Toast>(obj).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    dataGridViewToast.Refresh();
+
+                }
+            }
+        }
     }
+
+
+
+
     #endregion
 }
