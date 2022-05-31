@@ -142,6 +142,24 @@
             this.btnDeletePizza = new System.Windows.Forms.Button();
             this.btnEditPizza = new System.Windows.Forms.Button();
             this.btnAddPizza = new System.Windows.Forms.Button();
+            this.dataGridViewSalad = new System.Windows.Forms.DataGridView();
+            this.txtBoxDesSalad = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtBoxPriceSalad = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtBoxQuantSalad = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtBoxProdNameSalad = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtBoxIdSalad = new System.Windows.Forms.TextBox();
+            this.lbIdSal = new System.Windows.Forms.Label();
+            this.btnBrowseSalad = new System.Windows.Forms.Button();
+            this.pBoxImgSalad = new System.Windows.Forms.PictureBox();
+            this.btnSaveSalad = new System.Windows.Forms.Button();
+            this.btnCancelSalad = new System.Windows.Forms.Button();
+            this.btnDeleteSalad = new System.Windows.Forms.Button();
+            this.btnEditSalad = new System.Windows.Forms.Button();
+            this.btnAddSalad = new System.Windows.Forms.Button();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -180,24 +198,14 @@
             this.priceDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewSalad = new System.Windows.Forms.DataGridView();
-            this.txtBoxDesSalad = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtBoxPriceSalad = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtBoxQuantSalad = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtBoxProdNameSalad = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtBoxIdSalad = new System.Windows.Forms.TextBox();
-            this.lbIdSal = new System.Windows.Forms.Label();
-            this.btnBrowseSalad = new System.Windows.Forms.Button();
-            this.pBoxImgSalad = new System.Windows.Forms.PictureBox();
-            this.btnSaveSalad = new System.Windows.Forms.Button();
-            this.btnCancelSalad = new System.Windows.Forms.Button();
-            this.btnDeleteSalad = new System.Windows.Forms.Button();
-            this.btnEditSalad = new System.Windows.Forms.Button();
-            this.btnAddSalad = new System.Windows.Forms.Button();
+            this.saladBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imageUrlDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -216,14 +224,15 @@
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgPizza)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.burgerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toastBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pizzasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgSalad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saladBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -1256,6 +1265,7 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Salads";
             this.tabPage7.UseVisualStyleBackColor = true;
+            this.tabPage7.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage7_MouseDoubleClick);
             // 
             // tabPage8
             // 
@@ -1461,6 +1471,186 @@
             this.btnAddPizza.Text = "Add";
             this.btnAddPizza.UseVisualStyleBackColor = false;
             this.btnAddPizza.Click += new System.EventHandler(this.btnAddPizza_Click);
+            // 
+            // dataGridViewSalad
+            // 
+            this.dataGridViewSalad.AutoGenerateColumns = false;
+            this.dataGridViewSalad.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewSalad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSalad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn6,
+            this.productNameDataGridViewTextBoxColumn4,
+            this.imageUrlDataGridViewTextBoxColumn3,
+            this.quantityDataGridViewTextBoxColumn3,
+            this.priceDataGridViewTextBoxColumn3,
+            this.descriptionDataGridViewTextBoxColumn4,
+            this.categoryDataGridViewTextBoxColumn3});
+            this.dataGridViewSalad.DataSource = this.saladBindingSource;
+            this.dataGridViewSalad.GridColor = System.Drawing.Color.White;
+            this.dataGridViewSalad.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewSalad.Name = "dataGridViewSalad";
+            this.dataGridViewSalad.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewSalad.TabIndex = 0;
+            this.dataGridViewSalad.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSalad_CellClick);
+            // 
+            // txtBoxDesSalad
+            // 
+            this.txtBoxDesSalad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.saladBindingSource, "Description", true));
+            this.txtBoxDesSalad.Location = new System.Drawing.Point(668, 396);
+            this.txtBoxDesSalad.Multiline = true;
+            this.txtBoxDesSalad.Name = "txtBoxDesSalad";
+            this.txtBoxDesSalad.Size = new System.Drawing.Size(175, 74);
+            this.txtBoxDesSalad.TabIndex = 48;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(578, 396);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 13);
+            this.label5.TabIndex = 47;
+            this.label5.Text = "Description";
+            // 
+            // txtBoxPriceSalad
+            // 
+            this.txtBoxPriceSalad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.saladBindingSource, "Price", true));
+            this.txtBoxPriceSalad.Location = new System.Drawing.Point(668, 347);
+            this.txtBoxPriceSalad.Name = "txtBoxPriceSalad";
+            this.txtBoxPriceSalad.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxPriceSalad.TabIndex = 46;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(581, 355);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(31, 13);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "Price";
+            // 
+            // txtBoxQuantSalad
+            // 
+            this.txtBoxQuantSalad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.saladBindingSource, "Quantity", true));
+            this.txtBoxQuantSalad.Location = new System.Drawing.Point(668, 303);
+            this.txtBoxQuantSalad.Name = "txtBoxQuantSalad";
+            this.txtBoxQuantSalad.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxQuantSalad.TabIndex = 44;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(578, 311);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Quantity";
+            // 
+            // txtBoxProdNameSalad
+            // 
+            this.txtBoxProdNameSalad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.saladBindingSource, "ProductName", true));
+            this.txtBoxProdNameSalad.Location = new System.Drawing.Point(668, 260);
+            this.txtBoxProdNameSalad.Name = "txtBoxProdNameSalad";
+            this.txtBoxProdNameSalad.Size = new System.Drawing.Size(175, 20);
+            this.txtBoxProdNameSalad.TabIndex = 42;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(575, 268);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 13);
+            this.label8.TabIndex = 41;
+            this.label8.Text = "ProductName";
+            // 
+            // txtBoxIdSalad
+            // 
+            this.txtBoxIdSalad.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.saladBindingSource, "Id", true));
+            this.txtBoxIdSalad.Location = new System.Drawing.Point(668, 219);
+            this.txtBoxIdSalad.Name = "txtBoxIdSalad";
+            this.txtBoxIdSalad.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxIdSalad.TabIndex = 40;
+            // 
+            // lbIdSal
+            // 
+            this.lbIdSal.AutoSize = true;
+            this.lbIdSal.Location = new System.Drawing.Point(575, 226);
+            this.lbIdSal.Name = "lbIdSal";
+            this.lbIdSal.Size = new System.Drawing.Size(19, 13);
+            this.lbIdSal.TabIndex = 39;
+            this.lbIdSal.Text = "Id:";
+            // 
+            // btnBrowseSalad
+            // 
+            this.btnBrowseSalad.BackColor = System.Drawing.Color.MistyRose;
+            this.btnBrowseSalad.Location = new System.Drawing.Point(693, 173);
+            this.btnBrowseSalad.Name = "btnBrowseSalad";
+            this.btnBrowseSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseSalad.TabIndex = 38;
+            this.btnBrowseSalad.Text = "Browse";
+            this.btnBrowseSalad.UseVisualStyleBackColor = false;
+            this.btnBrowseSalad.Click += new System.EventHandler(this.btnBrowseSalad_Click);
+            // 
+            // pBoxImgSalad
+            // 
+            this.pBoxImgSalad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pBoxImgSalad.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.saladBindingSource, "ImageUrl", true));
+            this.pBoxImgSalad.Location = new System.Drawing.Point(668, 20);
+            this.pBoxImgSalad.Name = "pBoxImgSalad";
+            this.pBoxImgSalad.Size = new System.Drawing.Size(130, 130);
+            this.pBoxImgSalad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxImgSalad.TabIndex = 37;
+            this.pBoxImgSalad.TabStop = false;
+            // 
+            // btnSaveSalad
+            // 
+            this.btnSaveSalad.Location = new System.Drawing.Point(474, 447);
+            this.btnSaveSalad.Name = "btnSaveSalad";
+            this.btnSaveSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveSalad.TabIndex = 53;
+            this.btnSaveSalad.Text = "Save";
+            this.btnSaveSalad.UseVisualStyleBackColor = true;
+            this.btnSaveSalad.Click += new System.EventHandler(this.btnSaveSalad_Click);
+            // 
+            // btnCancelSalad
+            // 
+            this.btnCancelSalad.Location = new System.Drawing.Point(288, 447);
+            this.btnCancelSalad.Name = "btnCancelSalad";
+            this.btnCancelSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelSalad.TabIndex = 52;
+            this.btnCancelSalad.Text = "Cancel";
+            this.btnCancelSalad.UseVisualStyleBackColor = true;
+            this.btnCancelSalad.Click += new System.EventHandler(this.btnCancelSalad_Click);
+            // 
+            // btnDeleteSalad
+            // 
+            this.btnDeleteSalad.Location = new System.Drawing.Point(381, 447);
+            this.btnDeleteSalad.Name = "btnDeleteSalad";
+            this.btnDeleteSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteSalad.TabIndex = 51;
+            this.btnDeleteSalad.Text = "Delete";
+            this.btnDeleteSalad.UseVisualStyleBackColor = true;
+            this.btnDeleteSalad.Click += new System.EventHandler(this.btnDeleteSalad_Click);
+            // 
+            // btnEditSalad
+            // 
+            this.btnEditSalad.Location = new System.Drawing.Point(195, 447);
+            this.btnEditSalad.Name = "btnEditSalad";
+            this.btnEditSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnEditSalad.TabIndex = 50;
+            this.btnEditSalad.Text = "Edit";
+            this.btnEditSalad.UseVisualStyleBackColor = true;
+            this.btnEditSalad.Click += new System.EventHandler(this.btnEditSalad_Click);
+            // 
+            // btnAddSalad
+            // 
+            this.btnAddSalad.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAddSalad.Location = new System.Drawing.Point(102, 447);
+            this.btnAddSalad.Name = "btnAddSalad";
+            this.btnAddSalad.Size = new System.Drawing.Size(75, 23);
+            this.btnAddSalad.TabIndex = 49;
+            this.btnAddSalad.Text = "Add";
+            this.btnAddSalad.UseVisualStyleBackColor = false;
+            this.btnAddSalad.Click += new System.EventHandler(this.btnAddSalad_Click);
             // 
             // userBindingSource
             // 
@@ -1684,162 +1874,52 @@
             this.categoryDataGridViewTextBoxColumn2.HeaderText = "Category";
             this.categoryDataGridViewTextBoxColumn2.Name = "categoryDataGridViewTextBoxColumn2";
             // 
-            // dataGridViewSalad
+            // saladBindingSource
             // 
-            this.dataGridViewSalad.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewSalad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSalad.GridColor = System.Drawing.Color.White;
-            this.dataGridViewSalad.Location = new System.Drawing.Point(5, 5);
-            this.dataGridViewSalad.Name = "dataGridViewSalad";
-            this.dataGridViewSalad.Size = new System.Drawing.Size(545, 395);
-            this.dataGridViewSalad.TabIndex = 0;
+            this.saladBindingSource.DataSource = typeof(WFGoodFood.DataModel.Salad);
             // 
-            // txtBoxDesSalad
+            // idDataGridViewTextBoxColumn6
             // 
-            this.txtBoxDesSalad.Location = new System.Drawing.Point(668, 396);
-            this.txtBoxDesSalad.Multiline = true;
-            this.txtBoxDesSalad.Name = "txtBoxDesSalad";
-            this.txtBoxDesSalad.Size = new System.Drawing.Size(175, 74);
-            this.txtBoxDesSalad.TabIndex = 48;
+            this.idDataGridViewTextBoxColumn6.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn6.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn6.Name = "idDataGridViewTextBoxColumn6";
+            this.idDataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // label5
+            // productNameDataGridViewTextBoxColumn4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(578, 396);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 13);
-            this.label5.TabIndex = 47;
-            this.label5.Text = "Description";
+            this.productNameDataGridViewTextBoxColumn4.DataPropertyName = "ProductName";
+            this.productNameDataGridViewTextBoxColumn4.HeaderText = "ProductName";
+            this.productNameDataGridViewTextBoxColumn4.Name = "productNameDataGridViewTextBoxColumn4";
             // 
-            // txtBoxPriceSalad
+            // imageUrlDataGridViewTextBoxColumn3
             // 
-            this.txtBoxPriceSalad.Location = new System.Drawing.Point(668, 347);
-            this.txtBoxPriceSalad.Name = "txtBoxPriceSalad";
-            this.txtBoxPriceSalad.Size = new System.Drawing.Size(175, 20);
-            this.txtBoxPriceSalad.TabIndex = 46;
+            this.imageUrlDataGridViewTextBoxColumn3.DataPropertyName = "ImageUrl";
+            this.imageUrlDataGridViewTextBoxColumn3.HeaderText = "ImageUrl";
+            this.imageUrlDataGridViewTextBoxColumn3.Name = "imageUrlDataGridViewTextBoxColumn3";
             // 
-            // label6
+            // quantityDataGridViewTextBoxColumn3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(581, 355);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 13);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "Price";
+            this.quantityDataGridViewTextBoxColumn3.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn3.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn3.Name = "quantityDataGridViewTextBoxColumn3";
             // 
-            // txtBoxQuantSalad
+            // priceDataGridViewTextBoxColumn3
             // 
-            this.txtBoxQuantSalad.Location = new System.Drawing.Point(668, 303);
-            this.txtBoxQuantSalad.Name = "txtBoxQuantSalad";
-            this.txtBoxQuantSalad.Size = new System.Drawing.Size(175, 20);
-            this.txtBoxQuantSalad.TabIndex = 44;
+            this.priceDataGridViewTextBoxColumn3.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn3.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn3.Name = "priceDataGridViewTextBoxColumn3";
             // 
-            // label7
+            // descriptionDataGridViewTextBoxColumn4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(578, 311);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 13);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "Quantity";
+            this.descriptionDataGridViewTextBoxColumn4.DataPropertyName = "Description";
+            this.descriptionDataGridViewTextBoxColumn4.HeaderText = "Description";
+            this.descriptionDataGridViewTextBoxColumn4.Name = "descriptionDataGridViewTextBoxColumn4";
             // 
-            // txtBoxProdNameSalad
+            // categoryDataGridViewTextBoxColumn3
             // 
-            this.txtBoxProdNameSalad.Location = new System.Drawing.Point(668, 260);
-            this.txtBoxProdNameSalad.Name = "txtBoxProdNameSalad";
-            this.txtBoxProdNameSalad.Size = new System.Drawing.Size(175, 20);
-            this.txtBoxProdNameSalad.TabIndex = 42;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(575, 268);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 13);
-            this.label8.TabIndex = 41;
-            this.label8.Text = "ProductName";
-            // 
-            // txtBoxIdSalad
-            // 
-            this.txtBoxIdSalad.Location = new System.Drawing.Point(668, 219);
-            this.txtBoxIdSalad.Name = "txtBoxIdSalad";
-            this.txtBoxIdSalad.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxIdSalad.TabIndex = 40;
-            // 
-            // lbIdSal
-            // 
-            this.lbIdSal.AutoSize = true;
-            this.lbIdSal.Location = new System.Drawing.Point(575, 226);
-            this.lbIdSal.Name = "lbIdSal";
-            this.lbIdSal.Size = new System.Drawing.Size(19, 13);
-            this.lbIdSal.TabIndex = 39;
-            this.lbIdSal.Text = "Id:";
-            // 
-            // btnBrowseSalad
-            // 
-            this.btnBrowseSalad.BackColor = System.Drawing.Color.MistyRose;
-            this.btnBrowseSalad.Location = new System.Drawing.Point(693, 173);
-            this.btnBrowseSalad.Name = "btnBrowseSalad";
-            this.btnBrowseSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseSalad.TabIndex = 38;
-            this.btnBrowseSalad.Text = "Browse";
-            this.btnBrowseSalad.UseVisualStyleBackColor = false;
-            // 
-            // pBoxImgSalad
-            // 
-            this.pBoxImgSalad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pBoxImgSalad.Location = new System.Drawing.Point(668, 20);
-            this.pBoxImgSalad.Name = "pBoxImgSalad";
-            this.pBoxImgSalad.Size = new System.Drawing.Size(130, 130);
-            this.pBoxImgSalad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBoxImgSalad.TabIndex = 37;
-            this.pBoxImgSalad.TabStop = false;
-            // 
-            // btnSaveSalad
-            // 
-            this.btnSaveSalad.Location = new System.Drawing.Point(474, 447);
-            this.btnSaveSalad.Name = "btnSaveSalad";
-            this.btnSaveSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveSalad.TabIndex = 53;
-            this.btnSaveSalad.Text = "Save";
-            this.btnSaveSalad.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelSalad
-            // 
-            this.btnCancelSalad.Location = new System.Drawing.Point(288, 447);
-            this.btnCancelSalad.Name = "btnCancelSalad";
-            this.btnCancelSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelSalad.TabIndex = 52;
-            this.btnCancelSalad.Text = "Cancel";
-            this.btnCancelSalad.UseVisualStyleBackColor = true;
-            // 
-            // btnDeleteSalad
-            // 
-            this.btnDeleteSalad.Location = new System.Drawing.Point(381, 447);
-            this.btnDeleteSalad.Name = "btnDeleteSalad";
-            this.btnDeleteSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteSalad.TabIndex = 51;
-            this.btnDeleteSalad.Text = "Delete";
-            this.btnDeleteSalad.UseVisualStyleBackColor = true;
-            // 
-            // btnEditSalad
-            // 
-            this.btnEditSalad.Location = new System.Drawing.Point(195, 447);
-            this.btnEditSalad.Name = "btnEditSalad";
-            this.btnEditSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnEditSalad.TabIndex = 50;
-            this.btnEditSalad.Text = "Edit";
-            this.btnEditSalad.UseVisualStyleBackColor = true;
-            // 
-            // btnAddSalad
-            // 
-            this.btnAddSalad.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddSalad.Location = new System.Drawing.Point(102, 447);
-            this.btnAddSalad.Name = "btnAddSalad";
-            this.btnAddSalad.Size = new System.Drawing.Size(75, 23);
-            this.btnAddSalad.TabIndex = 49;
-            this.btnAddSalad.Text = "Add";
-            this.btnAddSalad.UseVisualStyleBackColor = false;
+            this.categoryDataGridViewTextBoxColumn3.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn3.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn3.Name = "categoryDataGridViewTextBoxColumn3";
             // 
             // UserControlManagement
             // 
@@ -1873,14 +1953,15 @@
             this.tabPage7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizza)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgPizza)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.burgerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toastBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pizzasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSalad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxImgSalad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.saladBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2056,5 +2137,13 @@
         private System.Windows.Forms.Button btnBrowseSalad;
         private System.Windows.Forms.PictureBox pBoxImgSalad;
         private System.Windows.Forms.DataGridView dataGridViewSalad;
+        private System.Windows.Forms.BindingSource saladBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn imageUrlDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn3;
     }
 }

@@ -583,6 +583,111 @@ namespace WFGoodFood.Control
                 }
             }
         }
+
+
+        #endregion
+
+        #region Salad table
+        private void btnBrowseSalad_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog opf = new OpenFileDialog()
+            { Filter = "Choose Image(*.JPG; *.PNG;*.GIF)|*.jpg; *.png; *.gif" })
+                if (opf.ShowDialog() == DialogResult.OK)
+                {
+                    pBoxImgSalad.Image = Image.FromFile(opf.FileName);
+                    Salad obj = saladBindingSource.Current as Salad;
+                    if (obj != null)
+                        obj.ImageUrl = opf.FileName;
+                }
+
+        }
+
+        private void btnAddSalad_Click(object sender, EventArgs e)
+        {
+            pBoxImgSalad.Image = null;
+            saladBindingSource.Add(new Salad());
+            saladBindingSource.MoveLast();
+            txtBoxProdNameSalad.Focus();
+        }
+
+        private void btnEditSalad_Click(object sender, EventArgs e)
+        {
+            txtBoxProdNameSalad.Enabled = true;
+            txtBoxDesSalad.Enabled = true;
+            txtBoxProdNameSalad.Focus();
+        }
+
+        private void btnCancelSalad_Click(object sender, EventArgs e)
+        {
+            saladBindingSource.ResetBindings(false);
+        }
+
+        private void dataGridViewSalad_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Salad obj = saladBindingSource.Current as Salad;
+            try
+            {
+
+                if (obj != null)
+                    pBoxImgSalad.Image = Image.FromFile(obj.ImageUrl);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void tabPage7_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                saladBindingSource.DataSource = db.SaladList.ToList();
+            }
+            Salad obj = saladBindingSource.Current as Salad;
+            if (obj != null)
+                pBoxImgSalad.Image = Image.FromFile(obj.ImageUrl);
+        }
+
+        private void btnDeleteSalad_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                using (ModelContext db = new ModelContext())
+                {
+                    Salad obj = saladBindingSource.Current as Salad;
+                    if (obj != null)
+                    {
+                        if (db.Entry<Salad>(obj).State == System.Data.Entity.EntityState.Detached)
+                            db.Set<Salad>().Attach(obj);
+                        db.Entry<Salad>(obj).State = System.Data.Entity.EntityState.Deleted;
+                        db.SaveChanges();
+                        saladBindingSource.RemoveCurrent();
+                        pBoxImgSalad.Image = null;
+
+                    }
+                }
+            }
+        }
+
+        private void btnSaveSalad_Click(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Salad obj = saladBindingSource.Current as Salad;
+                if (obj != null)
+                {
+                    if (db.Entry<Salad>(obj).State == System.Data.Entity.EntityState.Detached)
+                        db.Set<Salad>().Attach(obj);
+                    if (obj.Id == 0)
+                        db.Entry<Salad>(obj).State = System.Data.Entity.EntityState.Added;
+                    else
+                        db.Entry<Salad>(obj).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    dataGridViewSalad.Refresh();
+
+                }
+            }
+        }
     #endregion
 
 

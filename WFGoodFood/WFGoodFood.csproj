@@ -215,6 +215,7 @@
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Category.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Pizzas.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Product.datasource" />
+    <None Include="Properties\DataSources\WFGoodFood.DataModel.Salad.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.Toast.datasource" />
     <None Include="Properties\DataSources\WFGoodFood.DataModel.User.datasource" />
     <None Include="Properties\Settings.settings">
