@@ -89,7 +89,18 @@ namespace WFGoodFood.Control
                 }
             }
         }
-       
+        private void txtBoxSearchUser_TextChanged(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                User obj = userBindingSource.Current as User;
+                if (obj != null)
+                {
+                    dataGridView.DataSource = db.UserList.Where(x => x.UserName.Contains(txtBoxSearchUser.Text) || x.Phone.Contains(txtBoxSearchUser.Text)).ToList();
+
+                }
+            }
+        }
 
         #endregion
 
@@ -162,6 +173,18 @@ namespace WFGoodFood.Control
             using (ModelContext db = new ModelContext())
             {
                  adminBindingSource.DataSource = db.AdminList.ToList();
+            }
+        }
+        private void txtBoxSearchAdmin_TextChanged(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Admin obj = adminBindingSource.Current as Admin;
+                if (obj != null)
+                {
+                    dataGridViewAdmin.DataSource = db.AdminList.Where(x => x.Login.Contains(txtBoxSearchAdmin.Text) || x.Password.Contains(txtBoxSearchAdmin.Text)).ToList();
+
+                }
             }
         }
 
@@ -269,10 +292,23 @@ namespace WFGoodFood.Control
                 }
             }
         }
+        private void txtBoxSearchCategory_TextChanged(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Category obj = categoryBindingSource.Current as Category;
+                if (obj != null)
+                {
+                    dataGridViewCategory.DataSource = db.CategoryList.Where(x => x.ProductName.Contains(txtBoxSearchCategory.Text) || x.Description.Contains(txtBoxSearchCategory.Text)).ToList();
+
+                }
+            }
+        }
+
         #endregion
 
         #region Burger table
-       
+
 
         private void btnBrowseBurg_Click(object sender, EventArgs e)
         {
@@ -371,6 +407,18 @@ namespace WFGoodFood.Control
             }catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        private void txtBoxSearchBurger_TextChanged(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Burger obj = burgerBindingSource.Current as Burger;
+                if (obj != null)
+                {
+                    dataGridViewBurger.DataSource = db.BurgerList.Where(x => x.ProductName.Contains(txtBoxSearchBurger.Text) || x.Description.Contains(txtBoxSearchBurger.Text)).ToList();
+
+                }
             }
         }
 
@@ -474,6 +522,18 @@ namespace WFGoodFood.Control
                         db.Entry<Toast>(obj).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
                     dataGridViewToast.Refresh();
+
+                }
+            }
+        }
+        private void txtBoxSearchToast_TextChanged(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Toast obj = toastBindingSource.Current as Toast;
+                if (obj != null)
+                {
+                    dataGridViewToast.DataSource = db.ToastList.Where(x => x.ProductName.Contains(txtBoxSearchToast.Text) || x.Description.Contains(txtBoxSearchToast.Text)).ToList();
 
                 }
             }
@@ -583,7 +643,19 @@ namespace WFGoodFood.Control
                 }
             }
         }
+        private void txtBoxSearchPizza_TextChanged(object sender, EventArgs e)
+        {
 
+            using (ModelContext db = new ModelContext())
+            {
+                Pizzas obj = pizzasBindingSource.Current as Pizzas;
+                if (obj != null)
+                {
+                    dataGridViewPizza.DataSource = db.PizzasList.Where(x => x.ProductName.Contains(txtBoxSearchPizza.Text) || x.Description.Contains(txtBoxSearchPizza.Text)).ToList();
+
+                }
+            }
+        }
 
         #endregion
 
@@ -688,7 +760,18 @@ namespace WFGoodFood.Control
                 }
             }
         }
+        private void txtBoxSearchSalads_TextChanged(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Salad obj = saladBindingSource.Current as Salad;
+                if (obj != null)
+                {
+                    dataGridViewSalad.DataSource = db.SaladList.Where(x => x.ProductName.Contains(txtBoxSearchSalad.Text) || x.Description.Contains(txtBoxSearchSalad.Text)).ToList();
 
+                }
+            }
+        }
 
         #endregion
         #region Drink table
@@ -791,6 +874,19 @@ namespace WFGoodFood.Control
                 }
             }
         }
+        private void txtBoxSeachDrink_TextChanged(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Drink obj = drinkBindingSource.Current as Drink;
+                if (obj != null)
+                {
+                    dataGridViewDrink.DataSource = db.DrinkList.Where(x => x.ProductName.Contains(txtBoxSearchDrink.Text) || x.Description.Contains(txtBoxSearchDrink.Text)).ToList();
+
+                }
+            }
+        }
+
         #endregion
         #region Desert table
         private void btnBrowseDesert_Click(object sender, EventArgs e)
@@ -892,11 +988,31 @@ namespace WFGoodFood.Control
             }
         }
 
+        private void txtBoxSearch_TextChanged(object sender, EventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                Desert obj = desertBindingSource.Current as Desert;
+                if (obj != null)
+                {
+                    dataGridViewDesert.DataSource = db.DesertList.Where(x => x.ProductName.Contains(txtBoxSearch.Text)  || x.Description.Contains(txtBoxSearch.Text)).ToList();
+
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
         #endregion
 
-
-
-
-
+       
     }
 }

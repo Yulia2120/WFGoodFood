@@ -50,7 +50,7 @@
             // 
             // txtBoxPhone
             // 
-            this.txtBoxPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.txtBoxPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
             this.txtBoxPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxPhone.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtBoxPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
@@ -87,7 +87,7 @@
             // 
             // txtBoxEmail
             // 
-            this.txtBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.txtBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
             this.txtBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxEmail.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
@@ -131,7 +131,7 @@
             // 
             // txtBoxPassSign
             // 
-            this.txtBoxPassSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.txtBoxPassSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
             this.txtBoxPassSign.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxPassSign.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtBoxPassSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
@@ -161,7 +161,7 @@
             // 
             // txtBoxUserNameSign
             // 
-            this.txtBoxUserNameSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.txtBoxUserNameSign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
             this.txtBoxUserNameSign.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxUserNameSign.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtBoxUserNameSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
@@ -233,6 +233,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
             this.ClientSize = new System.Drawing.Size(630, 450);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lbName);

@@ -196,6 +196,24 @@
             this.pBoxImgDesert = new System.Windows.Forms.PictureBox();
             this.dataGridViewDesert = new System.Windows.Forms.DataGridView();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.lbSearch = new System.Windows.Forms.Label();
+            this.txtBoxSearch = new System.Windows.Forms.TextBox();
+            this.lbseach = new System.Windows.Forms.Label();
+            this.txtBoxSearchDrink = new System.Windows.Forms.TextBox();
+            this.lbSearchS = new System.Windows.Forms.Label();
+            this.txtBoxSearchSalad = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtBoxSearchPizza = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtBoxSearchToast = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtBoxSearchBurger = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtBoxSearchCategory = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtBoxSearchAdmin = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtBoxSearchUser = new System.Windows.Forms.TextBox();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -319,6 +337,8 @@
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
+            this.tabPage1.Controls.Add(this.label24);
+            this.tabPage1.Controls.Add(this.txtBoxSearchUser);
             this.tabPage1.Controls.Add(this.lbPhoneuser);
             this.tabPage1.Controls.Add(this.lbPasswuser);
             this.tabPage1.Controls.Add(this.lbEmailuser);
@@ -412,7 +432,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(763, 457);
+            this.btnSave.Location = new System.Drawing.Point(474, 395);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 15;
@@ -422,7 +442,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(577, 457);
+            this.btnCancel.Location = new System.Drawing.Point(288, 395);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 14;
@@ -432,7 +452,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(670, 457);
+            this.btnDelete.Location = new System.Drawing.Point(381, 395);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 13;
@@ -442,7 +462,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(484, 457);
+            this.btnEdit.Location = new System.Drawing.Point(195, 395);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 12;
@@ -453,7 +473,7 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAdd.Location = new System.Drawing.Point(391, 457);
+            this.btnAdd.Location = new System.Drawing.Point(102, 395);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 11;
@@ -539,12 +559,14 @@
             this.dataGridView.DataSource = this.userBindingSource;
             this.dataGridView.Location = new System.Drawing.Point(5, 5);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(545, 395);
+            this.dataGridView.Size = new System.Drawing.Size(545, 365);
             this.dataGridView.TabIndex = 0;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label23);
+            this.tabPage2.Controls.Add(this.txtBoxSearchAdmin);
             this.tabPage2.Controls.Add(this.btnSaveAdmin);
             this.tabPage2.Controls.Add(this.btnCancelAdmin);
             this.tabPage2.Controls.Add(this.btnDeleteAdmin);
@@ -568,7 +590,7 @@
             // 
             // btnSaveAdmin
             // 
-            this.btnSaveAdmin.Location = new System.Drawing.Point(765, 456);
+            this.btnSaveAdmin.Location = new System.Drawing.Point(474, 405);
             this.btnSaveAdmin.Name = "btnSaveAdmin";
             this.btnSaveAdmin.Size = new System.Drawing.Size(75, 23);
             this.btnSaveAdmin.TabIndex = 23;
@@ -578,7 +600,7 @@
             // 
             // btnCancelAdmin
             // 
-            this.btnCancelAdmin.Location = new System.Drawing.Point(579, 456);
+            this.btnCancelAdmin.Location = new System.Drawing.Point(288, 405);
             this.btnCancelAdmin.Name = "btnCancelAdmin";
             this.btnCancelAdmin.Size = new System.Drawing.Size(75, 23);
             this.btnCancelAdmin.TabIndex = 22;
@@ -588,7 +610,7 @@
             // 
             // btnDeleteAdmin
             // 
-            this.btnDeleteAdmin.Location = new System.Drawing.Point(672, 456);
+            this.btnDeleteAdmin.Location = new System.Drawing.Point(381, 405);
             this.btnDeleteAdmin.Name = "btnDeleteAdmin";
             this.btnDeleteAdmin.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteAdmin.TabIndex = 21;
@@ -598,7 +620,7 @@
             // 
             // btnEditAdmin
             // 
-            this.btnEditAdmin.Location = new System.Drawing.Point(486, 456);
+            this.btnEditAdmin.Location = new System.Drawing.Point(195, 405);
             this.btnEditAdmin.Name = "btnEditAdmin";
             this.btnEditAdmin.Size = new System.Drawing.Size(75, 23);
             this.btnEditAdmin.TabIndex = 20;
@@ -609,7 +631,7 @@
             // btnAddAdmin
             // 
             this.btnAddAdmin.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddAdmin.Location = new System.Drawing.Point(393, 456);
+            this.btnAddAdmin.Location = new System.Drawing.Point(102, 405);
             this.btnAddAdmin.Name = "btnAddAdmin";
             this.btnAddAdmin.Size = new System.Drawing.Size(75, 23);
             this.btnAddAdmin.TabIndex = 19;
@@ -680,12 +702,14 @@
             this.dataGridViewAdmin.DataSource = this.adminBindingSource;
             this.dataGridViewAdmin.Location = new System.Drawing.Point(5, 5);
             this.dataGridViewAdmin.Name = "dataGridViewAdmin";
-            this.dataGridViewAdmin.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewAdmin.Size = new System.Drawing.Size(545, 371);
             this.dataGridViewAdmin.TabIndex = 0;
             this.dataGridViewAdmin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdmin_CellClick);
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label22);
+            this.tabPage3.Controls.Add(this.txtBoxSearchCategory);
             this.tabPage3.Controls.Add(this.btnSaveCat);
             this.tabPage3.Controls.Add(this.btnCancelCat);
             this.tabPage3.Controls.Add(this.btnDeleteCat);
@@ -711,7 +735,7 @@
             // 
             // btnSaveCat
             // 
-            this.btnSaveCat.Location = new System.Drawing.Point(769, 457);
+            this.btnSaveCat.Location = new System.Drawing.Point(476, 416);
             this.btnSaveCat.Name = "btnSaveCat";
             this.btnSaveCat.Size = new System.Drawing.Size(75, 23);
             this.btnSaveCat.TabIndex = 28;
@@ -721,7 +745,7 @@
             // 
             // btnCancelCat
             // 
-            this.btnCancelCat.Location = new System.Drawing.Point(583, 457);
+            this.btnCancelCat.Location = new System.Drawing.Point(290, 416);
             this.btnCancelCat.Name = "btnCancelCat";
             this.btnCancelCat.Size = new System.Drawing.Size(75, 23);
             this.btnCancelCat.TabIndex = 27;
@@ -731,7 +755,7 @@
             // 
             // btnDeleteCat
             // 
-            this.btnDeleteCat.Location = new System.Drawing.Point(676, 457);
+            this.btnDeleteCat.Location = new System.Drawing.Point(383, 416);
             this.btnDeleteCat.Name = "btnDeleteCat";
             this.btnDeleteCat.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteCat.TabIndex = 26;
@@ -741,7 +765,7 @@
             // 
             // btnEditCat
             // 
-            this.btnEditCat.Location = new System.Drawing.Point(490, 457);
+            this.btnEditCat.Location = new System.Drawing.Point(197, 416);
             this.btnEditCat.Name = "btnEditCat";
             this.btnEditCat.Size = new System.Drawing.Size(75, 23);
             this.btnEditCat.TabIndex = 25;
@@ -752,7 +776,7 @@
             // btnAddCat
             // 
             this.btnAddCat.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddCat.Location = new System.Drawing.Point(397, 457);
+            this.btnAddCat.Location = new System.Drawing.Point(104, 416);
             this.btnAddCat.Name = "btnAddCat";
             this.btnAddCat.Size = new System.Drawing.Size(75, 23);
             this.btnAddCat.TabIndex = 24;
@@ -859,6 +883,8 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label21);
+            this.tabPage4.Controls.Add(this.txtBoxSearchBurger);
             this.tabPage4.Controls.Add(this.btnSaveBurger);
             this.tabPage4.Controls.Add(this.btnCancelBurger);
             this.tabPage4.Controls.Add(this.btnDeleteBurger);
@@ -887,7 +913,7 @@
             // 
             // btnSaveBurger
             // 
-            this.btnSaveBurger.Location = new System.Drawing.Point(475, 446);
+            this.btnSaveBurger.Location = new System.Drawing.Point(478, 395);
             this.btnSaveBurger.Name = "btnSaveBurger";
             this.btnSaveBurger.Size = new System.Drawing.Size(75, 23);
             this.btnSaveBurger.TabIndex = 33;
@@ -897,7 +923,7 @@
             // 
             // btnCancelBurger
             // 
-            this.btnCancelBurger.Location = new System.Drawing.Point(289, 446);
+            this.btnCancelBurger.Location = new System.Drawing.Point(292, 395);
             this.btnCancelBurger.Name = "btnCancelBurger";
             this.btnCancelBurger.Size = new System.Drawing.Size(75, 23);
             this.btnCancelBurger.TabIndex = 32;
@@ -907,7 +933,7 @@
             // 
             // btnDeleteBurger
             // 
-            this.btnDeleteBurger.Location = new System.Drawing.Point(382, 446);
+            this.btnDeleteBurger.Location = new System.Drawing.Point(385, 395);
             this.btnDeleteBurger.Name = "btnDeleteBurger";
             this.btnDeleteBurger.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteBurger.TabIndex = 31;
@@ -917,7 +943,7 @@
             // 
             // btnEditBurger
             // 
-            this.btnEditBurger.Location = new System.Drawing.Point(196, 446);
+            this.btnEditBurger.Location = new System.Drawing.Point(199, 395);
             this.btnEditBurger.Name = "btnEditBurger";
             this.btnEditBurger.Size = new System.Drawing.Size(75, 23);
             this.btnEditBurger.TabIndex = 30;
@@ -928,7 +954,7 @@
             // btnAddBurger
             // 
             this.btnAddBurger.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddBurger.Location = new System.Drawing.Point(103, 446);
+            this.btnAddBurger.Location = new System.Drawing.Point(106, 395);
             this.btnAddBurger.Name = "btnAddBurger";
             this.btnAddBurger.Size = new System.Drawing.Size(75, 23);
             this.btnAddBurger.TabIndex = 29;
@@ -1060,12 +1086,14 @@
             this.dataGridViewBurger.DataSource = this.burgerBindingSource;
             this.dataGridViewBurger.Location = new System.Drawing.Point(5, 5);
             this.dataGridViewBurger.Name = "dataGridViewBurger";
-            this.dataGridViewBurger.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewBurger.Size = new System.Drawing.Size(545, 362);
             this.dataGridViewBurger.TabIndex = 0;
             this.dataGridViewBurger.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBurger_CellClick);
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.label20);
+            this.tabPage5.Controls.Add(this.txtBoxSearchToast);
             this.tabPage5.Controls.Add(this.btnSaveToast);
             this.tabPage5.Controls.Add(this.btnCancelToast);
             this.tabPage5.Controls.Add(this.btnDeleteToast);
@@ -1094,7 +1122,7 @@
             // 
             // btnSaveToast
             // 
-            this.btnSaveToast.Location = new System.Drawing.Point(478, 442);
+            this.btnSaveToast.Location = new System.Drawing.Point(477, 391);
             this.btnSaveToast.Name = "btnSaveToast";
             this.btnSaveToast.Size = new System.Drawing.Size(75, 23);
             this.btnSaveToast.TabIndex = 38;
@@ -1104,7 +1132,7 @@
             // 
             // btnCancelToast
             // 
-            this.btnCancelToast.Location = new System.Drawing.Point(292, 442);
+            this.btnCancelToast.Location = new System.Drawing.Point(291, 391);
             this.btnCancelToast.Name = "btnCancelToast";
             this.btnCancelToast.Size = new System.Drawing.Size(75, 23);
             this.btnCancelToast.TabIndex = 37;
@@ -1114,7 +1142,7 @@
             // 
             // btnDeleteToast
             // 
-            this.btnDeleteToast.Location = new System.Drawing.Point(385, 442);
+            this.btnDeleteToast.Location = new System.Drawing.Point(384, 391);
             this.btnDeleteToast.Name = "btnDeleteToast";
             this.btnDeleteToast.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteToast.TabIndex = 36;
@@ -1124,7 +1152,7 @@
             // 
             // btnEditToast
             // 
-            this.btnEditToast.Location = new System.Drawing.Point(199, 442);
+            this.btnEditToast.Location = new System.Drawing.Point(198, 391);
             this.btnEditToast.Name = "btnEditToast";
             this.btnEditToast.Size = new System.Drawing.Size(75, 23);
             this.btnEditToast.TabIndex = 35;
@@ -1135,7 +1163,7 @@
             // btnAddtoast
             // 
             this.btnAddtoast.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddtoast.Location = new System.Drawing.Point(106, 442);
+            this.btnAddtoast.Location = new System.Drawing.Point(105, 391);
             this.btnAddtoast.Name = "btnAddtoast";
             this.btnAddtoast.Size = new System.Drawing.Size(75, 23);
             this.btnAddtoast.TabIndex = 34;
@@ -1267,12 +1295,14 @@
             this.dataGridViewToast.DataSource = this.toastBindingSource;
             this.dataGridViewToast.Location = new System.Drawing.Point(5, 5);
             this.dataGridViewToast.Name = "dataGridViewToast";
-            this.dataGridViewToast.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewToast.Size = new System.Drawing.Size(545, 358);
             this.dataGridViewToast.TabIndex = 0;
             this.dataGridViewToast.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewToast_CellClick);
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.label19);
+            this.tabPage6.Controls.Add(this.txtBoxSearchPizza);
             this.tabPage6.Controls.Add(this.btnSavePizza);
             this.tabPage6.Controls.Add(this.btnCancelPizza);
             this.tabPage6.Controls.Add(this.btnDeletePizza);
@@ -1301,7 +1331,7 @@
             // 
             // btnSavePizza
             // 
-            this.btnSavePizza.Location = new System.Drawing.Point(477, 444);
+            this.btnSavePizza.Location = new System.Drawing.Point(475, 393);
             this.btnSavePizza.Name = "btnSavePizza";
             this.btnSavePizza.Size = new System.Drawing.Size(75, 23);
             this.btnSavePizza.TabIndex = 43;
@@ -1311,7 +1341,7 @@
             // 
             // btnCancelPizza
             // 
-            this.btnCancelPizza.Location = new System.Drawing.Point(291, 444);
+            this.btnCancelPizza.Location = new System.Drawing.Point(289, 393);
             this.btnCancelPizza.Name = "btnCancelPizza";
             this.btnCancelPizza.Size = new System.Drawing.Size(75, 23);
             this.btnCancelPizza.TabIndex = 42;
@@ -1321,7 +1351,7 @@
             // 
             // btnDeletePizza
             // 
-            this.btnDeletePizza.Location = new System.Drawing.Point(384, 444);
+            this.btnDeletePizza.Location = new System.Drawing.Point(382, 393);
             this.btnDeletePizza.Name = "btnDeletePizza";
             this.btnDeletePizza.Size = new System.Drawing.Size(75, 23);
             this.btnDeletePizza.TabIndex = 41;
@@ -1331,7 +1361,7 @@
             // 
             // btnEditPizza
             // 
-            this.btnEditPizza.Location = new System.Drawing.Point(198, 444);
+            this.btnEditPizza.Location = new System.Drawing.Point(196, 393);
             this.btnEditPizza.Name = "btnEditPizza";
             this.btnEditPizza.Size = new System.Drawing.Size(75, 23);
             this.btnEditPizza.TabIndex = 40;
@@ -1342,7 +1372,7 @@
             // btnAddPizza
             // 
             this.btnAddPizza.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddPizza.Location = new System.Drawing.Point(105, 444);
+            this.btnAddPizza.Location = new System.Drawing.Point(103, 393);
             this.btnAddPizza.Name = "btnAddPizza";
             this.btnAddPizza.Size = new System.Drawing.Size(75, 23);
             this.btnAddPizza.TabIndex = 39;
@@ -1474,12 +1504,14 @@
             this.dataGridViewPizza.DataSource = this.pizzasBindingSource;
             this.dataGridViewPizza.Location = new System.Drawing.Point(5, 5);
             this.dataGridViewPizza.Name = "dataGridViewPizza";
-            this.dataGridViewPizza.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewPizza.Size = new System.Drawing.Size(545, 360);
             this.dataGridViewPizza.TabIndex = 0;
             this.dataGridViewPizza.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPizza_CellClick);
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.lbSearchS);
+            this.tabPage7.Controls.Add(this.txtBoxSearchSalad);
             this.tabPage7.Controls.Add(this.btnSaveSalad);
             this.tabPage7.Controls.Add(this.btnCancelSalad);
             this.tabPage7.Controls.Add(this.btnDeleteSalad);
@@ -1508,7 +1540,7 @@
             // 
             // btnSaveSalad
             // 
-            this.btnSaveSalad.Location = new System.Drawing.Point(474, 447);
+            this.btnSaveSalad.Location = new System.Drawing.Point(478, 396);
             this.btnSaveSalad.Name = "btnSaveSalad";
             this.btnSaveSalad.Size = new System.Drawing.Size(75, 23);
             this.btnSaveSalad.TabIndex = 53;
@@ -1518,7 +1550,7 @@
             // 
             // btnCancelSalad
             // 
-            this.btnCancelSalad.Location = new System.Drawing.Point(288, 447);
+            this.btnCancelSalad.Location = new System.Drawing.Point(292, 396);
             this.btnCancelSalad.Name = "btnCancelSalad";
             this.btnCancelSalad.Size = new System.Drawing.Size(75, 23);
             this.btnCancelSalad.TabIndex = 52;
@@ -1528,7 +1560,7 @@
             // 
             // btnDeleteSalad
             // 
-            this.btnDeleteSalad.Location = new System.Drawing.Point(381, 447);
+            this.btnDeleteSalad.Location = new System.Drawing.Point(385, 396);
             this.btnDeleteSalad.Name = "btnDeleteSalad";
             this.btnDeleteSalad.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteSalad.TabIndex = 51;
@@ -1538,7 +1570,7 @@
             // 
             // btnEditSalad
             // 
-            this.btnEditSalad.Location = new System.Drawing.Point(195, 447);
+            this.btnEditSalad.Location = new System.Drawing.Point(199, 396);
             this.btnEditSalad.Name = "btnEditSalad";
             this.btnEditSalad.Size = new System.Drawing.Size(75, 23);
             this.btnEditSalad.TabIndex = 50;
@@ -1549,7 +1581,7 @@
             // btnAddSalad
             // 
             this.btnAddSalad.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddSalad.Location = new System.Drawing.Point(102, 447);
+            this.btnAddSalad.Location = new System.Drawing.Point(106, 396);
             this.btnAddSalad.Name = "btnAddSalad";
             this.btnAddSalad.Size = new System.Drawing.Size(75, 23);
             this.btnAddSalad.TabIndex = 49;
@@ -1681,12 +1713,14 @@
             this.dataGridViewSalad.DataSource = this.saladBindingSource;
             this.dataGridViewSalad.Location = new System.Drawing.Point(5, 5);
             this.dataGridViewSalad.Name = "dataGridViewSalad";
-            this.dataGridViewSalad.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewSalad.Size = new System.Drawing.Size(545, 363);
             this.dataGridViewSalad.TabIndex = 0;
             this.dataGridViewSalad.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSalad_CellClick);
             // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.lbseach);
+            this.tabPage8.Controls.Add(this.txtBoxSearchDrink);
             this.tabPage8.Controls.Add(this.btnSaveDrink);
             this.tabPage8.Controls.Add(this.btnCancelDrink);
             this.tabPage8.Controls.Add(this.btnDeleteDrink);
@@ -1715,7 +1749,7 @@
             // 
             // btnSaveDrink
             // 
-            this.btnSaveDrink.Location = new System.Drawing.Point(475, 444);
+            this.btnSaveDrink.Location = new System.Drawing.Point(473, 393);
             this.btnSaveDrink.Name = "btnSaveDrink";
             this.btnSaveDrink.Size = new System.Drawing.Size(75, 23);
             this.btnSaveDrink.TabIndex = 65;
@@ -1725,7 +1759,7 @@
             // 
             // btnCancelDrink
             // 
-            this.btnCancelDrink.Location = new System.Drawing.Point(289, 444);
+            this.btnCancelDrink.Location = new System.Drawing.Point(287, 393);
             this.btnCancelDrink.Name = "btnCancelDrink";
             this.btnCancelDrink.Size = new System.Drawing.Size(75, 23);
             this.btnCancelDrink.TabIndex = 64;
@@ -1735,7 +1769,7 @@
             // 
             // btnDeleteDrink
             // 
-            this.btnDeleteDrink.Location = new System.Drawing.Point(382, 444);
+            this.btnDeleteDrink.Location = new System.Drawing.Point(380, 393);
             this.btnDeleteDrink.Name = "btnDeleteDrink";
             this.btnDeleteDrink.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteDrink.TabIndex = 63;
@@ -1745,7 +1779,7 @@
             // 
             // btnEditDrink
             // 
-            this.btnEditDrink.Location = new System.Drawing.Point(196, 444);
+            this.btnEditDrink.Location = new System.Drawing.Point(194, 393);
             this.btnEditDrink.Name = "btnEditDrink";
             this.btnEditDrink.Size = new System.Drawing.Size(75, 23);
             this.btnEditDrink.TabIndex = 62;
@@ -1756,7 +1790,7 @@
             // btnAddDrink
             // 
             this.btnAddDrink.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddDrink.Location = new System.Drawing.Point(103, 444);
+            this.btnAddDrink.Location = new System.Drawing.Point(101, 393);
             this.btnAddDrink.Name = "btnAddDrink";
             this.btnAddDrink.Size = new System.Drawing.Size(75, 23);
             this.btnAddDrink.TabIndex = 61;
@@ -1888,12 +1922,14 @@
             this.dataGridViewDrink.DataSource = this.drinkBindingSource;
             this.dataGridViewDrink.Location = new System.Drawing.Point(5, 5);
             this.dataGridViewDrink.Name = "dataGridViewDrink";
-            this.dataGridViewDrink.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewDrink.Size = new System.Drawing.Size(545, 360);
             this.dataGridViewDrink.TabIndex = 0;
             this.dataGridViewDrink.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDrink_CellClick);
             // 
             // tabPage9
             // 
+            this.tabPage9.Controls.Add(this.lbSearch);
+            this.tabPage9.Controls.Add(this.txtBoxSearch);
             this.tabPage9.Controls.Add(this.btnSaveDesert);
             this.tabPage9.Controls.Add(this.btnCancelDesert);
             this.tabPage9.Controls.Add(this.btnDeleteDesert);
@@ -1922,7 +1958,7 @@
             // 
             // btnSaveDesert
             // 
-            this.btnSaveDesert.Location = new System.Drawing.Point(479, 446);
+            this.btnSaveDesert.Location = new System.Drawing.Point(479, 390);
             this.btnSaveDesert.Name = "btnSaveDesert";
             this.btnSaveDesert.Size = new System.Drawing.Size(75, 23);
             this.btnSaveDesert.TabIndex = 77;
@@ -1932,7 +1968,7 @@
             // 
             // btnCancelDesert
             // 
-            this.btnCancelDesert.Location = new System.Drawing.Point(293, 446);
+            this.btnCancelDesert.Location = new System.Drawing.Point(293, 390);
             this.btnCancelDesert.Name = "btnCancelDesert";
             this.btnCancelDesert.Size = new System.Drawing.Size(75, 23);
             this.btnCancelDesert.TabIndex = 76;
@@ -1942,7 +1978,7 @@
             // 
             // btnDeleteDesert
             // 
-            this.btnDeleteDesert.Location = new System.Drawing.Point(386, 446);
+            this.btnDeleteDesert.Location = new System.Drawing.Point(386, 390);
             this.btnDeleteDesert.Name = "btnDeleteDesert";
             this.btnDeleteDesert.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteDesert.TabIndex = 75;
@@ -1952,7 +1988,7 @@
             // 
             // btnEditDesert
             // 
-            this.btnEditDesert.Location = new System.Drawing.Point(200, 446);
+            this.btnEditDesert.Location = new System.Drawing.Point(200, 390);
             this.btnEditDesert.Name = "btnEditDesert";
             this.btnEditDesert.Size = new System.Drawing.Size(75, 23);
             this.btnEditDesert.TabIndex = 74;
@@ -1963,7 +1999,7 @@
             // btnAddDesert
             // 
             this.btnAddDesert.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAddDesert.Location = new System.Drawing.Point(107, 446);
+            this.btnAddDesert.Location = new System.Drawing.Point(107, 390);
             this.btnAddDesert.Name = "btnAddDesert";
             this.btnAddDesert.Size = new System.Drawing.Size(75, 23);
             this.btnAddDesert.TabIndex = 73;
@@ -2095,7 +2131,7 @@
             this.dataGridViewDesert.DataSource = this.desertBindingSource;
             this.dataGridViewDesert.Location = new System.Drawing.Point(5, 5);
             this.dataGridViewDesert.Name = "dataGridViewDesert";
-            this.dataGridViewDesert.Size = new System.Drawing.Size(545, 395);
+            this.dataGridViewDesert.Size = new System.Drawing.Size(545, 361);
             this.dataGridViewDesert.TabIndex = 0;
             this.dataGridViewDesert.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDesert_CellClick);
             // 
@@ -2106,6 +2142,159 @@
             this.tabPage10.Size = new System.Drawing.Size(872, 504);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // lbSearch
+            // 
+            this.lbSearch.AutoSize = true;
+            this.lbSearch.Location = new System.Drawing.Point(104, 452);
+            this.lbSearch.Name = "lbSearch";
+            this.lbSearch.Size = new System.Drawing.Size(41, 13);
+            this.lbSearch.TabIndex = 79;
+            this.lbSearch.Text = "Search";
+            // 
+            // txtBoxSearch
+            // 
+            this.txtBoxSearch.Location = new System.Drawing.Point(173, 449);
+            this.txtBoxSearch.Name = "txtBoxSearch";
+            this.txtBoxSearch.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearch.TabIndex = 78;
+            this.txtBoxSearch.TextChanged += new System.EventHandler(this.txtBoxSearch_TextChanged);
+            // 
+            // lbseach
+            // 
+            this.lbseach.AutoSize = true;
+            this.lbseach.Location = new System.Drawing.Point(98, 450);
+            this.lbseach.Name = "lbseach";
+            this.lbseach.Size = new System.Drawing.Size(41, 13);
+            this.lbseach.TabIndex = 81;
+            this.lbseach.Text = "Search";
+            // 
+            // txtBoxSearchDrink
+            // 
+            this.txtBoxSearchDrink.Location = new System.Drawing.Point(167, 447);
+            this.txtBoxSearchDrink.Name = "txtBoxSearchDrink";
+            this.txtBoxSearchDrink.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchDrink.TabIndex = 80;
+            this.txtBoxSearchDrink.TextChanged += new System.EventHandler(this.txtBoxSeachDrink_TextChanged);
+            // 
+            // lbSearchS
+            // 
+            this.lbSearchS.AutoSize = true;
+            this.lbSearchS.Location = new System.Drawing.Point(103, 453);
+            this.lbSearchS.Name = "lbSearchS";
+            this.lbSearchS.Size = new System.Drawing.Size(41, 13);
+            this.lbSearchS.TabIndex = 81;
+            this.lbSearchS.Text = "Search";
+            // 
+            // txtBoxSearchSalad
+            // 
+            this.txtBoxSearchSalad.Location = new System.Drawing.Point(172, 450);
+            this.txtBoxSearchSalad.Name = "txtBoxSearchSalad";
+            this.txtBoxSearchSalad.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchSalad.TabIndex = 80;
+            this.txtBoxSearchSalad.TextChanged += new System.EventHandler(this.txtBoxSearchSalads_TextChanged);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(100, 450);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 13);
+            this.label19.TabIndex = 81;
+            this.label19.Text = "Search";
+            // 
+            // txtBoxSearchPizza
+            // 
+            this.txtBoxSearchPizza.Location = new System.Drawing.Point(169, 447);
+            this.txtBoxSearchPizza.Name = "txtBoxSearchPizza";
+            this.txtBoxSearchPizza.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchPizza.TabIndex = 80;
+            this.txtBoxSearchPizza.TextChanged += new System.EventHandler(this.txtBoxSearchPizza_TextChanged);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(100, 448);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(41, 13);
+            this.label20.TabIndex = 81;
+            this.label20.Text = "Search";
+            // 
+            // txtBoxSearchToast
+            // 
+            this.txtBoxSearchToast.Location = new System.Drawing.Point(169, 445);
+            this.txtBoxSearchToast.Name = "txtBoxSearchToast";
+            this.txtBoxSearchToast.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchToast.TabIndex = 80;
+            this.txtBoxSearchToast.TextChanged += new System.EventHandler(this.txtBoxSearchToast_TextChanged);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(100, 452);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(41, 13);
+            this.label21.TabIndex = 81;
+            this.label21.Text = "Search";
+            // 
+            // txtBoxSearchBurger
+            // 
+            this.txtBoxSearchBurger.Location = new System.Drawing.Point(169, 449);
+            this.txtBoxSearchBurger.Name = "txtBoxSearchBurger";
+            this.txtBoxSearchBurger.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchBurger.TabIndex = 80;
+            this.txtBoxSearchBurger.TextChanged += new System.EventHandler(this.txtBoxSearchBurger_TextChanged);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(101, 466);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(41, 13);
+            this.label22.TabIndex = 81;
+            this.label22.Text = "Search";
+            // 
+            // txtBoxSearchCategory
+            // 
+            this.txtBoxSearchCategory.Location = new System.Drawing.Point(170, 463);
+            this.txtBoxSearchCategory.Name = "txtBoxSearchCategory";
+            this.txtBoxSearchCategory.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchCategory.TabIndex = 80;
+            this.txtBoxSearchCategory.TextChanged += new System.EventHandler(this.txtBoxSearchCategory_TextChanged);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(99, 454);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(41, 13);
+            this.label23.TabIndex = 81;
+            this.label23.Text = "Search";
+            // 
+            // txtBoxSearchAdmin
+            // 
+            this.txtBoxSearchAdmin.Location = new System.Drawing.Point(168, 451);
+            this.txtBoxSearchAdmin.Name = "txtBoxSearchAdmin";
+            this.txtBoxSearchAdmin.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchAdmin.TabIndex = 80;
+            this.txtBoxSearchAdmin.TextChanged += new System.EventHandler(this.txtBoxSearchAdmin_TextChanged);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(100, 451);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(41, 13);
+            this.label24.TabIndex = 81;
+            this.label24.Text = "Search";
+            // 
+            // txtBoxSearchUser
+            // 
+            this.txtBoxSearchUser.Location = new System.Drawing.Point(169, 448);
+            this.txtBoxSearchUser.Name = "txtBoxSearchUser";
+            this.txtBoxSearchUser.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchUser.TabIndex = 80;
+            this.txtBoxSearchUser.TextChanged += new System.EventHandler(this.txtBoxSearchUser_TextChanged);
             // 
             // userBindingSource
             // 
@@ -2756,5 +2945,23 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Label lbSearch;
+        private System.Windows.Forms.TextBox txtBoxSearch;
+        private System.Windows.Forms.Label lbseach;
+        private System.Windows.Forms.TextBox txtBoxSearchDrink;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txtBoxSearchUser;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox txtBoxSearchAdmin;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtBoxSearchCategory;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txtBoxSearchBurger;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txtBoxSearchToast;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtBoxSearchPizza;
+        private System.Windows.Forms.Label lbSearchS;
+        private System.Windows.Forms.TextBox txtBoxSearchSalad;
     }
 }
