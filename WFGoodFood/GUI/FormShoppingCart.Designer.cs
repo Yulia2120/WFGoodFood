@@ -45,6 +45,9 @@
             this.btnOrderShop = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbClose = new System.Windows.Forms.Label();
+            this.txtBoxQuantity = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +86,7 @@
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Sarllina", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.lbName.Location = new System.Drawing.Point(431, 9);
+            this.lbName.Location = new System.Drawing.Point(431, 13);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(151, 55);
             this.lbName.TabIndex = 53;
@@ -93,7 +96,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(13, 83);
+            this.label1.Location = new System.Drawing.Point(13, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 21);
             this.label1.TabIndex = 54;
@@ -102,7 +105,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel1.Location = new System.Drawing.Point(20, 179);
+            this.panel1.Location = new System.Drawing.Point(18, 157);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(360, 3);
             this.panel1.TabIndex = 55;
@@ -111,7 +114,7 @@
             // 
             this.lbNameShop.AutoSize = true;
             this.lbNameShop.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbNameShop.Location = new System.Drawing.Point(17, 139);
+            this.lbNameShop.Location = new System.Drawing.Point(17, 117);
             this.lbNameShop.Name = "lbNameShop";
             this.lbNameShop.Size = new System.Drawing.Size(48, 17);
             this.lbNameShop.TabIndex = 56;
@@ -123,7 +126,7 @@
             this.txtBoxNameShop.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxNameShop.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtBoxNameShop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtBoxNameShop.Location = new System.Drawing.Point(22, 162);
+            this.txtBoxNameShop.Location = new System.Drawing.Point(22, 140);
             this.txtBoxNameShop.Name = "txtBoxNameShop";
             this.txtBoxNameShop.Size = new System.Drawing.Size(282, 15);
             this.txtBoxNameShop.TabIndex = 57;
@@ -134,7 +137,7 @@
             this.txtBoxPhoneShop.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxPhoneShop.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtBoxPhoneShop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtBoxPhoneShop.Location = new System.Drawing.Point(22, 249);
+            this.txtBoxPhoneShop.Location = new System.Drawing.Point(19, 215);
             this.txtBoxPhoneShop.Name = "txtBoxPhoneShop";
             this.txtBoxPhoneShop.Size = new System.Drawing.Size(282, 15);
             this.txtBoxPhoneShop.TabIndex = 60;
@@ -143,7 +146,7 @@
             // 
             this.lbPhoneShop.AutoSize = true;
             this.lbPhoneShop.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbPhoneShop.Location = new System.Drawing.Point(17, 218);
+            this.lbPhoneShop.Location = new System.Drawing.Point(19, 185);
             this.lbPhoneShop.Name = "lbPhoneShop";
             this.lbPhoneShop.Size = new System.Drawing.Size(49, 17);
             this.lbPhoneShop.TabIndex = 59;
@@ -152,7 +155,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel2.Location = new System.Drawing.Point(20, 265);
+            this.panel2.Location = new System.Drawing.Point(18, 230);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(360, 3);
             this.panel2.TabIndex = 58;
@@ -163,7 +166,7 @@
             this.txtBoxDelivShop.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBoxDelivShop.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.txtBoxDelivShop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
-            this.txtBoxDelivShop.Location = new System.Drawing.Point(22, 335);
+            this.txtBoxDelivShop.Location = new System.Drawing.Point(19, 288);
             this.txtBoxDelivShop.Name = "txtBoxDelivShop";
             this.txtBoxDelivShop.Size = new System.Drawing.Size(282, 15);
             this.txtBoxDelivShop.TabIndex = 63;
@@ -172,7 +175,7 @@
             // 
             this.lbDelivAdres.AutoSize = true;
             this.lbDelivAdres.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbDelivAdres.Location = new System.Drawing.Point(17, 297);
+            this.lbDelivAdres.Location = new System.Drawing.Point(15, 253);
             this.lbDelivAdres.Name = "lbDelivAdres";
             this.lbDelivAdres.Size = new System.Drawing.Size(111, 17);
             this.lbDelivAdres.TabIndex = 62;
@@ -181,7 +184,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
-            this.panel4.Location = new System.Drawing.Point(20, 351);
+            this.panel4.Location = new System.Drawing.Point(18, 303);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(360, 3);
             this.panel4.TabIndex = 61;
@@ -193,7 +196,7 @@
             this.btnOrderShop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrderShop.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnOrderShop.ForeColor = System.Drawing.Color.White;
-            this.btnOrderShop.Location = new System.Drawing.Point(441, 335);
+            this.btnOrderShop.Location = new System.Drawing.Point(440, 354);
             this.btnOrderShop.Name = "btnOrderShop";
             this.btnOrderShop.Size = new System.Drawing.Size(135, 31);
             this.btnOrderShop.TabIndex = 64;
@@ -204,7 +207,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WFGoodFood.Properties.Resources.pngwing_com__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(435, 61);
+            this.pictureBox1.Location = new System.Drawing.Point(434, 76);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(141, 262);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -224,12 +227,44 @@
             this.lbClose.MouseEnter += new System.EventHandler(this.lbClose_MouseEnter);
             this.lbClose.MouseLeave += new System.EventHandler(this.lbClose_MouseLeave);
             // 
+            // txtBoxQuantity
+            // 
+            this.txtBoxQuantity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
+            this.txtBoxQuantity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxQuantity.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtBoxQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(121)))), ((int)(((byte)(122)))));
+            this.txtBoxQuantity.Location = new System.Drawing.Point(19, 361);
+            this.txtBoxQuantity.Name = "txtBoxQuantity";
+            this.txtBoxQuantity.Size = new System.Drawing.Size(282, 15);
+            this.txtBoxQuantity.TabIndex = 69;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(14, 321);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 17);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Quantity";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(115)))), ((int)(((byte)(0)))));
+            this.panel5.Location = new System.Drawing.Point(18, 376);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(360, 3);
+            this.panel5.TabIndex = 67;
+            // 
             // FormShopping_cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
             this.ClientSize = new System.Drawing.Size(614, 411);
+            this.Controls.Add(this.txtBoxQuantity);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.lbClose);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnOrderShop);
@@ -276,5 +311,8 @@
         private System.Windows.Forms.Button btnOrderShop;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbClose;
+        private System.Windows.Forms.TextBox txtBoxQuantity;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel5;
     }
 }

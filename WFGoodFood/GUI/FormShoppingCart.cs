@@ -42,7 +42,6 @@ namespace WFGoodFood.GUI
             else MessageBox.Show("Please fill in the empty fields!");
         }
 
-
-
+       
     }
 }

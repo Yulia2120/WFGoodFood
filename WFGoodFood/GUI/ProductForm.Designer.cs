@@ -40,11 +40,11 @@
             this.lbDelivery = new System.Windows.Forms.Label();
             this.lbrestor = new System.Windows.Forms.Label();
             this.lbIcon = new System.Windows.Forms.Label();
+            this.userControlBurger = new WFGoodFood.Control.UserControlBurger();
             this.userControlManagement1 = new WFGoodFood.Control.UserControlManagement();
             this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
             this.userControlCategory1 = new WFGoodFood.Control.UserControlCategory();
             this.userControlDelivery2 = new WFGoodFood.Control.UserControlDelivery();
-            this.userControlBurger = new WFGoodFood.Control.UserControlBurger();
             this.pnlSide.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
@@ -172,7 +172,7 @@
             // 
             this.lbDelivery.AutoSize = true;
             this.lbDelivery.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbDelivery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.lbDelivery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
             this.lbDelivery.Location = new System.Drawing.Point(27, 64);
             this.lbDelivery.Name = "lbDelivery";
             this.lbDelivery.Size = new System.Drawing.Size(57, 17);
@@ -183,7 +183,7 @@
             // 
             this.lbrestor.AutoSize = true;
             this.lbrestor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbrestor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.lbrestor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
             this.lbrestor.Location = new System.Drawing.Point(27, 48);
             this.lbrestor.Name = "lbrestor";
             this.lbrestor.Size = new System.Drawing.Size(72, 17);
@@ -194,16 +194,24 @@
             // 
             this.lbIcon.AutoSize = true;
             this.lbIcon.Font = new System.Drawing.Font("Sarllina", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.lbIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(232)))), ((int)(((byte)(207)))));
             this.lbIcon.Location = new System.Drawing.Point(15, 9);
             this.lbIcon.Name = "lbIcon";
             this.lbIcon.Size = new System.Drawing.Size(105, 38);
             this.lbIcon.TabIndex = 0;
             this.lbIcon.Text = "GoodFood";
             // 
+            // userControlBurger
+            // 
+            this.userControlBurger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.userControlBurger.Location = new System.Drawing.Point(202, 96);
+            this.userControlBurger.Name = "userControlBurger";
+            this.userControlBurger.Size = new System.Drawing.Size(880, 530);
+            this.userControlBurger.TabIndex = 19;
+            // 
             // userControlManagement1
             // 
-            this.userControlManagement1.Location = new System.Drawing.Point(202, 95);
+            this.userControlManagement1.Location = new System.Drawing.Point(202, 96);
             this.userControlManagement1.Name = "userControlManagement1";
             this.userControlManagement1.Size = new System.Drawing.Size(880, 530);
             this.userControlManagement1.TabIndex = 18;
@@ -211,7 +219,7 @@
             // userControlHome1
             // 
             this.userControlHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlHome1.Location = new System.Drawing.Point(202, 95);
+            this.userControlHome1.Location = new System.Drawing.Point(203, 98);
             this.userControlHome1.Name = "userControlHome1";
             this.userControlHome1.Size = new System.Drawing.Size(877, 530);
             this.userControlHome1.TabIndex = 17;
@@ -219,7 +227,7 @@
             // userControlCategory1
             // 
             this.userControlCategory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlCategory1.Location = new System.Drawing.Point(203, 104);
+            this.userControlCategory1.Location = new System.Drawing.Point(206, 105);
             this.userControlCategory1.Name = "userControlCategory1";
             this.userControlCategory1.Size = new System.Drawing.Size(877, 530);
             this.userControlCategory1.TabIndex = 16;
@@ -227,18 +235,10 @@
             // userControlDelivery2
             // 
             this.userControlDelivery2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlDelivery2.Location = new System.Drawing.Point(222, 108);
+            this.userControlDelivery2.Location = new System.Drawing.Point(206, 98);
             this.userControlDelivery2.Name = "userControlDelivery2";
-            this.userControlDelivery2.Size = new System.Drawing.Size(842, 530);
+            this.userControlDelivery2.Size = new System.Drawing.Size(874, 530);
             this.userControlDelivery2.TabIndex = 15;
-            // 
-            // userControlBurger
-            // 
-            this.userControlBurger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlBurger.Location = new System.Drawing.Point(202, 97);
-            this.userControlBurger.Name = "userControlBurger";
-            this.userControlBurger.Size = new System.Drawing.Size(880, 530);
-            this.userControlBurger.TabIndex = 19;
             // 
             // ProductForm
             // 
