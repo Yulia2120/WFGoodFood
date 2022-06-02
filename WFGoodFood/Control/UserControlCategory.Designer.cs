@@ -157,6 +157,7 @@
             this.btnCatToast.TabIndex = 4;
             this.btnCatToast.Text = "Read More";
             this.btnCatToast.UseVisualStyleBackColor = false;
+            this.btnCatToast.Click += new System.EventHandler(this.btnCatToast_Click);
             // 
             // label5
             // 
@@ -215,6 +216,7 @@
             this.btnCatPizza.TabIndex = 4;
             this.btnCatPizza.Text = "Read More";
             this.btnCatPizza.UseVisualStyleBackColor = false;
+            this.btnCatPizza.Click += new System.EventHandler(this.btnCatPizza_Click);
             // 
             // label8
             // 
@@ -273,6 +275,7 @@
             this.btnCatSalad.TabIndex = 4;
             this.btnCatSalad.Text = "Read More";
             this.btnCatSalad.UseVisualStyleBackColor = false;
+            this.btnCatSalad.Click += new System.EventHandler(this.btnCatSalad_Click);
             // 
             // label11
             // 
@@ -331,6 +334,7 @@
             this.btnCatDrinks.TabIndex = 4;
             this.btnCatDrinks.Text = "Read More";
             this.btnCatDrinks.UseVisualStyleBackColor = false;
+            this.btnCatDrinks.Click += new System.EventHandler(this.btnCatDrinks_Click);
             // 
             // label14
             // 
@@ -389,6 +393,7 @@
             this.btnCatDessert.TabIndex = 4;
             this.btnCatDessert.Text = "Read More";
             this.btnCatDessert.UseVisualStyleBackColor = false;
+            this.btnCatDessert.Click += new System.EventHandler(this.btnCatDessert_Click);
             // 
             // label17
             // 

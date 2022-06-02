@@ -138,6 +138,12 @@
     <Compile Include="GUI\Sign-Up.Designer.cs">
       <DependentUpon>Sign-Up.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ToastForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ToastForm.Designer.cs">
+      <DependentUpon>ToastForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202205241753294_user.cs" />
     <Compile Include="Migrations\202205241753294_user.designer.cs">
       <DependentUpon>202205241753294_user.cs</DependentUpon>
@@ -224,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Sign-Up.resx">
       <DependentUpon>Sign-Up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ToastForm.resx">
+      <DependentUpon>ToastForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205241753294_user.resx">
       <DependentUpon>202205241753294_user.cs</DependentUpon>

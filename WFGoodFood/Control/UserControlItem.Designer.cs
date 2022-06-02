@@ -34,6 +34,7 @@
             this.lbDesItem = new System.Windows.Forms.Label();
             this.lbNameItem = new System.Windows.Forms.Label();
             this.pBoxItem = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlCategory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxItem)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +43,7 @@
             // 
             this.pnlCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.pnlCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlCategory.Controls.Add(this.label1);
             this.pnlCategory.Controls.Add(this.lbPriceItem);
             this.pnlCategory.Controls.Add(this.btnItem);
             this.pnlCategory.Controls.Add(this.lbDesItem);
@@ -57,7 +59,7 @@
             this.lbPriceItem.AutoSize = true;
             this.lbPriceItem.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbPriceItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(75)))), ((int)(((byte)(72)))));
-            this.lbPriceItem.Location = new System.Drawing.Point(104, 35);
+            this.lbPriceItem.Location = new System.Drawing.Point(118, 36);
             this.lbPriceItem.Name = "lbPriceItem";
             this.lbPriceItem.Size = new System.Drawing.Size(0, 16);
             this.lbPriceItem.TabIndex = 5;
@@ -105,6 +107,17 @@
             this.pBoxItem.TabIndex = 0;
             this.pBoxItem.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(75)))), ((int)(((byte)(72)))));
+            this.label1.Location = new System.Drawing.Point(108, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "$";
+            // 
             // UserControlItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,5 +140,6 @@
         private System.Windows.Forms.Label lbDesItem;
         private System.Windows.Forms.Label lbNameItem;
         private System.Windows.Forms.PictureBox pBoxItem;
+        private System.Windows.Forms.Label label1;
     }
 }

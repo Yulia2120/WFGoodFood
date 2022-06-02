@@ -22,9 +22,33 @@ namespace WFGoodFood.Control
         private void btnCatBurg_Click(object sender, EventArgs e)
         {
             ProductAllForm allForm = new ProductAllForm();
-            allForm.Show();
+            allForm.Show(); 
+        }
 
-           
+        private void btnCatToast_Click(object sender, EventArgs e)
+        {
+            ToastForm toast = new ToastForm();
+            toast.Show();
+        }
+
+        private void btnCatPizza_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCatSalad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCatDrinks_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCatDessert_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

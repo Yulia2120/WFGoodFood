@@ -12,38 +12,28 @@ using WFGoodFood.DataModel;
 
 namespace WFGoodFood.GUI
 {
-    public partial class ProductAllForm : Form
+    public partial class ToastForm : Form
     {
-        public ProductAllForm()
+        public ToastForm()
         {
             InitializeComponent();
         }
 
         private void lbClose_Click(object sender, EventArgs e)
         {
-            ProductAllForm allForm = new ProductAllForm();
-            allForm.Close();
+            ToastForm toast = new ToastForm();
+            toast.Close();
             Hide();
         }
 
-        private void lbClose_MouseEnter(object sender, EventArgs e)
-        {
-            lbClose.ForeColor = Color.Red;
-        }
-
-        private void lbClose_MouseLeave(object sender, EventArgs e)
-        {
-            lbClose.ForeColor = Color.Black;
-        }
-
-        private void ProductAllForm_Load(object sender, EventArgs e)
+        private void ToastForm_Load(object sender, EventArgs e)
         {
             int x = 15, y = 40;
 
             using (ModelContext db = new ModelContext())
             {
 
-                foreach (var item in db.BurgerList)
+                foreach (var item in db.ToastList)
                 {
                     this.Controls.Add(new UserControlItem(item.ProductName, item.Price, item.ImageUrl)
                     { Location = new Point(x, y) });
@@ -56,6 +46,16 @@ namespace WFGoodFood.GUI
                     }
                 }
             }
+        }
+
+        private void lbClose_MouseEnter(object sender, EventArgs e)
+        {
+            lbClose.ForeColor = Color.Red;
+        }
+
+        private void lbClose_MouseLeave(object sender, EventArgs e)
+        {
+            lbClose.ForeColor = Color.Black;
         }
     }
 }
