@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WFGoodFood.DataModel;
+using WFGoodFood.GUI;
 
 namespace WFGoodFood.Control
 {
@@ -18,6 +19,12 @@ namespace WFGoodFood.Control
             InitializeComponent();
         }
 
-       
+        private void btnCatBurg_Click(object sender, EventArgs e)
+        {
+            ProductAllForm allForm = new ProductAllForm();
+            allForm.Show();
+
+           
+        }
     }
 }

@@ -41,10 +41,10 @@
             this.lbrestor = new System.Windows.Forms.Label();
             this.lbIcon = new System.Windows.Forms.Label();
             this.userControlBurger = new WFGoodFood.Control.UserControlBurger();
-            this.userControlManagement1 = new WFGoodFood.Control.UserControlManagement();
-            this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
+            this.userControlManagement = new WFGoodFood.Control.UserControlManagement();
+            this.userControlDelivery = new WFGoodFood.Control.UserControlDelivery();
             this.userControlCategory1 = new WFGoodFood.Control.UserControlCategory();
-            this.userControlDelivery2 = new WFGoodFood.Control.UserControlDelivery();
+            this.userControlHome1 = new WFGoodFood.Control.UserControlHome();
             this.pnlSide.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.SuspendLayout();
@@ -204,41 +204,41 @@
             // userControlBurger
             // 
             this.userControlBurger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlBurger.Location = new System.Drawing.Point(202, 96);
+            this.userControlBurger.Location = new System.Drawing.Point(202, 97);
             this.userControlBurger.Name = "userControlBurger";
             this.userControlBurger.Size = new System.Drawing.Size(880, 530);
-            this.userControlBurger.TabIndex = 19;
+            this.userControlBurger.TabIndex = 15;
             // 
-            // userControlManagement1
+            // userControlManagement
             // 
-            this.userControlManagement1.Location = new System.Drawing.Point(202, 96);
-            this.userControlManagement1.Name = "userControlManagement1";
-            this.userControlManagement1.Size = new System.Drawing.Size(880, 530);
-            this.userControlManagement1.TabIndex = 18;
+            this.userControlManagement.Location = new System.Drawing.Point(203, 95);
+            this.userControlManagement.Name = "userControlManagement";
+            this.userControlManagement.Size = new System.Drawing.Size(880, 530);
+            this.userControlManagement.TabIndex = 16;
             // 
-            // userControlHome1
+            // userControlDelivery
             // 
-            this.userControlHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlHome1.Location = new System.Drawing.Point(203, 98);
-            this.userControlHome1.Name = "userControlHome1";
-            this.userControlHome1.Size = new System.Drawing.Size(877, 530);
-            this.userControlHome1.TabIndex = 17;
+            this.userControlDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.userControlDelivery.Location = new System.Drawing.Point(203, 95);
+            this.userControlDelivery.Name = "userControlDelivery";
+            this.userControlDelivery.Size = new System.Drawing.Size(877, 530);
+            this.userControlDelivery.TabIndex = 17;
             // 
             // userControlCategory1
             // 
             this.userControlCategory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlCategory1.Location = new System.Drawing.Point(206, 105);
+            this.userControlCategory1.Location = new System.Drawing.Point(201, 97);
             this.userControlCategory1.Name = "userControlCategory1";
-            this.userControlCategory1.Size = new System.Drawing.Size(877, 530);
-            this.userControlCategory1.TabIndex = 16;
+            this.userControlCategory1.Size = new System.Drawing.Size(882, 530);
+            this.userControlCategory1.TabIndex = 18;
             // 
-            // userControlDelivery2
+            // userControlHome1
             // 
-            this.userControlDelivery2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
-            this.userControlDelivery2.Location = new System.Drawing.Point(206, 98);
-            this.userControlDelivery2.Name = "userControlDelivery2";
-            this.userControlDelivery2.Size = new System.Drawing.Size(874, 530);
-            this.userControlDelivery2.TabIndex = 15;
+            this.userControlHome1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
+            this.userControlHome1.Location = new System.Drawing.Point(200, 95);
+            this.userControlHome1.Name = "userControlHome1";
+            this.userControlHome1.Size = new System.Drawing.Size(880, 530);
+            this.userControlHome1.TabIndex = 19;
             // 
             // ProductForm
             // 
@@ -246,11 +246,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(1084, 650);
-            this.Controls.Add(this.userControlBurger);
-            this.Controls.Add(this.userControlManagement1);
             this.Controls.Add(this.userControlHome1);
             this.Controls.Add(this.userControlCategory1);
-            this.Controls.Add(this.userControlDelivery2);
+            this.Controls.Add(this.userControlDelivery);
+            this.Controls.Add(this.userControlManagement);
+            this.Controls.Add(this.userControlBurger);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.pnlSide);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -280,11 +280,11 @@
         private Control.UserControlHome userControlHome;
         private Control.UserControlCategory userControlCategory;
         private Control.UserControlDelivery userControlDelivery1;
-        private Control.UserControlDelivery userControlDelivery2;
-        private Control.UserControlCategory userControlCategory1;
-        private Control.UserControlHome userControlHome1;
-        private Control.UserControlManagement userControlManagement1;
         private System.Windows.Forms.Button btnProducts;
         private Control.UserControlBurger userControlBurger;
+        private Control.UserControlManagement userControlManagement;
+        private Control.UserControlDelivery userControlDelivery;
+        private Control.UserControlCategory userControlCategory1;
+        private Control.UserControlHome userControlHome1;
     }
 }

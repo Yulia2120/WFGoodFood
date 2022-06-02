@@ -31,7 +31,7 @@
             this.pnlCategory = new System.Windows.Forms.Panel();
             this.btnCatBurg = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbCatBurgers = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCatToast = new System.Windows.Forms.Button();
@@ -78,7 +78,7 @@
             this.pnlCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCategory.Controls.Add(this.btnCatBurg);
             this.pnlCategory.Controls.Add(this.label2);
-            this.pnlCategory.Controls.Add(this.label1);
+            this.pnlCategory.Controls.Add(this.lbCatBurgers);
             this.pnlCategory.Controls.Add(this.pictureBox1);
             this.pnlCategory.Location = new System.Drawing.Point(113, 24);
             this.pnlCategory.Name = "pnlCategory";
@@ -98,7 +98,7 @@
             this.btnCatBurg.TabIndex = 4;
             this.btnCatBurg.Text = "Read More";
             this.btnCatBurg.UseVisualStyleBackColor = false;
-        
+            this.btnCatBurg.Click += new System.EventHandler(this.btnCatBurg_Click);
             // 
             // label2
             // 
@@ -111,15 +111,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Alfalfa sprouts crown \r\nthese juicy burgers.\r\n";
             // 
-            // label1
+            // lbCatBurgers
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(73, 130);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Burgers";
+            this.lbCatBurgers.AutoSize = true;
+            this.lbCatBurgers.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbCatBurgers.Location = new System.Drawing.Point(73, 130);
+            this.lbCatBurgers.Name = "lbCatBurgers";
+            this.lbCatBurgers.Size = new System.Drawing.Size(62, 18);
+            this.lbCatBurgers.TabIndex = 1;
+            this.lbCatBurgers.Text = "Burgers";
             // 
             // pictureBox1
             // 
@@ -461,7 +461,7 @@
         private System.Windows.Forms.Panel pnlCategory;
         private System.Windows.Forms.Button btnCatBurg;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbCatBurgers;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCatToast;

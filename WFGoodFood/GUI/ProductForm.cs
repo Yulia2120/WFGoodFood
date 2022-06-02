@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
+using WFGoodFood.Control;
+using WFGoodFood.DataModel;
+using WFGoodFood.GUI;
 
 namespace WFGoodFood
 {
@@ -53,14 +54,14 @@ namespace WFGoodFood
         {
             pnlSide.Height = btnDelivery.Height;
             pnlRed.Top = btnDelivery.Top;
-            userControlDelivery2.BringToFront();
+            userControlDelivery.BringToFront();
         }
 
         private void btnManagement_Click(object sender, EventArgs e)
         {
             pnlSide.Height = btnManagement.Height;
             pnlRed.Top = btnManagement.Top;
-            userControlManagement1.BringToFront();
+            userControlManagement.BringToFront();
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
@@ -68,8 +69,9 @@ namespace WFGoodFood
             pnlSide.Height = btnProducts.Height;
             pnlRed.Top = btnProducts.Top;
             userControlBurger.BringToFront();
+
         }
 
-      
+        
     }
 }

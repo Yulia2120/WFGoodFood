@@ -16,6 +16,11 @@ namespace WFGoodFood.DataModel
         public string ImageUrl { get; set; }
         [StringLength(2555)]
         public string Description { get; set; }
+        public ICollection<Burger> Burgers { get; set; }
+        public Category()
+        {
+            Burgers = new List<Burger>();
+        }
 
     }
 }
