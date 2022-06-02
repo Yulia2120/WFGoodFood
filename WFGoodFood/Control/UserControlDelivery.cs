@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DGVPrinterHelper;
+using System;
 using System.Windows.Forms;
+using WFGoodFood.GUI;
 
 namespace WFGoodFood.Control
 {
@@ -15,6 +10,13 @@ namespace WFGoodFood.Control
         public UserControlDelivery()
         {
             InitializeComponent();
+          
+        }
+
+        private void btnOrdersDeliv_Click(object sender, EventArgs e)
+        {
+            OrderForm orderForm = new OrderForm();
+            orderForm.Show();
         }
     }
 }

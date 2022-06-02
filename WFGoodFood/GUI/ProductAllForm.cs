@@ -21,9 +21,9 @@ namespace WFGoodFood.GUI
 
         private void lbClose_Click(object sender, EventArgs e)
         {
-            ProductAllForm allForm = new ProductAllForm();
-            allForm.Close();
+            Close();
             Hide();
+         
         }
 
         private void lbClose_MouseEnter(object sender, EventArgs e)

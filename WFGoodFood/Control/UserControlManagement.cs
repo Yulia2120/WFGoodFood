@@ -1002,17 +1002,28 @@ namespace WFGoodFood.Control
         }
 
 
-
-
-
-
-
-
-
-
-
         #endregion
 
-       
+        #region Order table
+
+        private void tabPage10_MouseDown(object sender, MouseEventArgs e)
+        {
+            using (ModelContext db = new ModelContext())
+            {
+                orderBindingSource.DataSource = db.OrderList.ToList();
+            }
+         
+          
+        }
+
+
+    #endregion
+
+
+
+
+
+
+
     }
 }

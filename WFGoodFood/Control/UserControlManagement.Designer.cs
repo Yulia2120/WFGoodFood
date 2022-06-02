@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtBoxSearchUser = new System.Windows.Forms.TextBox();
             this.lbPhoneuser = new System.Windows.Forms.Label();
             this.lbPasswuser = new System.Windows.Forms.Label();
             this.lbEmailuser = new System.Windows.Forms.Label();
@@ -53,6 +55,8 @@
             this.lbId = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtBoxSearchAdmin = new System.Windows.Forms.TextBox();
             this.btnSaveAdmin = new System.Windows.Forms.Button();
             this.btnCancelAdmin = new System.Windows.Forms.Button();
             this.btnDeleteAdmin = new System.Windows.Forms.Button();
@@ -66,6 +70,8 @@
             this.lbIdadmin = new System.Windows.Forms.Label();
             this.dataGridViewAdmin = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtBoxSearchCategory = new System.Windows.Forms.TextBox();
             this.btnSaveCat = new System.Windows.Forms.Button();
             this.btnCancelCat = new System.Windows.Forms.Button();
             this.btnDeleteCat = new System.Windows.Forms.Button();
@@ -82,6 +88,8 @@
             this.dataGridViewCategory = new System.Windows.Forms.DataGridView();
             this.ImageUrl = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtBoxSearchBurger = new System.Windows.Forms.TextBox();
             this.btnSaveBurger = new System.Windows.Forms.Button();
             this.btnCancelBurger = new System.Windows.Forms.Button();
             this.btnDeleteBurger = new System.Windows.Forms.Button();
@@ -101,6 +109,8 @@
             this.pBoxImage = new System.Windows.Forms.PictureBox();
             this.dataGridViewBurger = new System.Windows.Forms.DataGridView();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtBoxSearchToast = new System.Windows.Forms.TextBox();
             this.btnSaveToast = new System.Windows.Forms.Button();
             this.btnCancelToast = new System.Windows.Forms.Button();
             this.btnDeleteToast = new System.Windows.Forms.Button();
@@ -120,6 +130,8 @@
             this.pBoxImgToast = new System.Windows.Forms.PictureBox();
             this.dataGridViewToast = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtBoxSearchPizza = new System.Windows.Forms.TextBox();
             this.btnSavePizza = new System.Windows.Forms.Button();
             this.btnCancelPizza = new System.Windows.Forms.Button();
             this.btnDeletePizza = new System.Windows.Forms.Button();
@@ -139,6 +151,8 @@
             this.pBoxImgPizza = new System.Windows.Forms.PictureBox();
             this.dataGridViewPizza = new System.Windows.Forms.DataGridView();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.lbSearchS = new System.Windows.Forms.Label();
+            this.txtBoxSearchSalad = new System.Windows.Forms.TextBox();
             this.btnSaveSalad = new System.Windows.Forms.Button();
             this.btnCancelSalad = new System.Windows.Forms.Button();
             this.btnDeleteSalad = new System.Windows.Forms.Button();
@@ -158,6 +172,8 @@
             this.pBoxImgSalad = new System.Windows.Forms.PictureBox();
             this.dataGridViewSalad = new System.Windows.Forms.DataGridView();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.lbseach = new System.Windows.Forms.Label();
+            this.txtBoxSearchDrink = new System.Windows.Forms.TextBox();
             this.btnSaveDrink = new System.Windows.Forms.Button();
             this.btnCancelDrink = new System.Windows.Forms.Button();
             this.btnDeleteDrink = new System.Windows.Forms.Button();
@@ -177,6 +193,8 @@
             this.pBoxImgDrink = new System.Windows.Forms.PictureBox();
             this.dataGridViewDrink = new System.Windows.Forms.DataGridView();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.lbSearch = new System.Windows.Forms.Label();
+            this.txtBoxSearch = new System.Windows.Forms.TextBox();
             this.btnSaveDesert = new System.Windows.Forms.Button();
             this.btnCancelDesert = new System.Windows.Forms.Button();
             this.btnDeleteDesert = new System.Windows.Forms.Button();
@@ -196,24 +214,7 @@
             this.pBoxImgDesert = new System.Windows.Forms.PictureBox();
             this.dataGridViewDesert = new System.Windows.Forms.DataGridView();
             this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.lbSearch = new System.Windows.Forms.Label();
-            this.txtBoxSearch = new System.Windows.Forms.TextBox();
-            this.lbseach = new System.Windows.Forms.Label();
-            this.txtBoxSearchDrink = new System.Windows.Forms.TextBox();
-            this.lbSearchS = new System.Windows.Forms.Label();
-            this.txtBoxSearchSalad = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtBoxSearchPizza = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtBoxSearchToast = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtBoxSearchBurger = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtBoxSearchCategory = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txtBoxSearchAdmin = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.txtBoxSearchUser = new System.Windows.Forms.TextBox();
+            this.dataGridViewOrder = new System.Windows.Forms.DataGridView();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -276,6 +277,15 @@
             this.priceDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantityDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.createdDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.burgersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.orderBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -302,6 +312,8 @@
             this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDesert)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDesert)).BeginInit();
+            this.tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
@@ -311,6 +323,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.saladBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.drinkBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.desertBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -368,6 +381,23 @@
             this.tabPage1.Text = "User";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage1_MouseDoubleClick);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(100, 451);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(41, 13);
+            this.label24.TabIndex = 81;
+            this.label24.Text = "Search";
+            // 
+            // txtBoxSearchUser
+            // 
+            this.txtBoxSearchUser.Location = new System.Drawing.Point(169, 448);
+            this.txtBoxSearchUser.Name = "txtBoxSearchUser";
+            this.txtBoxSearchUser.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchUser.TabIndex = 80;
+            this.txtBoxSearchUser.TextChanged += new System.EventHandler(this.txtBoxSearchUser_TextChanged);
             // 
             // lbPhoneuser
             // 
@@ -588,6 +618,23 @@
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage2_MouseDoubleClick);
             // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(99, 454);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(41, 13);
+            this.label23.TabIndex = 81;
+            this.label23.Text = "Search";
+            // 
+            // txtBoxSearchAdmin
+            // 
+            this.txtBoxSearchAdmin.Location = new System.Drawing.Point(168, 451);
+            this.txtBoxSearchAdmin.Name = "txtBoxSearchAdmin";
+            this.txtBoxSearchAdmin.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchAdmin.TabIndex = 80;
+            this.txtBoxSearchAdmin.TextChanged += new System.EventHandler(this.txtBoxSearchAdmin_TextChanged);
+            // 
             // btnSaveAdmin
             // 
             this.btnSaveAdmin.Location = new System.Drawing.Point(474, 405);
@@ -732,6 +779,23 @@
             this.tabPage3.Text = "Category";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage3_MouseDoubleClick);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(101, 466);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(41, 13);
+            this.label22.TabIndex = 81;
+            this.label22.Text = "Search";
+            // 
+            // txtBoxSearchCategory
+            // 
+            this.txtBoxSearchCategory.Location = new System.Drawing.Point(170, 463);
+            this.txtBoxSearchCategory.Name = "txtBoxSearchCategory";
+            this.txtBoxSearchCategory.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchCategory.TabIndex = 80;
+            this.txtBoxSearchCategory.TextChanged += new System.EventHandler(this.txtBoxSearchCategory_TextChanged);
             // 
             // btnSaveCat
             // 
@@ -910,6 +974,23 @@
             this.tabPage4.Text = "Burger";
             this.tabPage4.UseVisualStyleBackColor = true;
             this.tabPage4.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage4_MouseDoubleClick);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(100, 452);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(41, 13);
+            this.label21.TabIndex = 81;
+            this.label21.Text = "Search";
+            // 
+            // txtBoxSearchBurger
+            // 
+            this.txtBoxSearchBurger.Location = new System.Drawing.Point(169, 449);
+            this.txtBoxSearchBurger.Name = "txtBoxSearchBurger";
+            this.txtBoxSearchBurger.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchBurger.TabIndex = 80;
+            this.txtBoxSearchBurger.TextChanged += new System.EventHandler(this.txtBoxSearchBurger_TextChanged);
             // 
             // btnSaveBurger
             // 
@@ -1120,6 +1201,23 @@
             this.tabPage5.UseVisualStyleBackColor = true;
             this.tabPage5.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage5_MouseDoubleClick);
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(100, 448);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(41, 13);
+            this.label20.TabIndex = 81;
+            this.label20.Text = "Search";
+            // 
+            // txtBoxSearchToast
+            // 
+            this.txtBoxSearchToast.Location = new System.Drawing.Point(169, 445);
+            this.txtBoxSearchToast.Name = "txtBoxSearchToast";
+            this.txtBoxSearchToast.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchToast.TabIndex = 80;
+            this.txtBoxSearchToast.TextChanged += new System.EventHandler(this.txtBoxSearchToast_TextChanged);
+            // 
             // btnSaveToast
             // 
             this.btnSaveToast.Location = new System.Drawing.Point(477, 391);
@@ -1328,6 +1426,23 @@
             this.tabPage6.Text = "Pizzas";
             this.tabPage6.UseVisualStyleBackColor = true;
             this.tabPage6.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage6_MouseDoubleClick);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(100, 450);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 13);
+            this.label19.TabIndex = 81;
+            this.label19.Text = "Search";
+            // 
+            // txtBoxSearchPizza
+            // 
+            this.txtBoxSearchPizza.Location = new System.Drawing.Point(169, 447);
+            this.txtBoxSearchPizza.Name = "txtBoxSearchPizza";
+            this.txtBoxSearchPizza.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchPizza.TabIndex = 80;
+            this.txtBoxSearchPizza.TextChanged += new System.EventHandler(this.txtBoxSearchPizza_TextChanged);
             // 
             // btnSavePizza
             // 
@@ -1538,6 +1653,23 @@
             this.tabPage7.UseVisualStyleBackColor = true;
             this.tabPage7.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage7_MouseDoubleClick);
             // 
+            // lbSearchS
+            // 
+            this.lbSearchS.AutoSize = true;
+            this.lbSearchS.Location = new System.Drawing.Point(103, 453);
+            this.lbSearchS.Name = "lbSearchS";
+            this.lbSearchS.Size = new System.Drawing.Size(41, 13);
+            this.lbSearchS.TabIndex = 81;
+            this.lbSearchS.Text = "Search";
+            // 
+            // txtBoxSearchSalad
+            // 
+            this.txtBoxSearchSalad.Location = new System.Drawing.Point(172, 450);
+            this.txtBoxSearchSalad.Name = "txtBoxSearchSalad";
+            this.txtBoxSearchSalad.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchSalad.TabIndex = 80;
+            this.txtBoxSearchSalad.TextChanged += new System.EventHandler(this.txtBoxSearchSalads_TextChanged);
+            // 
             // btnSaveSalad
             // 
             this.btnSaveSalad.Location = new System.Drawing.Point(478, 396);
@@ -1746,6 +1878,23 @@
             this.tabPage8.Text = "Drinks";
             this.tabPage8.UseVisualStyleBackColor = true;
             this.tabPage8.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage8_MouseDoubleClick);
+            // 
+            // lbseach
+            // 
+            this.lbseach.AutoSize = true;
+            this.lbseach.Location = new System.Drawing.Point(98, 450);
+            this.lbseach.Name = "lbseach";
+            this.lbseach.Size = new System.Drawing.Size(41, 13);
+            this.lbseach.TabIndex = 81;
+            this.lbseach.Text = "Search";
+            // 
+            // txtBoxSearchDrink
+            // 
+            this.txtBoxSearchDrink.Location = new System.Drawing.Point(167, 447);
+            this.txtBoxSearchDrink.Name = "txtBoxSearchDrink";
+            this.txtBoxSearchDrink.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearchDrink.TabIndex = 80;
+            this.txtBoxSearchDrink.TextChanged += new System.EventHandler(this.txtBoxSeachDrink_TextChanged);
             // 
             // btnSaveDrink
             // 
@@ -1956,6 +2105,23 @@
             this.tabPage9.UseVisualStyleBackColor = true;
             this.tabPage9.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabPage9_MouseDoubleClick);
             // 
+            // lbSearch
+            // 
+            this.lbSearch.AutoSize = true;
+            this.lbSearch.Location = new System.Drawing.Point(104, 452);
+            this.lbSearch.Name = "lbSearch";
+            this.lbSearch.Size = new System.Drawing.Size(41, 13);
+            this.lbSearch.TabIndex = 79;
+            this.lbSearch.Text = "Search";
+            // 
+            // txtBoxSearch
+            // 
+            this.txtBoxSearch.Location = new System.Drawing.Point(173, 449);
+            this.txtBoxSearch.Name = "txtBoxSearch";
+            this.txtBoxSearch.Size = new System.Drawing.Size(381, 20);
+            this.txtBoxSearch.TabIndex = 78;
+            this.txtBoxSearch.TextChanged += new System.EventHandler(this.txtBoxSearch_TextChanged);
+            // 
             // btnSaveDesert
             // 
             this.btnSaveDesert.Location = new System.Drawing.Point(479, 390);
@@ -2137,164 +2303,34 @@
             // 
             // tabPage10
             // 
+            this.tabPage10.Controls.Add(this.dataGridViewOrder);
             this.tabPage10.Location = new System.Drawing.Point(4, 4);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Size = new System.Drawing.Size(872, 504);
             this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "Orders";
             this.tabPage10.UseVisualStyleBackColor = true;
+            this.tabPage10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tabPage10_MouseDown);
             // 
-            // lbSearch
+            // dataGridViewOrder
             // 
-            this.lbSearch.AutoSize = true;
-            this.lbSearch.Location = new System.Drawing.Point(104, 452);
-            this.lbSearch.Name = "lbSearch";
-            this.lbSearch.Size = new System.Drawing.Size(41, 13);
-            this.lbSearch.TabIndex = 79;
-            this.lbSearch.Text = "Search";
-            // 
-            // txtBoxSearch
-            // 
-            this.txtBoxSearch.Location = new System.Drawing.Point(173, 449);
-            this.txtBoxSearch.Name = "txtBoxSearch";
-            this.txtBoxSearch.Size = new System.Drawing.Size(381, 20);
-            this.txtBoxSearch.TabIndex = 78;
-            this.txtBoxSearch.TextChanged += new System.EventHandler(this.txtBoxSearch_TextChanged);
-            // 
-            // lbseach
-            // 
-            this.lbseach.AutoSize = true;
-            this.lbseach.Location = new System.Drawing.Point(98, 450);
-            this.lbseach.Name = "lbseach";
-            this.lbseach.Size = new System.Drawing.Size(41, 13);
-            this.lbseach.TabIndex = 81;
-            this.lbseach.Text = "Search";
-            // 
-            // txtBoxSearchDrink
-            // 
-            this.txtBoxSearchDrink.Location = new System.Drawing.Point(167, 447);
-            this.txtBoxSearchDrink.Name = "txtBoxSearchDrink";
-            this.txtBoxSearchDrink.Size = new System.Drawing.Size(381, 20);
-            this.txtBoxSearchDrink.TabIndex = 80;
-            this.txtBoxSearchDrink.TextChanged += new System.EventHandler(this.txtBoxSeachDrink_TextChanged);
-            // 
-            // lbSearchS
-            // 
-            this.lbSearchS.AutoSize = true;
-            this.lbSearchS.Location = new System.Drawing.Point(103, 453);
-            this.lbSearchS.Name = "lbSearchS";
-            this.lbSearchS.Size = new System.Drawing.Size(41, 13);
-            this.lbSearchS.TabIndex = 81;
-            this.lbSearchS.Text = "Search";
-            // 
-            // txtBoxSearchSalad
-            // 
-            this.txtBoxSearchSalad.Location = new System.Drawing.Point(172, 450);
-            this.txtBoxSearchSalad.Name = "txtBoxSearchSalad";
-            this.txtBoxSearchSalad.Size = new System.Drawing.Size(381, 20);
-            this.txtBoxSearchSalad.TabIndex = 80;
-            this.txtBoxSearchSalad.TextChanged += new System.EventHandler(this.txtBoxSearchSalads_TextChanged);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(100, 450);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 13);
-            this.label19.TabIndex = 81;
-            this.label19.Text = "Search";
-            // 
-            // txtBoxSearchPizza
-            // 
-            this.txtBoxSearchPizza.Location = new System.Drawing.Point(169, 447);
-            this.txtBoxSearchPizza.Name = "txtBoxSearchPizza";
-            this.txtBoxSearchPizza.Size = new System.Drawing.Size(381, 20);
-            this.txtBoxSearchPizza.TabIndex = 80;
-            this.txtBoxSearchPizza.TextChanged += new System.EventHandler(this.txtBoxSearchPizza_TextChanged);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(100, 448);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 13);
-            this.label20.TabIndex = 81;
-            this.label20.Text = "Search";
-            // 
-            // txtBoxSearchToast
-            // 
-            this.txtBoxSearchToast.Location = new System.Drawing.Point(169, 445);
-            this.txtBoxSearchToast.Name = "txtBoxSearchToast";
-            this.txtBoxSearchToast.Size = new System.Drawing.Size(381, 20);
-            this.txtBoxSearchToast.TabIndex = 80;
-            this.txtBoxSearchToast.TextChanged += new System.EventHandler(this.txtBoxSearchToast_TextChanged);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(100, 452);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 13);
-            this.label21.TabIndex = 81;
-            this.label21.Text = "Search";
-            // 
-            // txtBoxSearchBurger
-            // 
-            this.txtBoxSearchBurger.Location = new System.Drawing.Point(169, 449);
-            this.txtBoxSearchBurger.Name = "txtBoxSearchBurger";
-            this.txtBoxSearchBurger.Size = new System.Drawing.Size(381, 20);
-            this.txtBoxSearchBurger.TabIndex = 80;
-            this.txtBoxSearchBurger.TextChanged += new System.EventHandler(this.txtBoxSearchBurger_TextChanged);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(101, 466);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 13);
-            this.label22.TabIndex = 81;
-            this.label22.Text = "Search";
-            // 
-            // txtBoxSearchCategory
-            // 
-            this.txtBoxSearchCategory.Location = new System.Drawing.Point(170, 463);
-            this.txtBoxSearchCategory.Name = "txtBoxSearchCategory";
-            this.txtBoxSearchCategory.Size = new System.Drawing.Size(381, 20);
-            this.txtBoxSearchCategory.TabIndex = 80;
-            this.txtBoxSearchCategory.TextChanged += new System.EventHandler(this.txtBoxSearchCategory_TextChanged);
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(99, 454);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(41, 13);
-            this.label23.TabIndex = 81;
-            this.label23.Text = "Search";
-            // 
-            // txtBoxSearchAdmin
-            // 
-            this.txtBoxSearchAdmin.Location = new System.Drawing.Point(168, 451);
-            this.txtBoxSearchAdmin.Name = "txtBoxSearchAdmin";
-            this.txtBoxSearchAdmin.Size = new System.Drawing.Size(381, 20);
-            this.txtBoxSearchAdmin.TabIndex = 80;
-            this.txtBoxSearchAdmin.TextChanged += new System.EventHandler(this.txtBoxSearchAdmin_TextChanged);
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(100, 451);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(41, 13);
-            this.label24.TabIndex = 81;
-            this.label24.Text = "Search";
-            // 
-            // txtBoxSearchUser
-            // 
-            this.txtBoxSearchUser.Location = new System.Drawing.Point(169, 448);
-            this.txtBoxSearchUser.Name = "txtBoxSearchUser";
-            this.txtBoxSearchUser.Size = new System.Drawing.Size(381, 20);
-            this.txtBoxSearchUser.TabIndex = 80;
-            this.txtBoxSearchUser.TextChanged += new System.EventHandler(this.txtBoxSearchUser_TextChanged);
+            this.dataGridViewOrder.AutoGenerateColumns = false;
+            this.dataGridViewOrder.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOrder.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.orderIdDataGridViewTextBoxColumn,
+            this.customerIdDataGridViewTextBoxColumn,
+            this.phoneDataGridViewTextBoxColumn1,
+            this.addressDataGridViewTextBoxColumn,
+            this.quantityDataGridViewTextBoxColumn6,
+            this.totalDataGridViewTextBoxColumn,
+            this.createdDateDataGridViewTextBoxColumn,
+            this.burgersDataGridViewTextBoxColumn});
+            this.dataGridViewOrder.DataSource = this.orderBindingSource;
+            this.dataGridViewOrder.Location = new System.Drawing.Point(5, 5);
+            this.dataGridViewOrder.Name = "dataGridViewOrder";
+            this.dataGridViewOrder.Size = new System.Drawing.Size(751, 361);
+            this.dataGridViewOrder.TabIndex = 0;
             // 
             // userBindingSource
             // 
@@ -2659,6 +2695,59 @@
             this.categoryDataGridViewTextBoxColumn5.HeaderText = "Category";
             this.categoryDataGridViewTextBoxColumn5.Name = "categoryDataGridViewTextBoxColumn5";
             // 
+            // orderIdDataGridViewTextBoxColumn
+            // 
+            this.orderIdDataGridViewTextBoxColumn.DataPropertyName = "OrderId";
+            this.orderIdDataGridViewTextBoxColumn.HeaderText = "OrderId";
+            this.orderIdDataGridViewTextBoxColumn.Name = "orderIdDataGridViewTextBoxColumn";
+            this.orderIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // customerIdDataGridViewTextBoxColumn
+            // 
+            this.customerIdDataGridViewTextBoxColumn.DataPropertyName = "CustomerId";
+            this.customerIdDataGridViewTextBoxColumn.HeaderText = "CustomerId";
+            this.customerIdDataGridViewTextBoxColumn.Name = "customerIdDataGridViewTextBoxColumn";
+            // 
+            // phoneDataGridViewTextBoxColumn1
+            // 
+            this.phoneDataGridViewTextBoxColumn1.DataPropertyName = "Phone";
+            this.phoneDataGridViewTextBoxColumn1.HeaderText = "Phone";
+            this.phoneDataGridViewTextBoxColumn1.Name = "phoneDataGridViewTextBoxColumn1";
+            // 
+            // addressDataGridViewTextBoxColumn
+            // 
+            this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
+            // 
+            // quantityDataGridViewTextBoxColumn6
+            // 
+            this.quantityDataGridViewTextBoxColumn6.DataPropertyName = "Quantity";
+            this.quantityDataGridViewTextBoxColumn6.HeaderText = "Quantity";
+            this.quantityDataGridViewTextBoxColumn6.Name = "quantityDataGridViewTextBoxColumn6";
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            // 
+            // createdDateDataGridViewTextBoxColumn
+            // 
+            this.createdDateDataGridViewTextBoxColumn.DataPropertyName = "CreatedDate";
+            this.createdDateDataGridViewTextBoxColumn.HeaderText = "CreatedDate";
+            this.createdDateDataGridViewTextBoxColumn.Name = "createdDateDataGridViewTextBoxColumn";
+            // 
+            // burgersDataGridViewTextBoxColumn
+            // 
+            this.burgersDataGridViewTextBoxColumn.DataPropertyName = "Burgers";
+            this.burgersDataGridViewTextBoxColumn.HeaderText = "Burgers";
+            this.burgersDataGridViewTextBoxColumn.Name = "burgersDataGridViewTextBoxColumn";
+            // 
+            // orderBindingSource
+            // 
+            this.orderBindingSource.DataSource = typeof(WFGoodFood.DataModel.Order);
+            // 
             // UserControlManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2701,6 +2790,8 @@
             this.tabPage9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImgDesert)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDesert)).EndInit();
+            this.tabPage10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
@@ -2710,6 +2801,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.saladBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.drinkBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.desertBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2963,5 +3055,15 @@
         private System.Windows.Forms.TextBox txtBoxSearchPizza;
         private System.Windows.Forms.Label lbSearchS;
         private System.Windows.Forms.TextBox txtBoxSearchSalad;
+        private System.Windows.Forms.DataGridView dataGridViewOrder;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orderIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn createdDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn burgersDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource orderBindingSource;
     }
 }

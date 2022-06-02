@@ -21,9 +21,9 @@ namespace WFGoodFood.GUI
 
         private void lbClose_Click(object sender, EventArgs e)
         {
-            ToastForm toast = new ToastForm();
-            toast.Close();
+           Close();
             Hide();
+           
         }
 
         private void ToastForm_Load(object sender, EventArgs e)
