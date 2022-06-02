@@ -19,7 +19,7 @@ namespace WFGoodFood
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
             // Application.Run(new LoginForm());
-           //  Application.Run(new FormLoading());
+            // Application.Run(new FormLoading());
              Application.Run(new ProductForm());
             //  Application.Run(new Sign_Up());
             //Application.Run(new FormShopping_cart());

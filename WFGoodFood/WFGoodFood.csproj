@@ -98,6 +98,7 @@
     <Compile Include="DataModel\Desert.cs" />
     <Compile Include="DataModel\Drink.cs" />
     <Compile Include="DataModel\ModelContext.cs" />
+    <Compile Include="DataModel\Order.cs" />
     <Compile Include="DataModel\Pizzas.cs" />
     <Compile Include="DataModel\Salad.cs" />
     <Compile Include="DataModel\Toast.cs" />
@@ -192,6 +193,14 @@
     <Compile Include="Migrations\202206020904304_category1.designer.cs">
       <DependentUpon>202206020904304_category1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206021102311_burger2.cs" />
+    <Compile Include="Migrations\202206021102311_burger2.designer.cs">
+      <DependentUpon>202206021102311_burger2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206021105269_order.cs" />
+    <Compile Include="Migrations\202206021105269_order.designer.cs">
+      <DependentUpon>202206021105269_order.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -269,6 +278,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206020904304_category1.resx">
       <DependentUpon>202206020904304_category1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206021102311_burger2.resx">
+      <DependentUpon>202206021102311_burger2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206021105269_order.resx">
+      <DependentUpon>202206021105269_order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

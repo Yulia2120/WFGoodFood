@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WFGoodFood.DataModel;
 
 namespace WFGoodFood.GUI
 {
@@ -33,13 +34,34 @@ namespace WFGoodFood.GUI
         {
             lbClose.ForeColor = Color.Black;
         }
-
+      
         private void btnOrderShop_Click(object sender, EventArgs e)
         {
-            if (txtBoxDelivShop.Text !=string.Empty && txtBoxNameShop.Text != string.Empty && txtBoxPhoneShop.Text != string.Empty)
-                MessageBox.Show("Order accepted! Have a good day!");
+        
+            using (ModelContext db = new ModelContext())
+            {
+                if (txtBoxDelivShop.Text != string.Empty && txtBoxNameShop.Text != string.Empty && txtBoxPhoneShop.Text != string.Empty && txtBoxQuantity.Text != string.Empty)
+                {
+                    Order obj = new Order();
+                    obj.CustomerId = txtBoxNameShop.Text;
+                    obj.Phone = txtBoxPhoneShop.Text;
+                    obj.Address = txtBoxDelivShop.Text;
+                    obj.Quantity = int.Parse(txtBoxQuantity.Text);
+                    obj.Total = int.Parse(txtBoxQuantity.Text);
+                    obj.CreatedDate = DateTime.Now;
 
-            else MessageBox.Show("Please fill in the empty fields!");
+                    db.Set<Order>().Add(obj);
+                    db.SaveChanges();
+                    MessageBox.Show("Order accepted! Have a good day!");
+                }
+
+
+                else MessageBox.Show("Please fill in the empty fields!");
+
+
+
+            }
+
         }
 
        

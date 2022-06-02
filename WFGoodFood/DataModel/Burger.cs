@@ -22,6 +22,8 @@ namespace WFGoodFood.DataModel
         [StringLength(2555)]
         public string Description { get; set; }
         public int? CategoryId { get; set; }
+        public int? OrderId { get; set; }
+        public Order Order {get; set; }
         public Category Category { get; set; }
 
     }
