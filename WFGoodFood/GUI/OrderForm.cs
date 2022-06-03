@@ -26,7 +26,7 @@ namespace WFGoodFood.GUI
         {
             DGVPrinter printer = new DGVPrinter();
             printer.Title = "Execution Order List";
-            printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date.ToString("MM/dd/yyyy"));
+            printer.SubTitle = string.Format("Date: {0}", DateTime.Now.Date.ToString("dd/MM/yyyy"));
             printer.SubTitleFormatFlags =StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             printer.PageNumbers = true;
             printer.PageNumberInHeader = false;
