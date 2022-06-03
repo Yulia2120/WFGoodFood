@@ -43,7 +43,8 @@ namespace WFGoodFood.Control
 
         private void btnCatDrinks_Click(object sender, EventArgs e)
         {
-
+            DrinkForm drinkForm = new DrinkForm();
+            drinkForm.Show();
         }
 
         private void btnCatDessert_Click(object sender, EventArgs e)
