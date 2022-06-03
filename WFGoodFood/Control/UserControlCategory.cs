@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WFGoodFood.DataModel;
 using WFGoodFood.GUI;
@@ -33,12 +26,14 @@ namespace WFGoodFood.Control
 
         private void btnCatPizza_Click(object sender, EventArgs e)
         {
-
+            PizzaForm pizzaForm = new PizzaForm();
+            pizzaForm.Show();
         }
 
         private void btnCatSalad_Click(object sender, EventArgs e)
         {
-
+            SaladForm saladForm = new SaladForm();
+            saladForm.Show();
         }
 
         private void btnCatDrinks_Click(object sender, EventArgs e)
@@ -49,7 +44,8 @@ namespace WFGoodFood.Control
 
         private void btnCatDessert_Click(object sender, EventArgs e)
         {
-
+            DesertForm desertForm = new DesertForm();
+            desertForm.Show();
         }
     }
 }

@@ -104,6 +104,12 @@
     <Compile Include="DataModel\Toast.cs" />
     <Compile Include="DataModel\User.cs" />
     <Compile Include="DGVPrinter.cs" />
+    <Compile Include="GUI\DesertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DesertForm.Designer.cs">
+      <DependentUpon>DesertForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\DrinkForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,12 @@
     <Compile Include="GUI\OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\PizzaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PizzaForm.Designer.cs">
+      <DependentUpon>PizzaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ProductAllForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,12 @@
     </Compile>
     <Compile Include="GUI\ProductForm.Designer.cs">
       <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SaladForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SaladForm.Designer.cs">
+      <DependentUpon>SaladForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Sign-Up.cs">
       <SubType>Form</SubType>
@@ -235,6 +253,9 @@
     <EmbeddedResource Include="Control\UserControlManagement.resx">
       <DependentUpon>UserControlManagement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DesertForm.resx">
+      <DependentUpon>DesertForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\DrinkForm.resx">
       <DependentUpon>DrinkForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,11 +271,17 @@
     <EmbeddedResource Include="GUI\OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PizzaForm.resx">
+      <DependentUpon>PizzaForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ProductAllForm.resx">
       <DependentUpon>ProductAllForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ProductForm.resx">
       <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SaladForm.resx">
+      <DependentUpon>SaladForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Sign-Up.resx">
       <DependentUpon>Sign-Up.cs</DependentUpon>

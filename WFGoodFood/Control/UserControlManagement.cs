@@ -1016,10 +1016,30 @@ namespace WFGoodFood.Control
           
         }
 
+        private void bntDeletOrder_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(this, "Are you sure want to delete this record?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                using (ModelContext db = new ModelContext())
+                {
+                    Order obj = orderBindingSource.Current as Order;
+                    if (obj != null)
+                    {
+                        if (db.Entry<Order>(obj).State == System.Data.Entity.EntityState.Detached)
+                            db.Set<Order>().Attach(obj);
+                        db.Entry<Order>(obj).State = System.Data.Entity.EntityState.Deleted;
+                        db.SaveChanges();
+                        orderBindingSource.RemoveCurrent();
+                       
 
-    #endregion
+                    }
+                }
+            }
+        }
 
 
+
+        #endregion
 
 
 
